@@ -1,0 +1,4 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang
+AGENCY_VL,České dráhy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AGENCY_BUS,Meziměstské autobusy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AGENCY_MHD,Městská hromadná doprava (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
