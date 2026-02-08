@@ -24,7 +24,7 @@ Městská hromadná doprava (MHD) pro města po celé České republice.
 - `stops.txt` - 61,052 zastávek
 - `routes.txt` - 4,588 MHD linek (tramvaje, metro, městské autobusy)
 - `trips.txt` - 301,953 spojů
-- `stop_times.txt` - 5.9 mil. záznamů příjezdů/odjezdů (226 MB)
+- `stop_times.txt.gz` - 5.9 mil. záznamů příjezdů/odjezdů (45 MB komprimováno, 226 MB nekomprimováno)
 
 ### data/regional/
 Regionální a dálkové spoje (vlaky, meziměstské autobusy).
@@ -34,7 +34,7 @@ Regionální a dálkové spoje (vlaky, meziměstské autobusy).
 - `stops.txt` - 61,052 zastávek (sdílené)
 - `routes.txt` - 2,147 regionálních linek
 - `trips.txt` - 82,732 spojů
-- `stop_times.txt` - 1.0 mil. záznamů příjezdů/odjezdů (39 MB)
+- `stop_times.txt` - 1.0 mil. záznamů příjezdů/odjezdů (39 MB nekomprimováno)
 
 ### data/merged/
 Kompletní integrovaný dataset (MHD + regionální) pro použití v aplikacích.
@@ -42,7 +42,7 @@ Kompletní integrovaný dataset (MHD + regionální) pro použití v aplikacích
 **Obsahuje:**
 - Vše výše zmíněné v jednom datasetu
 - `calendar_dates.txt` - 1.58 mil. kalendářních výjimek (státní svátky, prázdniny)
-- `stop_times.txt` - 6.9 mil. záznamů (265 MB)
+- `stop_times.txt.gz` - 6.9 mil. záznamů (52 MB komprimováno, 265 MB nekomprimováno)
 
 ## 🏙️ Seznam měst s MHD
 
@@ -79,22 +79,41 @@ Adamov, Aš, Benešov, Bílina, Blansko, Brandýs nad Labem, Břeclav, Bruntál,
 
 ## 🚀 Použití
 
+### Poznámka o komprimovaných souborech
+
+Velké `stop_times.txt` soubory jsou komprimované gzipem (`.txt.gz`) kvůli limitům GitHubu. GTFS specifikace oficiálně podporuje gzip komprimované soubory a většina nástrojů je automaticky dekomprimuje.
+
+**Dekomprese (pokud potřebuješ nekomprimované soubory):**
+```bash
+gunzip data/mhd/stop_times.txt.gz
+gunzip data/merged/stop_times.txt.gz
+```
+
 ### Rychlý start
 
 ```python
 import csv
+import gzip
 
-# Načtení zastávek
+# Načtení zastávek (nekomprimované)
 with open('data/mhd/stops.txt', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     stops = list(reader)
     print(f"Nalezeno {len(stops)} zastávek")
 
-# Načtení linek
+# Načtení linek (nekomprimované)
 with open('data/mhd/routes.txt', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     routes = list(reader)
     print(f"Nalezeno {len(routes)} linek")
+
+# Načtení stop_times (komprimované - přímé čtení)
+with gzip.open('data/mhd/stop_times.txt.gz', 'rt', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+    # Zpracuj po řádcích pro úsporu paměti
+    for row in reader:
+        print(row['trip_id'], row['stop_id'])
+        break  # Příklad - ukaž jen první řádek
 ```
 
 ### Import do databáze

@@ -1,6 +1,17 @@
-# OS
-.DS_Store
-Thumbs.db
+# Nekomprimované velké soubory (používáme .gz verze)
+data/*/stop_times.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
 
 # IDE
 .vscode/
@@ -9,12 +20,10 @@ Thumbs.db
 *.swo
 *~
 
-# Temp
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
 *.tmp
 *.bak
-__pycache__/
-
-# Large data files (optional)
-*.zip
-*.gz
-*.tar
