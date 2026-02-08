@@ -120,13 +120,15 @@ Dataset obsahuje 3 syntetické přepravce:
 
 ## Statistiky kvality
 
-| Metr ika | Hodnota | Status |
+| Metrika | Hodnota | Status |
 |----------|---------|--------|
-| Celkem zastávek | 18,862 | ✅ |
-| Zastávky s GPS | 0 (0%) | ⚠️ |
-| Celkem linek | 116 | ✅ |
-| Celkem spojů | 15,121 | ✅ |
-| Kalendářní výjimky | 0 | ⚠️ |
+| Celkem zastávek | 61,052 | ✅ |
+| Dopravní agentury | 215 | ✅ |
+| Celkem linek | 6,735 | ✅ |
+| Celkem spojů | 384,685 | ✅ |
+| Stop times záznamy | 6.9 mil. | ✅ |
+| Kalendářní výjimky | 1.58 mil. | ✅ |
+| Zastávky s GPS | Některé | ⚠️ |
 | Transfers | 0 | ⚠️ |
 
 ## Validace
@@ -180,14 +182,15 @@ MHD_STOP_0,MHD_STOP_1,2,180
 
 ### Oficiální GTFS ČR (portal.cisjr.cz)
 
-| Metrika | Tento dataset | GTFS_CR | Pokrytí |
-|---------|---------------|---------|---------|
-| Agencies | 3 | 211 | 1.4% |
-| Zastávky | 18,862 | 86,897 | 21.7% |
-| Linky | 116 | 5,767 | 2.0% |
-| Spoje | 15,121 | 295,855 | 5.1% |
+| Metrika | Tento dataset (v2.0) | Pouze TT-converted | Oficiální GTFS_CR |
+|---------|----------------------|--------------------|--------------------|
+| Agencies | 215 | 3 | 211 |
+| Zastávky | 61,052 | 18,862 | 86,897 |
+| Linky | 6,735 | 116 | 5,767 |
+| Spoje | 384,685 | 15,121 | 295,855 |
+| Stop times | 6.9 mil. | 30,242 | 5.4 mil. |
 
-**Závěr:** Tento dataset pokrývá primárně MHD a je vhodný jako doplněk oficiálních dat.
+**Závěr:** Dataset v2.0 integruje data z více zdrojů (GTFS_CR + PID + vlastní agregace) a poskytuje komplexnější pokrytí než jednotlivé zdroje samostatně. Obsahuje deduplikované zastávky a kategorizované linky podle typu dopravy (MHD vs. regionální).
 
 ## Doporučení pro použití
 
@@ -236,4 +239,4 @@ Pro hlášení chyb v datech nebo návrhy vylepšení vytvořte issue na GitHubu
 ---
 
 **Poslední aktualizace:** 2026-02-08
-**Verze datasetu:** 1.0.0
+**Verze datasetu:** 2.0.0 (Integrovaná data z GTFS_CR + PID + vlastní agregace)

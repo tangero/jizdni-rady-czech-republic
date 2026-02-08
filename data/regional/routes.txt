@@ -1,0 +1,2148 @@
+route_id,agency_id,route_short_name,route_long_name,route_type
+RT_1,AG_1,Vlak26C,VL Vlak26C,2
+RT_2,AG_1,Vlak26E,VL Vlak26E,2
+RT_3,AG_1,VlakIDOL26,VL VlakIDOL26,2
+RT_4,AG_1,VlakODIS26,VL VlakODIS26,2
+RT_5,AG_1,VlakPID26,VL VlakPID26,2
+RT_6,AG_2,Bus26C,BUS Bus26C,3
+RT_7,AG_2,Bus26S,BUS Bus26S,3
+RT_8,AG_3,Adamov,MHD Adamov,3
+RT_9,AG_3,As,MHD As,3
+RT_10,AG_3,Benesov,MHD Benesov,3
+RT_11,AG_3,Bilina,MHD Bilina,3
+RT_12,AG_3,Blansko,MHD Blansko,3
+RT_13,AG_3,Brandys,MHD Brandys,3
+RT_14,AG_3,Breclav,MHD Breclav,3
+RT_15,AG_3,Bruntal,MHD Bruntal,3
+RT_16,AG_3,BystriceNadPernstejnem,MHD BystriceNadPernstejnem,3
+RT_17,AG_3,CesBud,MHD CesBud,3
+RT_18,AG_3,CesTes,MHD CesTes,3
+RT_19,AG_3,CeskaLipa,MHD CeskaLipa,3
+RT_20,AG_3,CeskyKrumlov,MHD CeskyKrumlov,3
+RT_21,AG_3,Cheb,MHD Cheb,3
+RT_22,AG_3,Chomutov,MHD Chomutov,3
+RT_23,AG_3,Chrudim,MHD Chrudim,3
+RT_24,AG_3,DC,MHD DC,3
+RT_25,AG_3,DO,MHD DO,3
+RT_26,AG_3,Duchcov,MHD Duchcov,3
+RT_27,AG_3,DvurKral,MHD DvurKral,3
+RT_28,AG_3,FM,MHD FM,3
+RT_29,AG_3,HB,MHD HB,3
+RT_30,AG_3,Havirov,MHD Havirov,3
+RT_31,AG_3,Hodonin,MHD Hodonin,3
+RT_32,AG_3,Horice,MHD Horice,3
+RT_33,AG_3,HrKr,MHD HrKr,3
+RT_34,AG_3,Hranice,MHD Hranice,3
+RT_35,AG_3,IDSJMK,MHD IDSJMK,3
+RT_36,AG_3,Jablonec,MHD Jablonec,3
+RT_37,AG_3,Jachymov,MHD Jachymov,3
+RT_38,AG_3,Jicin,MHD Jicin,3
+RT_39,AG_3,Jihlava,MHD Jihlava,3
+RT_40,AG_3,JinHrad,MHD JinHrad,3
+RT_41,AG_3,KH,MHD KH,3
+RT_42,AG_3,KT,MHD KT,3
+RT_43,AG_3,KV,MHD KV,3
+RT_44,AG_3,Kadan,MHD Kadan,3
+RT_45,AG_3,Karvina,MHD Karvina,3
+RT_46,AG_3,Kladno,MHD Kladno,3
+RT_47,AG_3,KlasterecNadOhri,MHD KlasterecNadOhri,3
+RT_48,AG_3,Kolin,MHD Kolin,3
+RT_49,AG_3,KostelecNadOrlici,MHD KostelecNadOrlici,3
+RT_50,AG_3,Kralupy,MHD Kralupy,3
+RT_51,AG_3,Krnov,MHD Krnov,3
+RT_52,AG_3,Kromeriz,MHD Kromeriz,3
+RT_53,AG_3,Kyjov,MHD Kyjov,3
+RT_54,AG_3,Liberec,MHD Liberec,3
+RT_55,AG_3,Litomerice,MHD Litomerice,3
+RT_56,AG_3,Litomysl,MHD Litomysl,3
+RT_57,AG_3,Louny,MHD Louny,3
+RT_58,AG_3,Lovosice,MHD Lovosice,3
+RT_59,AG_3,MB,MHD MB,3
+RT_60,AG_3,MarianskeLazne,MHD MarianskeLazne,3
+RT_61,AG_3,Milevsko,MHD Milevsko,3
+RT_62,AG_3,Mnisek,MHD Mnisek,3
+RT_63,AG_3,Most,MHD Most,3
+RT_65,AG_3,Nachod,MHD Nachod,3
+RT_66,AG_3,NoveMestoMor,MHD NoveMestoMor,3
+RT_67,AG_3,ODIS,MHD ODIS,3
+RT_68,AG_3,Olomouc,MHD Olomouc,3
+RT_69,AG_3,Opava,MHD Opava,3
+RT_70,AG_3,Orlova,MHD Orlova,3
+RT_71,AG_3,Ostrov,MHD Ostrov,3
+RT_72,AG_3,PID,MHD PID,3
+RT_73,AG_3,Pardubice,MHD Pardubice,3
+RT_74,AG_3,Pelhrim,MHD Pelhrim,3
+RT_75,AG_3,Pisek,MHD Pisek,3
+RT_76,AG_3,Plzen,MHD Plzen,3
+RT_77,AG_3,Policka,MHD Policka,3
+RT_78,AG_3,Prelouc,MHD Prelouc,3
+RT_79,AG_3,Prerov,MHD Prerov,3
+RT_80,AG_3,Pribram,MHD Pribram,3
+RT_81,AG_3,Prostej,MHD Prostej,3
+RT_82,AG_3,Ricany,MHD Ricany,3
+RT_83,AG_3,Rokycany,MHD Rokycany,3
+RT_84,AG_3,RoudniceNadLabem,MHD RoudniceNadLabem,3
+RT_85,AG_3,RychnovNadKneznou,MHD RychnovNadKneznou,3
+RT_86,AG_3,Slany,MHD Slany,3
+RT_87,AG_3,Sokolov,MHD Sokolov,3
+RT_88,AG_3,SpindleruvMlyn,MHD SpindleruvMlyn,3
+RT_89,AG_3,Steti,MHD Steti,3
+RT_90,AG_3,Strakon,MHD Strakon,3
+RT_91,AG_3,Stribro,MHD Stribro,3
+RT_92,AG_3,Studenka,MHD Studenka,3
+RT_93,AG_3,Sumperk,MHD Sumperk,3
+RT_94,AG_3,Tabor,MHD Tabor,3
+RT_95,AG_3,Tachov,MHD Tachov,3
+RT_96,AG_3,Teplice,MHD Teplice,3
+RT_97,AG_3,Trebic,MHD Trebic,3
+RT_98,AG_3,Trinec,MHD Trinec,3
+RT_99,AG_3,Trutnov,MHD Trutnov,3
+RT_100,AG_3,Turnov,MHD Turnov,3
+RT_101,AG_3,TynisteNadOrlici,MHD TynisteNadOrlici,3
+RT_102,AG_3,UL,MHD UL,3
+RT_103,AG_3,UherskeHradiste,MHD UherskeHradiste,3
+RT_104,AG_3,ValMez,MHD ValMez,3
+RT_105,AG_3,Varnsdorf,MHD Varnsdorf,3
+RT_106,AG_3,VelkeMezirici,MHD VelkeMezirici,3
+RT_107,AG_3,Vimperk,MHD Vimperk,3
+RT_108,AG_3,Vlasim,MHD Vlasim,3
+RT_109,AG_3,Vrchlabi,MHD Vrchlabi,3
+RT_110,AG_3,Vsetin,MHD Vsetin,3
+RT_111,AG_3,Vyskov,MHD Vyskov,3
+RT_112,AG_3,ZN,MHD ZN,3
+RT_113,AG_3,ZR,MHD ZR,3
+RT_114,AG_3,Zabreh,MHD Zabreh,3
+RT_115,AG_3,Zatec,MHD Zatec,3
+RT_116,AG_3,Zlin,MHD Zlin,3
+RT_118,AG_5,P1,Sedlec - Zámky,4
+RT_119,AG_5,P2,V Podbabě - Podhoří,4
+RT_120,AG_6,1398,(Dresden)-Altenberg-Zinnwald-Teplice,3
+RT_121,AG_6,1896,Schöna-Hřensko,3
+RT_131,AG_10,,Ostrava-Svinov - Ostrava-Vítkovice,2
+RT_132,AG_10,,Ostrava-Vítkovice - Ostrava-Svinov,2
+RT_257,AG_11,X302,"Letňany - Mratín / Přezletice, Horní náves",3
+RT_288,AG_11,X25,Palmovka - Libeňský most - Palmovka,3
+RT_289,AG_11,X26,"Praha, Vítězné náměstí - Praha, Divoká Šárka",3
+RT_290,AG_11,X26,"Praha, Divoká Šárka - Praha, Dejvická",3
+RT_291,AG_11,X94,Palmovka - Tusarova - Palmovka,3
+RT_292,AG_11,X201,Letňany - Toužimská,3
+RT_293,AG_11,X137,Jinonická / Klamovka - Malá Ohrada,3
+RT_295,AG_11,AE,Hlavní nádraží  - Letiště / Terminál 1,3
+RT_326,AG_11,58,Palmovka - Letňany - Čakovice - Miškovice,11
+RT_327,AG_11,59,Nádraží Veleslavín - Letiště,11
+RT_356,AG_14,Betlémský vlak,Turnov - Stará Paka,2
+RT_357,AG_14,Betlémský vlak,Stará Paka - Liberec,2
+RT_358,AG_14,,Turnov - Lomnice nad Popelkou,2
+RT_359,AG_14,,Lomnice nad Popelkou - Turnov,2
+RT_360,AG_15,550385,Libochovice-Roudnice n.L.-Praha,3
+RT_423,AG_19,585200,Náměstí Svobody - Zámecké náměstí - Botanická zahrada - Zeyerovo náměstí - Náměstí Svobody,3
+RT_685,AG_29,141100,Praha - Karlovy Vary - Sokolov - Cheb - Františkovy Lázně,3
+RT_686,AG_29,570923,Most - Chomutov - Louny - Praha,3
+RT_687,AG_29,580924,Teplice - Havířov,3
+RT_688,AG_30,421827,Ostrov-Krásný Les-Stráž n.Ohří-Perštejn,3
+RT_797,AG_32,CYK2,CYKLOBUS ČESKÝ RÁJ: Mladá Boleslav - Mnichovo Hradiště - Kněžmost - Sobotka,3
+RT_801,AG_34,156530,Praha-Louny-Žatec,3
+RT_804,AG_35,Leo Express,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_805,AG_35,Leo Express,Bohumín - Praha hlavní nádraží,2
+RT_806,AG_35,Leo Express,Bohumín - Praha hlavní nádraží,2
+RT_807,AG_35,Leo Express,Praha hlavní nádraží - Bohumín,2
+RT_808,AG_35,Leo Express,Praha hlavní nádraží - Bohumín,2
+RT_809,AG_35,Leo Express,Praha hlavní nádraží - Bohumín,2
+RT_810,AG_35,Leo Express,Praha hlavní nádraží - Čadca,2
+RT_811,AG_35,Leo Express,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_812,AG_35,,Čadca - Praha hlavní nádraží,2
+RT_813,AG_35,Leo Express,Čadca - Praha hlavní nádraží,2
+RT_814,AG_35,,Břeclav - Praha hlavní nádraží,2
+RT_815,AG_35,,Břeclav - Praha hlavní nádraží,2
+RT_816,AG_35,,Čadca - Praha hlavní nádraží,2
+RT_817,AG_35,,Praha hlavní nádraží - Břeclav,2
+RT_818,AG_35,,Praha hlavní nádraží - Čadca,2
+RT_819,AG_35,,Čadca - Ostrava-Svinov,2
+RT_820,AG_35,,Praha hlavní nádraží - Bohumín,2
+RT_821,AG_35,,Bohumín - Praha hlavní nádraží,2
+RT_822,AG_35,,Praha hlavní nádraží - Břeclav,2
+RT_823,AG_35,,Čadca - Bohumín,2
+RT_824,AG_35,Leo Express,Bohumín - Čadca,2
+RT_964,AG_40,421308,Karlovy Vary - Ostrov - Jáchymov - Boží Dar - Vejprty,3
+RT_965,AG_41,U1,Děčín hl.n. – Ústí nad Labem hl.n. – Most – Chomutov – Kadaň předměstí,2
+RT_966,AG_41,U3,Děčín hl.n. – Ústí nad Labem hl.n. – Teplice v Čechách – Litvínov,2
+RT_967,AG_41,U3/U5,Děčín hl.n. – Ústí nad Labem hl.n. – Teplice v Čechách – Litvínov - Ústí n.L. – Úpořiny – Bílina – Most,2
+RT_968,AG_41,U5,Ústí n.L. – Úpořiny – Bílina – Most,2
+RT_969,AG_41,U13,Most – Žatec západ,2
+RT_970,AG_41,U16,Chomutov – Hradec u Kadaně,2
+RT_971,AG_41,,Louny předměstí - Osek město,2
+RT_986,AG_43,390239,Soběslav-Chotěmice-Deštná-Bořetín,3
+RT_995,AG_43,390268,"Mladá Vožice-Smilovy Hory,Františkov-Pacov",3
+RT_1079,AG_48,,Svobodné Heřmanice - Opava východ,2
+RT_1080,AG_48,,Opava východ - Svobodné Heřmanice,2
+RT_1081,AG_49,S58,Rakovník - Kralovice u Rakovníka,2
+RT_1082,AG_49,S58/U12/U14,Rakovník - Kralovice u Rakovníka - Rakovník – Louny – Most – Osek město,2
+RT_1083,AG_49,S58/U14,Jirkov - Chomutov - Lužná u Rakovníka – Rakovník - Rakovník - Kralovice u Rakovníka,2
+RT_1084,AG_49,U12,Rakovník – Louny – Most – Osek město,2
+RT_1085,AG_49,U14,Jirkov - Chomutov - Lužná u Rakovníka – Rakovník,2
+RT_1086,AG_49,T2,Děčín hl.n. / Liberec – Krásná Lípa/Rumburk – Mikulášovice,2
+RT_1087,AG_49,T7,Chomutov – Vejprty,2
+RT_1088,AG_49,T9,Liberec – Rybniště – Mikulášovice – Rumburk,2
+RT_1089,AG_49,L2,Liberec – Žandov (– Děčín hl.n.),2
+RT_1090,AG_49,L4,Mladá Boleslav – Česká Lípa – Jedlová (– Rumburk),2
+RT_1091,AG_49,L7 Vánoční kometa,Liberec – Zittau – Varnsdorf-pivovar Kocour,2
+RT_1092,AG_49,L7,Liberec – Zittau – Varnsdorf-pivovar Kocour,2
+RT_1093,AG_49,L24 Mácháč,Liberec – Doksy,2
+RT_1094,AG_49,L24 Údolská pouť,Liberec – Doksy,2
+RT_1095,AG_49,RE2 Vánoční kometa,Liberec – Zittau – Dresden,2
+RT_1096,AG_49,RE2,Liberec – Zittau – Dresden,2
+RT_1097,AG_49,,Rakovník - Kolešovice,2
+RT_1098,AG_49,,Kolešovice - Rakovník,2
+RT_1099,AG_49,,Most - České Budějovice,2
+RT_1100,AG_49,,České Budějovice - Most,2
+RT_1101,AG_49,,Rakovník - Louny,2
+RT_1102,AG_49,,Louny - Rakovník,2
+RT_1103,AG_49,,Rakovník - Budyně nad Ohří,2
+RT_1104,AG_49,,Budyně nad Ohří - Rakovník,2
+RT_1105,AG_49,,Benešov u Prahy - Most,2
+RT_1106,AG_49,,Most - Benešov u Prahy,2
+RT_1107,AG_49,,Praha-Čakovice - Praha hl. n.,2
+RT_1108,AG_50,421302,Boží Dar - Klášterec nad Ohří - Kadaň - Žatec - Praha,3
+RT_1271,AG_64,585101,"Teplice, Anger - Teplice, Nová Ves",11
+RT_1272,AG_64,585101,"Teplice, Nová Ves - Teplice, Anger",11
+RT_1273,AG_64,585102,"Teplice, Hudcov - Teplice, Olympia",11
+RT_1274,AG_64,585102,"Teplice, Anger - Teplice, Hudcov",11
+RT_1275,AG_64,585102,"Teplice, Olympia - Teplice, Hudcov",11
+RT_1276,AG_64,585102,"Teplice, Hudcov - Teplice, Anger",11
+RT_1277,AG_64,585103,"Teplice, Šanov II - Teplice, Prosetice",11
+RT_1278,AG_64,585103,"Teplice, Prosetice - Teplice, Panorama",11
+RT_1279,AG_64,585103,"Teplice, Prosetice - Teplice, Šanov II",11
+RT_1280,AG_64,585103,"Teplice, Panorama - Teplice, Prosetice",11
+RT_1281,AG_64,585104,"Teplice, Panorama - Teplice, nemocnice",11
+RT_1282,AG_64,585104,"Teplice, Panorama - Teplice, Řetenice, Tolstého",11
+RT_1283,AG_64,585104,"Teplice, Řetenice, Tolstého - Teplice, Hlavní nádraží",11
+RT_1284,AG_64,585104,"Teplice, nemocnice - Teplice, Panorama",11
+RT_1285,AG_64,585104,"Teplice, Řetenice, Tolstého - Teplice, Panorama",11
+RT_1286,AG_64,585105,"Teplice, Řetenice, Tolstého - Teplice, Anger",11
+RT_1287,AG_64,585105,"Teplice, Anger - Teplice, Řetenice, Tolstého",11
+RT_1288,AG_64,585106,"Teplice, Anger - Teplice, Nová Ves",11
+RT_1289,AG_64,585106,"Teplice, Nová Ves - Teplice, Anger",11
+RT_1290,AG_64,585106,"Kladruby, náves - Proboštov, Přítkov",11
+RT_1291,AG_64,585106,"Proboštov, Přítkov - Kladruby, náves",11
+RT_1292,AG_64,585106,"Proboštov, Přítkov - Teplice, Nová Ves",11
+RT_1293,AG_64,585106,"Teplice, Nová Ves - Proboštov, Přítkov",11
+RT_1294,AG_64,585106,"Teplice, Anger - Kladruby, náves",11
+RT_1295,AG_64,585106,"Kladruby, náves - Teplice, Anger",11
+RT_1296,AG_64,585107,"Teplice, Prosetice - Teplice, Řetenice, Tolstého",11
+RT_1297,AG_64,585107,"Teplice, Řetenice, Tolstého - Teplice, Prosetice",11
+RT_1298,AG_64,585108,"Teplice, Panorama - Teplice, Nová Ves",11
+RT_1299,AG_64,585108,"Teplice, Nová Ves - Teplice, Panorama",11
+RT_1300,AG_64,585109,"Teplice, Panorama - Teplice, Hlavní nádraží",3
+RT_1301,AG_64,585109,"Teplice, Panorama - Teplice, Prosetice",3
+RT_1302,AG_64,585109,"Teplice, Prosetice - Teplice, Panorama",3
+RT_1303,AG_64,585110,"Teplice, Doubravická - Teplice, Buzulucká",3
+RT_1304,AG_64,585110,"Teplice, Hlavní nádraží - Teplice, Buzulucká",3
+RT_1305,AG_64,585110,"Teplice, Buzulucká - Teplice, Doubravická",3
+RT_1306,AG_64,585111,"Teplice, Panorama - Teplice, Nová Ves",11
+RT_1307,AG_64,585111,"Teplice, Nová Ves - Teplice, Panorama",11
+RT_1308,AG_64,585119,"Teplice, Nová Ves - Teplice, Dopravní podnik",11
+RT_1309,AG_64,585119,"Teplice, Dopravní podnik - Teplice, Nová Ves",11
+RT_1310,AG_64,585119,"Teplice, Dopravní podnik - Teplice, Hlavní nádraží",11
+RT_1320,AG_68,,Turnov - Rovensko pod Troskami,2
+RT_1321,AG_68,,Rovensko pod Troskami - Semily,2
+RT_1322,AG_68,,Tanvald - Harrachov,2
+RT_1323,AG_68,,Kořenov - Tanvald,2
+RT_1324,AG_68,,Harrachov - Tanvald,2
+RT_1325,AG_68,,Tanvald - Kořenov,2
+RT_1326,AG_68,,Turnov - Martinice v Krkonoších,2
+RT_1327,AG_68,,Martinice v Krkonoších - Turnov,2
+RT_1328,AG_68,,Liberec - Křižany,2
+RT_1329,AG_68,,Křižany - Liberec,2
+RT_1330,AG_68,,Semily - Turnov,2
+RT_1331,AG_68,,Kořenov - Tanvald,2
+RT_1332,AG_68,,Tanvald - Harrachov,2
+RT_1333,AG_68,,Harrachov - Kořenov,2
+RT_1334,AG_68,,Kořenov - Harrachov,2
+RT_1335,AG_68,,Harrachov - Tanvald,2
+RT_1336,AG_68,,Martinice v Krkonoších - Rokytnice nad Jizerou,2
+RT_1337,AG_68,,Rokytnice nad Jizerou - Martinice v Krkonoších,2
+RT_1355,AG_70,T6,Kadaň-Prunéřov – Kadaňský Rohozec / Podbořany,2
+RT_1356,AG_70,T8,Most – Osek – Moldava v Krušných horách,2
+RT_1357,AG_70,,Jemnice - Moravské Budějovice,2
+RT_1358,AG_70,,Jemnice - Moravské Budějovice,2
+RT_1359,AG_70,,Jemnice - Moravské Budějovice,2
+RT_1360,AG_70,,Kroměříž - Vizovice,2
+RT_1361,AG_70,,Otrokovice - Vizovice,2
+RT_1362,AG_70,,Zlín střed - Kroměříž,2
+RT_1363,AG_70,,Vizovice - Zlín střed,2
+RT_1364,AG_70,,Zlín střed - Vizovice,2
+RT_1365,AG_70,,Vizovice - Otrokovice,2
+RT_1366,AG_70,,Podbořany - Kadaň,2
+RT_1367,AG_70,,Kroměříž - Zdounky,2
+RT_1368,AG_70,,Zdounky - Kroměříž,2
+RT_1369,AG_70,,Kadaň - Kadaňský Rohozec,2
+RT_1370,AG_70,,Kadaňský Rohozec - Podbořany,2
+RT_1371,AG_70,,Trhový Štěpánov - Vlašim,2
+RT_1372,AG_70,,Vlašim - Trhový Štěpánov,2
+RT_1373,AG_70,,Podbořany - Kadaň,2
+RT_1374,AG_71,,Letohrad - Králíky,2
+RT_1375,AG_71,,Letohrad - Králíky,2
+RT_1376,AG_71,,Ústí nad Orlicí - Letohrad,2
+RT_1377,AG_71,,Letohrad - Králíky,2
+RT_1378,AG_71,,Letohrad - Králíky,2
+RT_1379,AG_71,,Ústí nad Orlicí - Letohrad,2
+RT_1380,AG_71,,Ústí nad Orlicí - Letohrad,2
+RT_1381,AG_71,,Letohrad - Králíky,2
+RT_1382,AG_71,,Ústí nad Orlicí - Letohrad,2
+RT_1383,AG_71,,Letohrad - Králíky,2
+RT_1384,AG_71,,Letohrad - Králíky,2
+RT_1385,AG_71,,Letohrad - Králíky,2
+RT_1386,AG_71,,Letohrad - Králíky,2
+RT_1387,AG_71,,Ústí nad Orlicí - Letohrad,2
+RT_1388,AG_71,,Lichkov - Międzylesie,2
+RT_1389,AG_71,,Międzylesie - Lichkov,2
+RT_1390,AG_71,,Letohrad - Králíky,2
+RT_1391,AG_71,,Letohrad - Králíky,2
+RT_1392,AG_71,,Letohrad - Králíky,2
+RT_1393,AG_71,,Letohrad - Králíky,2
+RT_1394,AG_71,,Letohrad - Králíky,2
+RT_1395,AG_71,,Letohrad - Králíky,2
+RT_1396,AG_71,,Letohrad - Králíky,2
+RT_1397,AG_71,,Lanšperk - Králíky,2
+RT_1398,AG_71,,Letohrad - Králíky,2
+RT_1399,AG_72,595010,"SKIBUS Divadlo - Lipová - Telenice, železniční stanice - Zadní Telnice",3
+RT_1427,AG_72,595901,Lanová dráha Větruše,7
+RT_1480,AG_75,XL7,Liberec-Chrastava-Hrádek n.Nisou-Zittau-Hrádek nad Nisou-Chrastava  -Liberec,3
+RT_1490,AG_75,XL7,Liberec-Chrastava-Hrádek nad Nisou,3
+RT_1491,AG_75,X16,"Liberec - Kryštofovo Údolí - Novina,Křižanské sedlo",3
+RT_1511,AG_75,XD7,"Chrastava-Liberec,Machnín-Chrastava",3
+RT_1516,AG_75,345/540345,Liberec - Hodkovice nad Mohelkou - Mladá Boleslav,3
+RT_1541,AG_76,X315,Tuřice - Benátky nad Jizerou - Předměřice nad Jizerou,3
+RT_1553,AG_76,X398,Poděbrady - Písková Lhota,3
+RT_1575,AG_77,325001,Haklovy Dvory – Hlincová Hora,3
+RT_1576,AG_77,325002,Papírenská – Borek,11
+RT_1577,AG_77,325003,Máj (A. Barcala) – Nádraží,11
+RT_1578,AG_77,325005,Máj (A. Barcala) – Rožnov,11
+RT_1579,AG_77,325006,Hrdějovice – Dobrá Voda,3
+RT_1580,AG_77,325007,Máj (A. Barcala) – Boršov nad Vltavou,3
+RT_1581,AG_77,325008,Máj (A. Barcala) – Nemanice,11
+RT_1582,AG_77,325009,České Vrbné – Suché Vrbné,11
+RT_1583,AG_77,325010,Kaliště – Vidov,3
+RT_1584,AG_77,325011,Staré Hodějovice – Pražské sídliště,3
+RT_1585,AG_77,325012,Nádraží – Slévárenská,3
+RT_1586,AG_77,325013,Papírenská – Srubec,3
+RT_1587,AG_77,325014,Vltava – Nové Vráto,3
+RT_1588,AG_77,325015,České Vrbné – Papírenská,11
+RT_1589,AG_77,325016,"Nádraží – Litvínovice, Mokré",3
+RT_1590,AG_77,325018,Máj (A. Barcala) – Nádraží,3
+RT_1591,AG_77,325019,Nádraží – Homole,3
+RT_1592,AG_77,325021,Náměstí Přemysla Otakara II. – Havlíčkova kolonie,3
+RT_1593,AG_77,325022,Náměstí Přemysla Otakara II. – Papírenská,3
+RT_1594,AG_77,325023,Náměstí Přemysla Otakara II. – Parkoviště Jírovcova,3
+RT_1595,AG_77,325040,Nádraží – Letiště České Budějovice-Terminál,3
+RT_1596,AG_77,325045,Švábův Hrádek – Máj - Antonína Barcala,3
+RT_1597,AG_77,325053,Máj (A. Barcala) – Centrum Rožnov,11
+RT_1598,AG_77,325059,Vltava – Suché Vrbné,11
+RT_1602,AG_78,10,Tylova - Černice,11
+RT_1603,AG_78,11,Ústřední hřbitov - Malesice - Křimice,11
+RT_1604,AG_78,12,Nová Hospoda - Božkov - Letkov,11
+RT_1605,AG_78,13,Na Dlouhých - NC Černice,11
+RT_1606,AG_78,14,Pařížská - Sídliště Bory,11
+RT_1607,AG_78,15,Lobzy - Borská pole - Nová Hospoda,11
+RT_1608,AG_78,16,Doubravka - Sídliště Bory,11
+RT_1609,AG_78,17,Doubravka - Nová Hospoda,11
+RT_1610,AG_78,18,CAN Husova - Borská pole,11
+RT_1611,AG_78,19,Karlov - Nová Hospoda,11
+RT_1614,AG_78,22,Koterov - Malvíny,11
+RT_1640,AG_78,2A,Náměstí Republiky - Skvrňany,3
+RT_1647,AG_78,N7,Mrakodrap - Nová Hospoda,11
+RT_1653,AG_80,T3,Ústí n.L. – Velké Březno,2
+RT_1654,AG_80,,Turnov - Mnichovo Hradiště,2
+RT_1655,AG_80,,Mnichovo Hradiště - Lomnice nad Popelkou,2
+RT_1656,AG_80,,Lomnice nad Popelkou - Libuň,2
+RT_1657,AG_80,,Libuň - Lomnice nad Popelkou,2
+RT_1658,AG_80,,Lomnice nad Popelkou - Turnov,2
+RT_1659,AG_80,,Frýdek-Místek - Lískovec u Frýdku,2
+RT_1660,AG_80,,Lískovec u Frýdku - Frýdek-Místek,2
+RT_1661,AG_80,,Frýdek-Místek - Dobrá u Frýdku-Místku,2
+RT_1662,AG_80,,Dobrá u Frýdku-Místku - Frýdek-Místek,2
+RT_1663,AG_80,,Frýdek-Místek - Dobrá u Frýdku-Místku,2
+RT_1664,AG_80,,Ostrava střed - Ostrava-důl Zárubek,2
+RT_1765,AG_82,152101,Praha – Most – Chomutov,3
+RT_1780,AG_83,421800,Karlovy Vary-Bochov-Chyše-Lubenec-Blatno,3
+RT_1787,AG_83,527356,Porcelánka-Nádraží ČD-Evženie-Nádraží ČD-Porcelánka,3
+RT_1788,AG_83,527357,Náměstí-Zdrav.stř.-Petlérská-IP Verne III,3
+RT_1789,AG_83,557000,Městská autobusová doprava Litoměřice LINKA E,3
+RT_1790,AG_83,557540,Městská autobusová doprava Litoměřice LINKA A,3
+RT_1791,AG_83,557550,Městská autobusová doprava Litoměřice LINKA B,3
+RT_1792,AG_83,557560,Městská autobusová doprava Litoměřice LINKA C,3
+RT_1793,AG_83,557570,Městská autobusová doprava Litoměřice LINKA D,3
+RT_1794,AG_83,558001,"Lovosice,,záv.2-Lovosice,aut.nádr.-Lovosice,,Průmyslová-Lovosice,,hřbitov",3
+RT_1795,AG_83,565001,"Postoloprty,Březno,rozc.skanzen-Louny,,EPL hl.vrát.-Louny,,Komenského nám.-Louny,žel.st.-Černčice-Vršovice-Obora",3
+RT_1796,AG_83,565002,"Postoloprty,Březno,rozc.skanzen-Louny,EPL hl.vrát.-Louny,Tyršovo nám.-Louny,žel.st.-Černčice-Vršovice-Obora",3
+RT_1797,AG_83,565003,"Postoloprty,Březno,rozc.skanzen-Louny,EPL hl.vrát.-Louny,Tyršovo nám.-Louny,prům.zóna-Louny,žel.st.-Černčice-Vršovice-Obora",3
+RT_1798,AG_83,592972,Zubrnice- Lovečkovice- Úštěk,3
+RT_1801,AG_85,586001,Nové sady-Duchcov žel. stanice-U polikliniky,3
+RT_1802,AG_86,526001,"Strážiště - Pošta/U Nádraží - Jana Roháče,šuplík/Prunéřov",3
+RT_1803,AG_86,526002,"Polní - Pošta - Nemocnice,Poliklinika - Jana Roháče,Šuplík",3
+RT_1804,AG_86,526003,Kadaň - Brodce,3
+RT_1805,AG_87,566001,Raisova-Žel.st.-Aut.nádr.-Dukelská-Bezděkov,3
+RT_1806,AG_87,566002,Žel.st.-Aut.nádr.-Žel.st.,3
+RT_1815,AG_88,761100,Jihlava - Měřín - Velké Meziříčí - Velká Bíteš - Brno,3
+RT_1816,AG_88,766420,Jihlava-Brtnice-Kněžice-Okříšky-Třebíč,3
+RT_1817,AG_88,766934,Stará Říše - Nová Říše - Dačice,3
+RT_1818,AG_88,769100,Jihlava - Velké Meziříčí - Brno,3
+RT_1819,AG_88,791483,Třebíč - Kožichovice,3
+RT_1820,AG_88,795370,Třebíč - Jaroměřice nad Rokytnou - Moravské Budějovice - Jemnice,3
+RT_1821,AG_88,795372,Moravské Budějovice-Biskupice-Pulkov-Hrotovice,3
+RT_1822,AG_88,795373,Moravské Budějovice-Vysočany-Police-Jemnice,3
+RT_1823,AG_88,795374,Moravské Budějovice-Nové Syrovice-Budkov-Jemnice,3
+RT_1824,AG_88,795379,Jemnice-Jiratice,3
+RT_1825,AG_88,795380,Moravské Budějovice-Jaroměřice nad Rokytnou-Hrotovice-Dukovany,3
+RT_1826,AG_88,795385,Moravské Budějovice-Šebkovice-Čáslavice-Třebíč-Okříšky,3
+RT_1827,AG_88,795400,Jihlava-Stonařov-Želetava-Moravské Budějovice,3
+RT_1828,AG_88,795405,Jemnice-Budkov-Lesonice-Čáslavice-Třebíč,3
+RT_1829,AG_88,795409,"Jihlava-Cerekvička-Rosice-Vílanec,Loučky",3
+RT_1830,AG_88,795421,Okříšky-Přibyslavice-Třebíč,3
+RT_1831,AG_88,795480,Třebíč-Třebenice-Hrotovice-Rouchovany-Dukovany,3
+RT_1832,AG_88,795483,Třebíč-Valeč-Račice-Hrotovice,3
+RT_1835,AG_88,795937,Moravské Budějovice-Domamil-Budeč,3
+RT_1836,AG_88,796105,Kožichovice-Třebíč-Budišov-Tasov-Velká Bíteš,3
+RT_1837,AG_88,796381,Třebíč - Jaroměřice nad Rokytnou - Příštpo,3
+RT_1838,AG_88,796382,Jarorměřice nad Rokytnou - Výčapy - Horní Újezd - Čáslavice,3
+RT_1839,AG_88,796383,Jaroměřice n.R.-Blatnice-Bohušice-Jaroměřice n.R.,3
+RT_1840,AG_88,796384,Třebíč-Kojetice-Šebkovice-Jaroměřice nad Rokytnou,3
+RT_1841,AG_88,796407,Kožichovice - Třebíč - Předín - Dlouhá Brtnice,3
+RT_1842,AG_88,796421,Třebíč-Heraltice-Okříšky-Přibyslavice-Třebíč,3
+RT_1843,AG_88,796422,Třebíč-Okříšky-Červená Lhota,3
+RT_1844,AG_88,796423,Třebíč-Benetice-Horní Vilémovice-Bochovice-Rudíkov,3
+RT_1845,AG_88,796450,Třebíč-Studenec-Náměšť nad Oslavou-Jinošov-Velká Bíteš,3
+RT_1846,AG_88,796452,Třebíč - Smrk - Pyšel - Ocmanice - Náměšť nad Oslavou,3
+RT_1847,AG_88,796453,Třebíč-Vladislav-Budišov-Pyšel-Tasov,3
+RT_1848,AG_88,796454,Náměšť nad Oslavou-Sedlec-Hartvíkovice,3
+RT_1849,AG_88,796455,Nová Ves - Okříšky - Hartvíkovice - Mohelno - Dukovany,3
+RT_1850,AG_88,796456,"Třebíč-Vladislav,Střížov",3
+RT_1851,AG_88,796457,Náměšť nad Oslavou-Rapotice-Březník-Mohelno-Dukovany,3
+RT_1852,AG_88,796481,Třebíč-Dolní Vilémovice-Valeč-Hrotovice,3
+RT_1853,AG_88,796482,Třebíč - Myslibořice - Biskupice-Pulkov - Rouchovany - Tavíkovice,3
+RT_1854,AG_88,796935,Třebíč-Želetava-Nová Říše-Dačice,3
+RT_1855,AG_88,841101,Velké Meziříčí: Průmyslová - aut.nádr. - Hornoměstská - aut.nádr. - Průmyslová,3
+RT_1856,AG_88,841102,Velké Meziříčí - Rohy - Budišov - Hodov,3
+RT_1857,AG_88,841103,Velké Meziříčí - Velká Bíteš,3
+RT_1858,AG_88,841104,"Velké Meziříčí - Velké Meziříčí,Mostiště - Netín - Radostín nad Oslavou",3
+RT_1859,AG_88,841106,"Velké Meziříčí - Tasov - Ruda,Lhotka",3
+RT_1860,AG_88,841107,Velké Meziříčí - Uhřínov - Otín - Měřín,3
+RT_1861,AG_88,841108,Velké Meziříčí - Svařenov - Lavičky - Velké Meziříčí,3
+RT_1862,AG_88,841109,Měřín - Netín - Blízkov - Měřín,3
+RT_1863,AG_88,841111,Velká Bíteš - Osová Bítýška - Skřinářov - Křižanov - Sviny,3
+RT_1864,AG_88,841112,Velká Bíteš - Osová Bítýška - Březí - Vidonín - Heřmanov - Křižanov,3
+RT_1865,AG_88,841113,Baliny - Velké Meziříčí - Ořechov - Osová Bítýška - Křoví,3
+RT_1866,AG_88,841114,Velké Meziříčí - Vídeň - Bory,3
+RT_1867,AG_88,841115,Bystřice nad Pernštejnem - Dolní Rožínka - Dolní Libochová - Křižanov - Martinice - Velké Meziříčí,3
+RT_1868,AG_88,841116,Křižanov - Jívoví - Rousměrov - Ostrov n.Osl. - Žďár nad Sázavou,3
+RT_1869,AG_88,841119,Žďár nad Sázavou - Jámy - Radešínská Svratka - Mirošov - Moravec,3
+RT_1871,AG_88,841122,Dalečín - Vír - Štěpánov nad Svratkou - Nedvědice,3
+RT_1872,AG_88,841123,Skorotice - Nedvědice,3
+RT_1873,AG_88,841124,Bystřice nad Pernštejnem - Štěpánov nad Svratkou - Prosetín - Olešnice,3
+RT_1875,AG_88,841126,"Bystřice nad Pernštejnem - Rožná - Dolní Rožínka - Strážek - Moravec - Bobrová,Dolní Bobrová",3
+RT_1876,AG_88,841127,"Bystřice nad Pernštejnem - Rozsochy,Kundratice - Bystřice nad Pernštejnem",3
+RT_1877,AG_88,841128,"Bystřice nad Pernštejnem - Lísek - Věcov,Jimramovské Pavlovice",3
+RT_1878,AG_88,841129,Bystřice nad Pernštejnem - Písečné - Dalečín - Jimramov,3
+RT_1879,AG_88,841131,Bystřice nad Pernštejnem - Vír - Rovečné - Olešnice,3
+RT_1880,AG_88,841132,"Rovečné - Věstín,Bolešín",3
+RT_1881,AG_88,841133,Rovečné - Bystré - Ubušínek - Jimramov,3
+RT_1882,AG_88,841201,Měřín - Zhoř - Jamné - Polná,3
+RT_1885,AG_88,841460,Velké Meziříčí - Rudíkov - Třebíč,3
+RT_1886,AG_88,846451,Velká Bíteš-Jasenice-Náměšť nad Oslavou,3
+RT_1936,AG_89,E76,Letiště Tuřany-terminál – Hlavní nádraží,3
+RT_1940,AG_89,š85,"Tuřany, smyčka – Tuřany, smyčka",3
+RT_1941,AG_89,š86,Hlavní nádraží – Loosova,3
+RT_1942,AG_89,š88,Zoologická zahrada – ZŠ Jana Babáka,3
+RT_1956,AG_89,x91,"Mácova – Lelekovice, u kříže",3
+RT_1957,AG_89,x94,"Tomkovo náměstí – Obřany, sídliště",3
+RT_1958,AG_89,x41,"Ivanovice, Globus – Vranov, myslivna",3
+RT_1959,AG_89,E50,Areál Slatina – Kamechy,3
+RT_1960,AG_89,E75,"Areál Slatina – Židenice, nádraží",3
+RT_1961,AG_89,E56,"Nemocnice Bohunice – Královo Pole, nádraží",3
+RT_1962,AG_89,x75,"Obřanský most – Bílovice nad Svitavou, železniční stanice",3
+RT_1963,AG_90,765002,"Velký Beranov, obec - Masarykovo náměstí - Zborná",3
+RT_1964,AG_90,765004,Heroltice - Henčov - Masarykovo náměstí - V Ráji,3
+RT_1965,AG_90,765007,Popice - Vysoká - Masarykovo náměstí dolní,3
+RT_1966,AG_90,765008,Hybrálec - Masarykovo náměstí,3
+RT_1967,AG_90,765009,Chlumova - Masarykovo nám.dolní - NC AVENTIN,3
+RT_1968,AG_90,765010,Kosov - Masarykovo náměstí,3
+RT_1969,AG_90,765012,"Velký Beranov, obec - Masarykovo náměstí - Antonínův Důl",3
+RT_1970,AG_90,765031,Dopravní podnik - S.K. Neumanna - Bosch Diesel,3
+RT_1971,AG_90,765032,Dopravní podnik - Březinova - BOSCH Pávov,3
+RT_1972,AG_90,765041,Dopravní podnik - S.K. Neumanna - Swoboda Stamping,3
+RT_1973,AG_90,765042,Dopravní podnik - Březinova - Swoboda Stamping,3
+RT_1974,AG_90,765051,Škola Rošického - Škola Jarní,3
+RT_1975,AG_90,765052,Masarykovo náměstí - Škola Jungmannova,3
+RT_1976,AG_90,765101,Dopravní podnik - Masarykovo náměstí - Hlavní nádraží,11
+RT_1977,AG_90,765102,Hlavní nádraží - Masarykovo náměstí - Na Dolech - (Motorpal Hala),11
+RT_1978,AG_90,765104,Horní Kosov - Masarykovo náměstí - Březinova - Kaufland,11
+RT_1979,AG_90,765105,V Ráji - Masarykovo náměstí - Motorpala hala,11
+RT_1980,AG_90,765107,(Hlavní nádraží) - Březinova - Masarykovo nám.- Seifertova - Poliklinika,11
+RT_1981,AG_90,765108,Dopravní podnik - Masarykovo náměstí - Purmerendská,11
+RT_1982,AG_90,765109,Horní Kosov - Masarykovo náměstí - Antonínův Důl,11
+RT_1983,AG_90,765110,BOSCH Pávov - Poliklinika - BOSCH Pávov,11
+RT_1984,AG_90,765126,P+R Žižkova - Vysoká škola polytechnická - Kaufland,11
+RT_2264,AG_99,IKEA,Černý Most - Ikea Černý Most - Černý Most,3
+RT_2458,AG_101,X398,Poděbrady - Písková Lhota,3
+RT_2579,AG_107,895061,"Olomouc,Náměstí Hrdinů-Olomouc,Tržnice-Velký Týnec,Olympia",3
+RT_2749,AG_116,340335,Jindřichův Hradec-Deštná-Mnich-Kamenice nad Lipou,3
+RT_2750,AG_116,340338,Jindřichův Hradec-Nová Včelnice-Kamenice nad Lipou-Pelhřimov,3
+RT_2751,AG_116,340339,Jindřichův Hradec-Horní Radouň-Nová Včelnice-Kamenice nad Lipou,3
+RT_2752,AG_116,340341,Jindřichův Hradec-Jarošov nad Nežárkou-Strmilov-Studená,3
+RT_2753,AG_116,340342,Jindřichův Hradec-Blažejov-Kunžak-Studená-Telč,3
+RT_2754,AG_116,340350,Studená-Heřmaneč-Český Rudolec,3
+RT_2755,AG_116,340357,Dačice-Mrákotín-Telč,3
+RT_2756,AG_116,340361,"Dačice,,aut.nádr.-Dačice,Malý Pěčín,-Dačice,Velký Pěčín,",3
+RT_2757,AG_116,340364,Dačice-Budeč-Želetava,3
+RT_2758,AG_116,340366,Dačice-Budeč-Jemnice,3
+RT_2759,AG_116,340367,Dačice-Třebětice-Jemnice,3
+RT_2761,AG_116,340376,Slavonice-Dešná-Jemnice,3
+RT_2762,AG_116,340377,Dačice-Staré Hobzí-Písečné-Jemnice,3
+RT_2763,AG_116,340378,Dačice-Staré Hobzí-Písečné-Vratěnín,3
+RT_2764,AG_116,340379,Dačice-Jemnice-Police-Bítov-Vratěnín,3
+RT_2765,AG_117,344909,Jindřichův Hradec-Strmilov-Studená-Telč,3
+RT_2766,AG_117,764181,Jihlava-Polná-Brzkov-Přibyslav,3
+RT_2767,AG_117,764182,"Polná-Jihlava,,Bosch Pávov-Jihlava",3
+RT_2768,AG_117,764183,Polná-Dobronín-Kamenná-Polná,3
+RT_2769,AG_117,764184,Jihlava-Měšín-Střítež-Dobronín,3
+RT_2770,AG_117,764186,Polná-Bohdalov-Kyjov,3
+RT_2771,AG_117,764202,Jihlava-Velký Beranov-Kozlov-Jamné-Nadějov-Arnolec,3
+RT_2772,AG_117,764210,Polná-Šlapanov-Havlíčkův Brod,3
+RT_2773,AG_117,764260,Větrný Jeníkov-Jihlava,3
+RT_2774,AG_117,764261,Jihlava-Rantířov-Vyskytná nad Jihlavou-Dudín,3
+RT_2775,AG_117,764262,Jihlava-Plandry-Vyskytná nad Jihlavou-Nový Rychnov,3
+RT_2776,AG_117,764330,Jihlava-Třešť-Telč,3
+RT_2777,AG_117,764331,Jihlava-Cejle-Kostelec-Rohozná-Batelov,3
+RT_2778,AG_117,764332,"Třešť-Batelov-Batelov,Bezděčín",3
+RT_2779,AG_117,764333,Jihlava-Třešť-Řásná-Telč,3
+RT_2780,AG_117,764336,Třešť-Pavlov-Dlouhá Brtnice,3
+RT_2781,AG_117,764337,Třešť-Brtnice-Okříšky-Radonín,3
+RT_2782,AG_117,764338,Třešť-Růžená,3
+RT_2783,AG_117,764342,Telč-Zadní Vydří-Borovná-Telč,3
+RT_2784,AG_117,764343,Telč-Černíč-Radkov-Telč,3
+RT_2785,AG_117,764350,Telč-Stará Říše-Předín-Třebíč,3
+RT_2786,AG_117,764409,"Jihlava-Cerekvička-Rosice-Vílanec,Loučky",3
+RT_2787,AG_117,764410,Jihlava-Puklice-Brtnice-Předín-Želetava/Nová Ves,3
+RT_2788,AG_117,764412,"Jihlava-Puklice-Brtnice,Přímělkov",3
+RT_2789,AG_117,764470,Střítež-Jihlava-Luka nad Jihlavou-Kamenice-Měřín,3
+RT_2790,AG_117,764471,Kamenice-Chlum-Třebíč,3
+RT_2791,AG_117,764472,Jihlava-Velký Beranov-Kamenice-Měřín,3
+RT_2792,AG_117,764931,Telč-Mrákotín-Studená-Strmilov,3
+RT_2793,AG_117,764932,Telč-Nová Říše-Želetava,3
+RT_2794,AG_117,764933,Telč-Dačice-Jemnice,3
+RT_2795,AG_117,844109,Měřín-Netín-Blízkov-Měřín,3
+RT_2796,AG_117,844201,Měřín-Zhoř-Jamné-Polná,3
+RT_2864,AG_125,,Kořenov - Tanvald,2
+RT_2865,AG_125,,Tanvald - Harrachov,2
+RT_2866,AG_125,,Harrachov - Kořenov,2
+RT_2867,AG_125,,Kořenov - Harrachov,2
+RT_2868,AG_125,,Harrachov - Tanvald,2
+RT_2869,AG_125,,Tanvald - Kořenov,2
+RT_2875,AG_127,417003,Antoníčkův pramen - Kolonáda - Antoníčkův pramen,11
+RT_2876,AG_127,417005,Panská pole - Kolonáda - Panská pole,11
+RT_2877,AG_127,417006,City service - Velká Hleďsebe - Klimentov,11
+RT_2878,AG_127,417007,Antoníčkův pramen - Nádraží - Kaufland - Kolonáda - Panská pole - Antoníčkův pramen,11
+RT_2879,AG_127,417010,Drmoul - Hamrníky - Hřbitov,3
+RT_2880,AG_127,417013,"Drmoul - Hamrníky - Krakonoš - Zádub, Závišín",3
+RT_2881,AG_127,417014,Hamrníky - ZŠ Úšovice - ZŠ Jih - Ruský kostel,3
+RT_2882,AG_127,417016,"Mariánské Lázně - Velká Hleďsebe, Klimentov - Valy - Lázně Kynžvart",3
+RT_2883,AG_127,417114,ZŠ Úšovice - Hamrníky,3
+RT_2884,AG_127,417214,City service - Velká Hleďsebe - Klimentov - Ruský kostel,3
+RT_2900,AG_129,X221,Nádraží Klánovice-sever - Klánovice,3
+RT_2909,AG_131,CYK1,CYKLOBUS BRDY: Kytín - Mníšek pod Brdy - Dobřichovice,3
+RT_2915,AG_132,,Osoblaha - Třemešná ve Sl. úz. r.,2
+RT_2916,AG_132,,Třemešná ve Sl. úz. r. - Osoblaha,2
+RT_2917,AG_133,156100,Praha-Louny-Žatec-Podbořany-Kryry,3
+RT_2967,AG_134,BB2,Budějovická - Filadelfie - Budějovická,3
+RT_2968,AG_134,BB1,(BB1) Budějovická - Delta,3
+RT_2969,AG_134,157710,Praha-Most-Chomutov-Litvínov,3
+RT_2991,AG_134,580916,Teplice-Praha,3
+RT_2992,AG_134,587281,"Bílina,sídl.ZCH- Bílina,aut.nádr.- Bílina,nám.- Bílina,poliklinika-Bílina,aut.nádr.- Bílina,pož.zbroj.- Bílina,sídl.ZCH",3
+RT_2993,AG_134,587282,"Bílina,sídl.ZCH- Bílina,nám.- Bílina,hřbitov- Bílina,poliklinika- Bílina,VMG I- Bílina,hřbitov- Bílina,pož.zbroj.- Bílina,sídl.ZCH",3
+RT_2994,AG_134,587283,"Bílina,VMG I- Chudeřice,záv.- Bílina,sídl.ZCH- Bílina,nám.- Bílina,poliklinika- Bílina,pož.zbroj.- Bílina,sídl.ZCH- Chudeřice,záv.- Bílina,VMG I",3
+RT_2995,AG_135,560674,ŽATEC - LOUNY - PRAHA,3
+RT_2996,AG_135,570673,LITVÍNOV - MOST - LOUNY - PRAHA,3
+RT_2997,AG_136,510901,Šluknov-Rumburk-Varnsdorf-Nový Bor-Česká Lípa-Praha,3
+RT_2998,AG_137,S34,Praha – Praha-Čakovice,2
+RT_2999,AG_137,S43,Neratovice – Kralupy nad Vltavou,2
+RT_3000,AG_137,T1 Pražský motoráček,Praha hl.n. – Praha-Zličín,2
+RT_3001,AG_137,T3 Kokořínský rychlík,Praha-Vršovice – Mšeno,2
+RT_3002,AG_137,T7 Rakovnický rychlík,Praha hl.n. – Rakovník,2
+RT_3003,AG_137,T8 Posázavský motoráček,Praha hl.n. – Vrané nad Vltavou – Čerčany,2
+RT_3004,AG_137,T10 Lužickohorský rychlík,Louny předměstí - Most - Praha-Vršovice – Mikulášovice - Praha-Vršovice – Mikulášovice,2
+RT_3005,AG_137,T1 Kamenický motoráček,Česká Kamenice – Kamenický Šenov,2
+RT_3006,AG_137,T5 Podřipský motoráček,Roudnice n.L. – Straškov – Libochovice,2
+RT_3007,AG_137,T11 Podkrušnohorský motoráček,Děčín hl.n. – Telnice,2
+RT_3008,AG_137,,Praha-Čakovice - Praha hl. n.,2
+RT_3009,AG_137,,Praha-Čakovice - Praha hl. n.,2
+RT_3010,AG_137,Mochovský motoráček,Praha-Vysočany - Mochov,2
+RT_3011,AG_137,Mochovský motoráček,Mochov - Praha-Vysočany,2
+RT_3012,AG_137,Kralovický rychlík,Praha hlavní nádraží - Kralovice u Rakovníka,2
+RT_3013,AG_137,Kralovický rychlík,Kralovice u Rakovníka - Praha hlavní nádraží,2
+RT_3014,AG_137,,Praha-Čakovice - Praha hl. n.,2
+RT_3016,AG_139,696001,Špindlerův Mlýn - Špindlerova bouda,3
+RT_3017,AG_139,696002,MHD Špindlerův Mlýn,3
+RT_3018,AG_139,696003,SKIBUS 1: Bedřichov - Hromovka - Centrum - Svatý Petr - Medvědín,3
+RT_3198,AG_145,S49,Praha-Hostivař – Praha-Libeň – Roztoky u Prahy,2
+RT_3199,AG_145,S61,(Praha-Vršovice –) Praha hl.n. – Úvaly,2
+RT_3200,AG_145,R23 RegioJet,Kolín – Všetaty – Ústí nad Labem,2
+RT_3201,AG_145,R8,Brno – Vyškov – Přerov – Bohumín,2
+RT_3202,AG_145,,Ostrava hlavní nádraží - Čadca,2
+RT_3203,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3204,AG_145,,Praha hlavní nádraží - Čadca,2
+RT_3205,AG_145,,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_3206,AG_145,RegioJet,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_3207,AG_145,RegioJet,Bohumín - Praha-Zahradní Město,2
+RT_3208,AG_145,RegioJet,Čadca - Praha hlavní nádraží,2
+RT_3209,AG_145,RegioJet,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_3210,AG_145,RegioJet,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_3211,AG_145,RegioJet,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_3212,AG_145,RegioJet,Praha-Zahradní Město - Návsí,2
+RT_3213,AG_145,,Praha-Zahradní Město - Návsí,2
+RT_3214,AG_145,RegioJet,Praha-Zahradní Město - Havířov,2
+RT_3215,AG_145,,Praha-Zahradní Město - Havířov,2
+RT_3216,AG_145,RegioJet,Praha-Zahradní Město - Čadca,2
+RT_3217,AG_145,RegioJet,Praha-Zahradní Město - Opava východ,2
+RT_3218,AG_145,RegioJet,Praha-Zahradní Město - Bohumín,2
+RT_3219,AG_145,,Praha-Zahradní Město - Brno hlavní nádraží,2
+RT_3220,AG_145,,Praha-Zahradní Město - Brno hlavní nádraží,2
+RT_3221,AG_145,RegioJet,Návsí - Praha-Zahradní Město,2
+RT_3222,AG_145,RegioJet,Havířov - Praha-Zahradní Město,2
+RT_3223,AG_145,RegioJet,Čadca - Praha-Zahradní Město,2
+RT_3224,AG_145,,Návsí - Praha-Zahradní Město,2
+RT_3225,AG_145,RegioJet,Opava východ - Praha-Zahradní Město,2
+RT_3226,AG_145,RegioJet,Čadca - Praha-Zahradní Město,2
+RT_3227,AG_145,RegioJet,Praha-Zahradní Město - Čadca,2
+RT_3228,AG_145,RegioJet,Břeclav - Praha-Zahradní Město,2
+RT_3229,AG_145,,Praha-Zahradní Město - Břeclav,2
+RT_3230,AG_145,RegioJet,Praha-Zahradní Město - Břeclav,2
+RT_3231,AG_145,RegioJet,Brno hlavní nádraží - Praha-Zahradní Město,2
+RT_3232,AG_145,RegioJet,Brno hlavní nádraží - Praha-Zahradní Město,2
+RT_3233,AG_145,RegioJet,Břeclav - Praha-Zahradní Město,2
+RT_3234,AG_145,,Praha-Zahradní Město - Břeclav,2
+RT_3235,AG_145,RegioJet,Praha-Zahradní Město - Břeclav,2
+RT_3236,AG_145,RegioJet,Ostrava hlavní nádraží - Chałupki,2
+RT_3237,AG_145,RegioJet,Chałupki - Ostrava hlavní nádraží,2
+RT_3238,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3239,AG_145,RegioJet,Břeclav - Praha-Zahradní Město,2
+RT_3240,AG_145,RegioJet,Hohenau - Praha-Zahradní Město,2
+RT_3241,AG_145,RegioJet,Praha-Zahradní Město - Ostrava hlavní nádraží,2
+RT_3242,AG_145,,Praha-Běchovice - Praha hlavní nádraží,2
+RT_3243,AG_145,RegioJet,Čadca - Praha-Zahradní Město,2
+RT_3244,AG_145,RegioJet,Čadca - Praha-Zahradní Město,2
+RT_3245,AG_145,,Praha-Libeň - Praha hlavní nádraží,2
+RT_3246,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3247,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3248,AG_145,RegioJet,Čadca - Praha hlavní nádraží,2
+RT_3249,AG_145,RegioJet,Praha-Zahradní Město - Čadca,2
+RT_3250,AG_145,RegioJet,Návsí - Praha-Zahradní Město,2
+RT_3251,AG_145,RegioJet,Čadca - Praha-Zahradní Město,2
+RT_3252,AG_145,RegioJet,Praha-Zahradní Město - Čadca,2
+RT_3253,AG_145,RegioJet,Ostrava hlavní nádraží - Chałupki,2
+RT_3254,AG_145,RegioJet,Chałupki - Ostrava hlavní nádraží,2
+RT_3255,AG_145,RegioJet,Praha-Běchovice - Praha-Zahradní Město,2
+RT_3256,AG_145,RegioJet,Praha-Zahradní Město - Bohumín,2
+RT_3257,AG_145,RegioJet,Praha-Zahradní Město - Návsí,2
+RT_3258,AG_145,RegioJet,Havířov - Praha hlavní nádraží,2
+RT_3259,AG_145,RegioJet,Havířov - Praha hlavní nádraží,2
+RT_3260,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3261,AG_145,RegioJet,Čadca - Praha hlavní nádraží,2
+RT_3262,AG_145,RegioJet,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_3263,AG_145,RegioJet,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_3264,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3265,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3266,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3267,AG_145,RegioJet,Praha hlavní nádraží - Čadca,2
+RT_3268,AG_145,RegioJet,Praha hlavní nádraží - Kúty,2
+RT_3269,AG_146,R25,Plzeň – Blatno u Jesenice – Chomutov – Most,2
+RT_3270,AG_146,S4,České Budějovice – Nové Údolí / Volary,2
+RT_3271,AG_146,S7,Nové Údolí – Číčenice,2
+RT_3272,AG_146,S8,Strakonice – Volary,2
+RT_3273,AG_146,P11,Strakonice – Horažďovice předměstí – Sušice – Klatovy,2
+RT_3274,AG_146,P11/P23,Klatovy – Domažlice - Strakonice – Horažďovice předměstí – Sušice – Klatovy,2
+RT_3275,AG_146,P23,Klatovy – Domažlice,2
+RT_3276,AG_146,U52,Žatec – Lovosice – Ústí nad Labem,2
+RT_3277,AG_146,T8,(Děčín hl.n. -) Ústí nad Labem hl.n. – Moldava v Krušných horách,2
+RT_3278,AG_146,D66,Trutnov – Sędzisław ,2
+RT_3279,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3280,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3281,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3282,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3283,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3284,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3285,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3286,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3287,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3288,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3289,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3290,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3291,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3292,AG_146,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_3293,AG_146,,Vimperk - Strakonice,2
+RT_3294,AG_147,,Chomutov - Vejprty,2
+RT_3295,AG_147,,Vejprty - Chomutov,2
+RT_3296,AG_148,R14,Pardubice – Hradec Králové – Turnov – Liberec,2
+RT_3297,AG_148,R21,Praha – Mladá Boleslav – Turnov – Tanvald,2
+RT_3298,AG_148,R22,Kolín – Mladá Boleslav – Česká Lípa – Rumburk (– Šluknov),2
+RT_3299,AG_148,R24,Praha – Kladno – Rakovník,2
+RT_3300,AG_148,R26,Praha – Zdice – Příbram – Písek – České Budějovice,2
+RT_3301,AG_148,P1J,Strakonice – Horažďovice předměstí – Plzeň – Pňovany,2
+RT_3302,AG_148,L3,Liberec - Stará Paka - Jaroměř / Nová Paka,2
+RT_3303,AG_148,L4,Mladá Boleslav – Česká Lípa – Jedlová (– Rumburk),2
+RT_3304,AG_148,L31,Železný Brod – Tanvald,2
+RT_3305,AG_148,S52,(Brno -) Zaječí – Čejč – Hodonín,2
+RT_3306,AG_148,S53,Břeclav – Lanžhot,2
+RT_3307,AG_148,S2,(Rožnov pod Radhoštěm –) Valašské Meziříčí – Vsetín – Horní Lideč – Bylnice,2
+RT_3308,AG_148,S2,(Rožnov pod Radhoštěm –) Valašské Meziříčí – Vsetín – Horní Lideč – Bylnice - Lúky pod Makytou - Horní Lideč,2
+RT_3309,AG_148,S2 Hostýn,(Rožnov pod Radhoštěm –) Valašské Meziříčí – Vsetín – Horní Lideč – Bylnice,2
+RT_3310,AG_148,S5,Staré Město u Uherského Hradiště – Uherské Hradiště – Újezdec u Luhačovic – Bojkovice – Bylnice (– Vlárský  průsmyk / ZSSK),2
+RT_3311,AG_148,S6,Staré Město u Uherského Hradiště – Uherské Hradiště – Veselí nad Moravou,2
+RT_3312,AG_148,S22,(Vsetín -) Horní Lideč – Střelná (– ZSSK),2
+RT_3313,AG_148,S23,Vsetín – Velké Karlovice,2
+RT_3314,AG_148,Sp5,Staré Město u Uherského Hradiště – Uherské Hradiště – Újezdec u Luhačovic – Bojkovice – Bylnice,2
+RT_3315,AG_148,S53,(Uherský Brod –) Újezdec u Luhačovic – Luhačovice,2
+RT_3316,AG_148,R14,Ústí nad Labem – Česká Lípa – Liberec,2
+RT_3317,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3318,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3319,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3320,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3321,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3322,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3323,AG_148,,Vrbovce - Javorník nad Veličkou zastávka,2
+RT_3324,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3325,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3326,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3327,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3328,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3329,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3330,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3331,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3332,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3333,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3334,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3335,AG_148,,Hodonín - Veselí nad Moravou,2
+RT_3336,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3337,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3338,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3339,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3340,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3341,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3342,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3343,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3344,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3345,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3346,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3347,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3348,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3349,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3350,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3351,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3352,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3353,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3354,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3355,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3356,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3357,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3358,AG_148,,Lúky pod Makytou - Horní Lideč,2
+RT_3359,AG_148,,Lúky pod Makytou - Horní Lideč,2
+RT_3360,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3361,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3362,AG_148,Expres Pálava-Podyjí ,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3363,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3364,AG_148,Expres-Pálava-Podyjí,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3365,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3366,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3367,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3368,AG_148,Expres-Pálava-Podyjí,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3369,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3370,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3371,AG_148,,Lúky pod Makytou - Horní Lideč,2
+RT_3372,AG_148,,Lúky pod Makytou - Horní Lideč,2
+RT_3373,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3374,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3375,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3376,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3377,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3378,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3379,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3380,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3381,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3382,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3383,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3384,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3385,AG_148,,Uherský Brod - Staré Město u Uherského Hradiště,2
+RT_3386,AG_148,,Znojmo - Kroměříž-Oskol,2
+RT_3387,AG_148,,Kroměříž-Oskol - Znojmo,2
+RT_3388,AG_148,,Horní Lideč - Střelná,2
+RT_3389,AG_148,,Mikulov na Moravě - Břeclav,2
+RT_3390,AG_148,,Mikulov na Moravě - Břeclav,2
+RT_3391,AG_148,,Břeclav - Mikulov na Moravě,2
+RT_3392,AG_148,,Břeclav - Mikulov na Moravě,2
+RT_3393,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3394,AG_148,,Veselí nad Moravou - Strážnice,2
+RT_3395,AG_148,,Veselí nad Moravou - Lipov,2
+RT_3396,AG_148,,Lipov - Veselí nad Moravou,2
+RT_3397,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3398,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3399,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3400,AG_148,,Javorník nad Veličkou zastávka - Hodonín,2
+RT_3401,AG_148,,Velká nad Veličkou - Hodonín,2
+RT_3410,AG_150,Český les,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_3411,AG_150,Český les,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_3414,AG_152,570915,LITVÍNOV - MOST - LOUNY - PRAHA,3
+RT_3570,AG_158,876434,"Havířov,Pr.Suchá,GLOBUS-Havířov,Podlesí,aut.nádr.",3
+RT_3760,AG_165,340941,Nová Včelnice-Kamenice n.Lipou-Černovice-Tábor,3
+RT_3761,AG_165,340957,Jindřichův Hradec - Strmilov - Kunžak - Nová Bystřice - Kamenice nad Lipou,3
+RT_3762,AG_165,350001,"Pelhřimov, Starý Pelhřimov-Dubovice",3
+RT_3763,AG_165,350010,Pelhřimov-Božejov-Nová Cerekev-Kamenice n.Lipou,3
+RT_3764,AG_165,350020,Pelhřimov-Libkova Voda-Božejov-Těmice-Kamenice n.Lipou,3
+RT_3765,AG_165,350030,Pelhřimov-Humpolec-Havlíčkův Brod,3
+RT_3766,AG_165,350040,Pelhřimov-Nový Rychnov-Batelov,3
+RT_3767,AG_165,350050,Pacov-Pelhřimov-Jihlava,3
+RT_3768,AG_165,350060,Pelhřimov-Pavlov-Černov-Horní Cerekev,3
+RT_3769,AG_165,350070,Pelhřimov-Nová Cerekev-Kamenice n.Lipou,3
+RT_3770,AG_165,350080,Pelhřimov-Horní Cerekev-Horní Ves-Počátky,3
+RT_3771,AG_165,350110,Pelhřimov-Sedlice-Senožaty-Ježov,3
+RT_3772,AG_165,350120,Černovice-Nová Cerekev-Pelhřimov,3
+RT_3773,AG_165,350140,"Pelhřimov-Pelhřimov,Drbohlavy-Častrov-Žirovnice",3
+RT_3774,AG_165,350150,Pelhřimov-Putimov-Vyskytná-Nový Rychnov-Horní Cerekev,3
+RT_3775,AG_165,350160,Pelhřimov-Opatov-Jihlava,3
+RT_3776,AG_165,350170,Pelhřimov-Kamenice nad Lipou-Častrov-Počátky,3
+RT_3777,AG_165,350180,Pelhřimov-Střítež p.Křemešníkem-Žirov,3
+RT_3778,AG_165,350320,Humpolec-Dolní Město-Světlá nad Sázavou,3
+RT_3779,AG_165,350350,Humpolec-Budíkov-Kejžlice,3
+RT_3780,AG_165,350530,Počátky-Žirovnice-Rodinov-Kamenice nad Lipou,3
+RT_3781,AG_165,350550,Stojčín - Počátky - Batelov - Třešť,3
+RT_3782,AG_165,350610,Pelhřimov-Počátky-Stojčín,3
+RT_3783,AG_165,350620,Počátky-Horní Cerekev,3
+RT_3784,AG_165,350650,Kamenice nad Lipou - Počátky - Jihlava,3
+RT_3785,AG_165,350728,Kamenice n. Lipou - Černovice - Obrataň - Pacov,3
+RT_3786,AG_165,350760,Pacov-Lukavec-Křešín,3
+RT_3787,AG_165,350770,Pacov-Cetoraz-Obrataň-Zlátenka,3
+RT_3788,AG_165,350780,Pacov-Obrataň-Černovice-Hojovice,3
+RT_3789,AG_165,350800,Pacov-Mezilesí-Lukavec,3
+RT_3790,AG_165,350810,Pacov-Leskovice-Hořepník,3
+RT_3791,AG_165,350820,Pacov-Hořepník-Košetice-Dunice-Hořice,3
+RT_3792,AG_165,350830,Pacov-Hořepník-Pelhřimov,3
+RT_3793,AG_165,350850,Lukavec-Hořepník-Pelhřimov,3
+RT_3794,AG_165,350921,"Pacov-Pacov,Zhoř-Pojbuky",3
+RT_3795,AG_165,350930,Počátky-Jindřichův Hradec-České Budějovice,3
+RT_3796,AG_165,350940,Humpolec-Křelovice-Košetice-Pacov-Tábor,3
+RT_3797,AG_165,350942,Počátky-Jihlávka-Studená,3
+RT_3798,AG_165,350943,Počátky-Žirovnice-Nová Včelnice-Mnich,3
+RT_3799,AG_165,350945,Kamenice nad Lipou - Jindřichův Hradec,3
+RT_3800,AG_165,350946,Kamenice nad Lipou-Černovice,3
+RT_3801,AG_165,350947,Pacov-Vodice-Chýnov-Tábor,3
+RT_3802,AG_165,350951,Počátky-Žirovnice-Popelín,3
+RT_3803,AG_165,350952,"Počátky-Počátky,Horní Vilímeč-Studená",3
+RT_3804,AG_165,351030,Pelhřimov-Humpolec-Havlíčkův Brod,3
+RT_3805,AG_165,351050,Pacov-Pelhřimov,3
+RT_3806,AG_165,351728,Kamenice n. Lipou-Černovice-Obrataň-Pacov,3
+RT_3807,AG_165,760949,Jihlava-Počátky-Kamenice nad Lipou-Jindřichův Hradec,3
+RT_3808,AG_166,350030,Pelhřimov-Humpolec-Havlíčkův Brod,3
+RT_3809,AG_166,350031,Pelhřimov - Kojčice - Velký Rybník,3
+RT_3810,AG_166,350260,Humpolec-Zachotín-Pelhřimov,3
+RT_3811,AG_166,350270,Humpolec-Větrný Jeníkov-Jihlava,3
+RT_3812,AG_166,350280,"Humpolec-Senožaty-Křelovice,Jiřičky-Křelovice",3
+RT_3813,AG_166,350300,Humpolec-Sedlice-Pelhřimov,3
+RT_3814,AG_166,350310,Humpolec-Ledeč nad Sázavou,3
+RT_3815,AG_166,350320,Humpolec-Dolní Město-Světlá nad Sázavou,3
+RT_3816,AG_166,350330,"Humpolec-Proseč-Řečice,Křepiny-Světlá nad Sázavou",3
+RT_3817,AG_166,350340,Humpolec-Větrný Jeníkov,3
+RT_3818,AG_166,350350,Humpolec-Budíkov-Kejžlice,3
+RT_3819,AG_166,350360,"Humpolec-Herálec-Herálec,Mikulášov",3
+RT_3820,AG_166,350940,Humpolec-Křelovice-Košetice-Pacov-Tábor,3
+RT_3821,AG_166,760740,Jihlava-Ledeč nad Sázavou,3
+RT_3822,AG_167,350160,Pelhřimov-Opatov-Jihlava,3
+RT_3823,AG_167,350550,Stojčín - Počátky - Batelov - Třešť,3
+RT_3824,AG_167,350610,Pelhřimov-Počátky-Stojčín,3
+RT_3825,AG_167,350951,Počátky-Žirovnice-Popelín,3
+RT_3826,AG_167,760949,Jihlava-Počátky-Kamenice nad Lipou-Jindřichův Hradec,3
+RT_3827,AG_168,603160,Žďár nad Sázavou - Vojnův Městec - Ždírec nad Doubravou - Chotěboř,3
+RT_3828,AG_168,603161,Radostín - Ždírec nad Doubravou - Havlíčkova Borová - Přibyslav,3
+RT_3829,AG_168,603162,Chotěboř - Bezděkov - Slavíkov - Podmoklany - Ždírec nad Doubravou,3
+RT_3830,AG_168,603163,Ždírec nad Doubravou - Slavíkov - Trhová Kamenice,3
+RT_3831,AG_168,603164,Chotěboř - Libice nad Doubravou - Horní Bradlo,3
+RT_3834,AG_168,603167,Chotěboř - Libice nad Doubravou - Maleč - Chotěboř,3
+RT_3835,AG_168,603170,Chotěboř - Vilémov - Golčův Jeníkov,3
+RT_3837,AG_168,603172,Habry - Golčův Jeníkov,3
+RT_3838,AG_168,603173,"Golčův Jeníkov - Golčův Jeníkov,Kobylí Hlava  -  Golčův Jeníkov",3
+RT_3840,AG_168,603191,Havlíčkův Brod - Lípa - Úsobí - Herálec - Boňkov,3
+RT_3841,AG_168,603192,Havlíčkův Brod - Herálec - Větrný Jeníkov,3
+RT_3842,AG_168,603193,Havlíčkův Brod - Okrouhlička - Štoky - Šlapanov,3
+RT_3843,AG_168,603194,"Havlíčkův Brod - Okrouhlička,Skřivánek - Štoky - Jihlava",3
+RT_3844,AG_168,603211,Havlíčkův Brod - Dlouhá Ves - Přibyslav,3
+RT_3845,AG_168,603212,Havlíčkův Brod - Pohled - Přibyslav,3
+RT_3846,AG_168,603213,Chotěboř - Oudoleň - Havlíčkova Borová,3
+RT_3847,AG_168,603214,Havlíčkův Brod - Ždírec - Česká Bělá - Havlíčkova Borová,3
+RT_3848,AG_168,603215,Havlíčkův Brod - Krátká Ves  - Česká Bělá - Havlíčkova Borová,3
+RT_3849,AG_168,603216,"Přibyslav - Šlapanov,Kněžská",3
+RT_3850,AG_168,603220,Chotěboř - Dolní Krupá - Havlíčkův Brod,3
+RT_3851,AG_168,603221,Havlíčkův Brod - Horní Krupá - Chotěboř,3
+RT_3852,AG_168,603222,Havlíčkův Brod - Břevnice - Čachotín - Chotěboř,3
+RT_3853,AG_168,603223,Chotěboř - Česká Bělá - Přibyslav,3
+RT_3854,AG_168,603224,Chotěboř - Kámen - Tis - Habry,3
+RT_3855,AG_168,603225,Havlíčkův Brod  - Kámen - Habry,3
+RT_3856,AG_168,603226,Vilémov - Uhelná Příbram,3
+RT_3857,AG_168,603227,Chotěboř - Uhelná Příbram - Vepříkov - Habry,3
+RT_3858,AG_168,603228,Habry - Leškovice - Vilémov,3
+RT_3859,AG_168,603229,"Habry - Habry,Lubno - Chrtníč - Habry",3
+RT_3860,AG_168,603230,Ledeč nad Sázavou - Číhošť - Leština u Světlé - Habry,3
+RT_3861,AG_168,603231,"Ledeč nad Sázavou - Kožlí,Sechov - Ledeč nad Sázavou",3
+RT_3862,AG_168,603232,Světlá nad Sázavou - Vlkanov - Číhošť,3
+RT_3863,AG_168,603233,Světlá nad Sázavou - Vlkanov - Ledeč nad Sázavou,3
+RT_3864,AG_168,603240,Ledeč nad Sázavou - Světlá nad Sázavou - Okrouhlice - Havlíčkův Brod,3
+RT_3865,AG_168,603241,Havlíčkův Brod - Lipnice nad Sázavou - Dolní Město - Ledeč nad Sázavou,3
+RT_3866,AG_168,603242,Světlá nad Sázavou - Lučice - Havlíčkův Brod,3
+RT_3867,AG_168,603243,Světlá nad Sázavou - Sázavka - Habry,3
+RT_3868,AG_168,603244,"Havlíčkův Brod - Okrouhlice - Okrouhlice,Olešnice",3
+RT_3869,AG_168,603246,Světlá nad Sázavou - Dolní Město - Lipnice nad Sázavou - Světlá nad Sázavou,3
+RT_3870,AG_168,603247,Světlá nad Sázavou - Pohleď,3
+RT_3871,AG_168,603248,Světlá nad Sázavou - Dolní Město - Trpišovice - Ledeč nad Sázavou,3
+RT_3872,AG_168,763190,Jihlava - Úsobí - Lípa - Havlíčkův Brod,3
+RT_3873,AG_168,763195,"Jihlava - Štoky - Štoky,Petrovice",3
+RT_3899,AG_170,X398,Poděbrady - Písková Lhota,3
+RT_3996,AG_173,845001,linka č. 1  (HETTICH) - nádraží - (ŽĎAS) - ZR 3 - Studentská - ZR 5 - TOKOZ,3
+RT_3997,AG_173,845002,linka č. 2  nádraží - náměstí - Studentská - ZR 5 - Zámek - Pilská nádrž,3
+RT_3998,AG_173,845003,linka č. 3  nádraží - Klafar - ZR 2 - ZR 5 - Studentská - Jamská - HETTICH - nádraží,3
+RT_3999,AG_173,845004,linka č. 4 nádraží - Vodojem - ZR 4 - Libušín - ZR 3 - nádraží,3
+RT_4000,AG_173,845005,linka č. 5  nádraží - náměstí - Studentská - ZR 5 - ZR 2 - Libušín - náměstí - nádraží,3
+RT_4001,AG_173,845006,"linka č. 6  nádraží - ZR 3 - náměstí - Vodojem - ZR 5 - Zelená hora,hřbitov - (TOKOZ)",3
+RT_4002,AG_173,845007,linka č. 7  nádraží - ZR 3 - Studentská - ZR 5 - TOKOZ,3
+RT_4003,AG_173,845008,linka č. 8  nádraží - ZR 3 - Klafar - Libušín - ZR 4- Vodojem- nádraží,3
+RT_4004,AG_173,845009,linka č. 9  nádraží - ZR 3 - nádraží - HETTICH - Jamská - nádraží,3
+RT_4005,AG_173,845101,Linka č. 1 Dopravní terminál-Bělisko-nemocnice-BILLA-centrum-Dopravní terminál,3
+RT_4006,AG_173,845102,Linka č. 2 Dopravní terminál-Kulturní dům-nemocnice-centrum-Dopravní terminál,3
+RT_4007,AG_173,845103,Linka č. 3 Dopravní terminál-Maršovská-Dopravní terminál,3
+RT_4008,AG_173,845104,Linka č. 4 centrum-Dopravní terminál-nemocnice-Petrovice-Dopravní terminál,3
+RT_4009,AG_173,845105,Linka č. 5 Dopravní terminál-Sporten-Pohledec-Dopravní terminál,3
+RT_4010,AG_174,842101,Velké Meziříčí: Průmyslová-aut.nádr.-Hornoměstská-aut.nádr.-Průmyslová,3
+RT_4011,AG_174,842110,Žďár nad Sázavou-Bohdalec-Bobrová-Moravec-Křižanov-Velká Bíteš-Brno,3
+RT_4012,AG_174,842116,Křižanov-Jívoví-Rousměrov-Ostrov n.Osl-Žďár nad Sázavou,3
+RT_4013,AG_174,842117,Žďár nad Sázavou-Ostrov nad Oslavou-Radostín nad Oslavou-Bory-Velké Meziříčí,3
+RT_4014,AG_174,842118,Nové Město na Moravě-Hodíškov-Ostrov nad Oslavou-Bohdalec,3
+RT_4015,AG_174,842119,Žďár nad Sázavou-Jámy-Radešínská Svratka-Mirošov-Moravec,3
+RT_4016,AG_174,842130,Bystřice nad Pernštejnem-Nové Město na Moravě-Žďár nad Sázavou,3
+RT_4017,AG_174,842133,Ubušínek-Jimramov,3
+RT_4019,AG_174,842136,"Žďár nad Sázavou-Nové Město na Moravě,Slavkovice-Nové Město na Moravě-Zubří",3
+RT_4020,AG_174,842138,Nové Město na Moravě-Křídla-Dolní Rožínka-Strážek,3
+RT_4021,AG_174,842139,"Nové Město na Moravě,Jiříkovice-Nové Město na Moravě-Dlouhé-Bobrová-Bobrůvka",3
+RT_4022,AG_174,842140,Nové Město na Moravě-Sněžné-Svratka,3
+RT_4024,AG_174,842142,Sněžné-Líšná-Javorek-Jimramov,3
+RT_4025,AG_174,842143,Žďár nad Sázavou-Tři Studně-Fryšava-Sněžné-Spělkov,3
+RT_4026,AG_174,842144,Nové Město na Moravě-Vlachovice-Tři Studně-Fryšava-Sněžné,3
+RT_4027,AG_174,842145,Velké Meziříčí-Dobrá Voda-Křižanov-Bobrůvka-Bobrová-Nové Město na Moravě,3
+RT_4028,AG_174,842150,Žďár nad Sázavou-Herálec-Svratka,3
+RT_4029,AG_174,842151,"Žďár nad Sázavou-Hamry nad Sázavou-Hamry nad Sázavou,Šlakhamry",3
+RT_4030,AG_174,842154,Žďár nad Sázavou-Sázava-Matějov-Nové Veselí-Žďár nad Sázavou,3
+RT_4031,AG_174,842155,Žďár nad Sázavou-Nové Veselí-Bohdalov-Pavlov-Měřín,3
+RT_4032,AG_174,842156,Žďár nad Sázavou-Nové Veselí-Kotlasy,3
+RT_4033,AG_174,842157,Žďár nad Sázavou-Sázava-Velká Losenice-Přibyslav,3
+RT_4034,AG_174,842158,Žďár nad Sázavou-Polnička-Vepřová-Velká Losenice-Přibyslav,3
+RT_4035,AG_174,842159,Žďár nad Sázavou-Polnička-Škrdlovice-Světnov,3
+RT_4036,AG_174,842180,Žďár nad Sázavou-Nížkov-Polná-Jihlava,3
+RT_4037,AG_174,842182,"Žďár nad Sázavou-Nížkov-Polná-Jihlava,,BOSCH Pávov-Jihlava",3
+RT_4038,AG_174,842185,Žďár nad Sázavou-Nové Veselí-Nížkov-Přibyslav-Hřiště,3
+RT_4039,AG_174,842200,Žďár nad Sázavou-Bohdalov-Jamné-Jihlava,3
+RT_4040,AG_175,XL7,Liberec-Chrastava-Hrádek n.Nisou-Zittau-Hrádek nad Nisou-Chrastava  -Liberec,3
+RT_4132,AG_179,U10,Litoměřice horní n. – Lovosice – Třebívlice – Most,2
+RT_4133,AG_179,T4,Lovosice – Chotiměř,2
+RT_4134,AG_179,,Dolní Bousov - Kopidlno,2
+RT_4135,AG_179,,Kopidlno - Dolní Bousov,2
+RT_4136,AG_179,,Dolní Bousov - Kopidlno,2
+RT_4137,AG_179,,Kopidlno - Bakov nad Jizerou,2
+RT_4138,AG_179,,Bakov nad Jizerou - Kopidlno,2
+RT_4139,AG_179,Podřipská střela,Straškov - Louny,2
+RT_4140,AG_179,Podřipská střela,Louny - Straškov,2
+RT_4141,AG_179,,Dětenice - Kopidlno,2
+RT_4142,AG_179,,Kopidlno - Dětenice,2
+RT_4143,AG_180,426001,Nemocnice - Náměstí - Průmyslová zóna,3
+RT_4144,AG_180,426002,Náměstí - Nádraží,3
+RT_4145,AG_180,426004,Náměstí - Vykmanov - Hluboký - Náměstí,3
+RT_4146,AG_180,426005,Nemocnice - Náměstí - Hroznětín,3
+RT_4179,AG_181,425001,Hory - Globus - Tržnice - Lázně III - Divadelní náměstí,3
+RT_4180,AG_181,425002,Divadelní náměstí - Tržnice - OC Varyáda,3
+RT_4181,AG_181,425003,Stará Kysibelská - Tržnice - Stará Role,3
+RT_4182,AG_181,425004,Horní nádraží - Lázně III - Tržnice - Křižíkova,3
+RT_4183,AG_181,425005,Bohatice - Tržnice - Sedlec - Otovice - Čankov,3
+RT_4184,AG_181,425006,Stará Kysibelská - Tržnice - Doubí,3
+RT_4185,AG_181,425007,Tržnice - Březová,3
+RT_4186,AG_181,425008,Tržnice - Olšová Vrata - Letiště - Kolová,3
+RT_4187,AG_181,425009,Tržnice - Čankov,3
+RT_4188,AG_181,425011,Horní nádraží - Tržnice - Divadelní náměstí,3
+RT_4189,AG_181,425012,Dolní nádraží-terminál - Čankovská - Dolní nádraží-terminál,3
+RT_4190,AG_181,425013,Stará Role-sídliště - Tržnice - Lanovka Imperial,3
+RT_4191,AG_181,425015,Stará Kysibelská - Lidická - Tržnice - Stará Role,3
+RT_4192,AG_181,425016,Tašovice - OC Varyáda,3
+RT_4193,AG_181,425017,Tržnice - Dalovice,3
+RT_4194,AG_181,425019,Garáže MHD - Tržnice - Otovice - Tržnice - Garáže MHD,3
+RT_4195,AG_181,425020,Parkoviště KOME - Divadelní náměstí,3
+RT_4196,AG_181,425021,Krematorium - Tržnice - Hřbitov Drahovice,3
+RT_4197,AG_181,425022,Tržnice - Shopland - Jenišov - Hory - Doubí,3
+RT_4198,AG_181,425023,Tržnice - Loket,3
+RT_4199,AG_181,425044,U Zámečku – MATTONI Arena – Tržnice – Richmond – Letiště,3
+RT_4200,AG_181,425051,Garáže MHD - Tržnice - Stará Role,3
+RT_4201,AG_181,425052,Divadelní náměstí - Tržnice - Doubí,3
+RT_4594,AG_196,MHD 1,MHD Benešov ORANŽOVÁ Albert - Nezvalova - Terminál - U Náhonu,3
+RT_4595,AG_196,MHD 2,MHD Benešov ZELENÁ MŠ Úsměv - Terminál - Černoleská - Mariánovice,3
+RT_4596,AG_196,MHD 3,MHD Benešov MODRÁ Buková Lhota - Pomněnice - Purkyňova - Terminál - Masarykovo náměstí,3
+RT_4597,AG_196,MHD 4,MHD Benešov RŮŽOVÁ MŠ Úsměv - Terminál - U Náhonu,3
+RT_4598,AG_196,MHD 5,MHD Benešov ŽLUTÁ Terminál - Křižíkova,3
+RT_4599,AG_196,MHD 6,"MHD Benešov ČERVENÁ Terminál - Konopiště, Růžová zahrada",3
+RT_4603,AG_196,MHD 1,Oáza/Kuří - Strašín,3
+RT_4604,AG_196,MHD 2,"Strašín,Pastelkov - Oáza",3
+RT_4605,AG_196,MHD 3,Jažlovice - Pacov,3
+RT_4606,AG_196,MHD 7,Olivovna - Srnčí,3
+RT_4607,AG_196,MHD 9,Olivovna - Obchodní,3
+RT_4608,AG_196,MHD 91,Obchodní - Olivovna,3
+RT_4609,AG_196,MHD 92,"Pod Lihovarem - Strašín,Pampelišková",3
+RT_4630,AG_198,825001,"Zlín,Lužkovice,Na Gruntech - Zlín,Prštné,Náves",11
+RT_4631,AG_198,825002,"Zlín,Bartošova Čtvrť - Otrokovice,Štěrkoviště",11
+RT_4632,AG_198,825003,"Zlín,Lesní Čtvrť - Zlín,Louky,točna",11
+RT_4633,AG_198,825004,"Zlín,Lešná,zoo - Zlín,Podhoří,točna",11
+RT_4634,AG_198,825005,"Zlín,Lešná,zoo - Zlín,Podhoří,točna",11
+RT_4635,AG_198,825006,"Zlín,Jižní Svahy,Kocanda - Otrokovice,žel.st.",11
+RT_4636,AG_198,825007,"Zlín,Jižní Svahy,Kocanda - Zlín,Antonínova",11
+RT_4637,AG_198,825008,"Zlín,Jižní Svahy,Kocanda - Zlín,Jižní Svahy,Kocanda",11
+RT_4638,AG_198,825009,"Zlín,Jižní Svahy,Středová - Zlín,Jižní Svahy,Středová",11
+RT_4639,AG_198,825010,"Zlín,Jižní Svahy,Středová - Zlín,Malenovice,Centro",11
+RT_4640,AG_198,825011,"Zlín,Lužkovice,Na Gruntech - Zlín,Prštné,Náves",11
+RT_4641,AG_198,825012,"Želechovice n.Dřev.,točna u školy - Zlín,Sportovní hala",11
+RT_4642,AG_198,825013,"Zlín,Lesní Čtvrť - Zlín,Antonínova",11
+RT_4643,AG_198,825014,"Zlín,Jižní Svahy,Středová - Zlín,Antonínova",11
+RT_4644,AG_198,825031,"Zlín,Jaroslavice,točna - Zlín,Mladcová,Bartošův dům",3
+RT_4645,AG_198,825032,"Zlín,Kudlov,točna - Zlín,Kudlov,točna",3
+RT_4646,AG_198,825033,"Zlín,Zlínské Paseky,točna - Zlín,Bartošova Čtvrť,zdrav.škola",3
+RT_4647,AG_198,825035,"Zlín,Antonínova - Zlín,Velíková,točna",3
+RT_4648,AG_198,825036,"Zlín,Antonínova - Zlín,Velíková,točna",3
+RT_4649,AG_198,825038,"Zlín,Příluky,Za Kapličkou - Zlín,Příluky,Za Kapličkou",3
+RT_4650,AG_198,825046,"Zlín,Velíková,točna - Zlín,Velíková,točna",3
+RT_4651,AG_198,825047,"Zlín,Štípa,U Kapličky - Zlín,Štípa,U Kapličky",3
+RT_4652,AG_198,825051,"Zlín,Malenovice,Centro - Zlín,Malenovice,křiž.",3
+RT_4653,AG_198,825052,"Zlín,Malenovice,točna - Zlín,Chlum",3
+RT_4654,AG_198,825053,"Zlín,Malenovice,točna - Zlín,Salaš,točna",3
+RT_4655,AG_198,825070,"Zlín,Podvesná XVII - Otrokovice,Štěrkoviště",3
+RT_4656,AG_198,825090,"Želechovice n.Dřev.,točna u školy - Zlín,Sportovní hala",3
+RT_4657,AG_198,825091,"Zlín,Příluky,Za Kapličkou - Zlín,Dřevnická,škola",3
+RT_4658,AG_198,825092,"Zlín,Podhoří,škola - Zlín,Louky,točna",3
+RT_4659,AG_198,825099,"Zlín,Jižní Svahy,Kocanda - Otrokovice,Štěrkoviště",11
+RT_4660,AG_198,825113,"Zlín,Lesní Čtvrť - Zlín,Antonínova",3
+RT_4661,AG_198,825155,"Otrokovice,žel.st. - Otrokovice,Štěrkoviště",11
+RT_4784,AG_201,AE,linka 83,3
+RT_4790,AG_201,101,"Hlavní nádraží - Radvanice,Ludvíkova",11
+RT_4791,AG_201,102,Hlavní nádraží - Hulváky,11
+RT_4792,AG_201,103,"Mor.Ostrava,náměstí Republiky - Koblov",11
+RT_4793,AG_201,104,"Michálkovice - Mor.Ostrava,náměstí Republiky/Mor.Ostrava,Vozovna trolejbusů",11
+RT_4794,AG_201,105,"Mor.Ostrava,Karolina U lávky - Koblov",11
+RT_4795,AG_201,106,"Hlavní nádraží - Heřmanice,Důl Heřmanice",11
+RT_4796,AG_201,107,"Hranečník - Mor.Ostrava,sídliště Fifejdy/Mor.Ostrava,Vozovna trolejbusů",11
+RT_4797,AG_201,108,"Hlavní nádraží/Mor.Ostrava,Vozovna trolejbusů - Hulváky",11
+RT_4798,AG_201,109,"Heřmanice,Důl Heřmanice - Hulváky",11
+RT_4799,AG_201,111,Hlavní nádraží - Michálkovice,11
+RT_4800,AG_201,112,Hlavní nádraží - Hulváky,11
+RT_4801,AG_201,113,Michálkovice - Koblov,11
+RT_4832,AG_204,575001,"Most,Velebudická - Litvínov,Citadela",3
+RT_4833,AG_204,575002,"Most,nádraží - Most,Velebudická",3
+RT_4834,AG_204,575003,"Most,nádraží - Litvínov,Citadela",3
+RT_4835,AG_204,575004,"Most,Dopravní podnik - Litvínov,Citadela",3
+RT_4836,AG_204,575005,"Nádraží - OD PRIOR - Okružní,SHELL/Vtelno,Na Gruntě",3
+RT_4837,AG_204,575009,"Dopravní podnik - Čepirohy,okály - Dopravní podnik",3
+RT_4838,AG_204,575010,"Most,Velebudice,škola - Most,nádraží - Obrnice",3
+RT_4839,AG_204,575012,"Dopravní podnik - Nádraží - Komořany - Záluží,CHEMOPETROL",3
+RT_4840,AG_204,575016,Jezero Most - Nádraží - Za Krematoriem - Nádraží - Jezero Most,3
+RT_4841,AG_204,575017,Hipodrom - Dopravní podnik - Zahražany - Dopravní podnik - Hipodrom,3
+RT_4842,AG_204,575018,Obchodní dům PRIOR - 14.ZŠ,3
+RT_4843,AG_204,575020,Nádraží - OD PRIOR - Zahražany - Čsl. armády - Muzeum,3
+RT_4844,AG_204,575022,"Nádraží - Souš,Matylda",3
+RT_4845,AG_204,575025,"Báňská - Kahan - Vtelno,Na Gruntě",3
+RT_4846,AG_204,575030,Jezero Most - Nádraží - Nemocnice - Nádraží - Jezero Most,3
+RT_4847,AG_204,575031,"Most,nádraží - OD PRIOR - Havraň - Havraň,Joseph",3
+RT_4848,AG_204,575040,"Most,Velebudická - Most,nádraží - Litvínov,Citadela",3
+RT_4849,AG_204,575050,1.náměstí - Čsl. armády,3
+RT_4850,AG_204,575051,"Čepirohy, okály - Průběžná - Dům peněžnictví",3
+RT_4851,AG_204,575053,"Vtelno,Na Gruntě/Rudolice - Nádraží - Kahan - 10. ZŠ",3
+RT_4852,AG_204,576008,"Litvínov,nádraží - Litvínov,průmyslová zóna",3
+RT_4853,AG_204,576013,"Litvínov,Křížatky - Litvínov,Janov - Litvínov,Hamr - Litvínov - Lom - Lom,Loučná - Osek",3
+RT_4854,AG_204,576014,"Litvínov - Litvínov,Hamr - Litvínov,Janov - Horní Jiřetín,Černice - Horní Jiřetín",3
+RT_4855,AG_204,576015,"Litvínov,nádraží - Litvínov,Janov,škola - Litvínov,nádraží",3
+RT_4856,AG_204,576021,"Litvínov,Janov - Litvínov,Hamr (Lom,Loučná - Lom) - Litvínov - Litvínov,Záluží",3
+RT_4857,AG_204,576023,Litvínov - Meziboří - Litvínov,3
+RT_4858,AG_204,576027,"Litvínov,nádraží - Litvínov,Šumná",3
+RT_4859,AG_204,576028,"Litvínov,Záluží - Horní Jiřetín,Černice - Horní Jiřetín",3
+RT_4860,AG_204,576060,"Litvínov,Janov - Litvínov,Hamr - Litvínov - Lom - Lom,Loučná - Osek",3
+RT_4905,AG_209,520970,"Chomutov-Jirkov-Malý Háj,Lesná",3
+RT_4927,AG_210,202,"(M.Hoštice) Opava, Kateřinky - Opava, Albert hypermarket",11
+RT_4928,AG_210,203,"Opava, Globus - Opava, Jaktař",11
+RT_4929,AG_210,204,"Opava, Kylešovice, škola - Opava, Englišova",11
+RT_4944,AG_211,605001,Dopravní terminál - Havlíčkovo náměstí - Nemocnice - Ledečská - Perknov a zpět,3
+RT_4945,AG_211,605002,Dopravní terminál - Žižkov II - Havlíčkovo náměstí - Penny market - Nový hřbitov - Perknov a zpět,3
+RT_4946,AG_211,605003,Dopravní terminál - Havlíčkovo náměstí - Penny market - Reynkova TS - Vršovice a zpět,3
+RT_4947,AG_211,605004,Dopravní terminál - Humpolecká - Čechova - Šmolovy a zpět,3
+RT_4948,AG_211,605005,Dopravní terminál - Futaba - Mírovka - Průmyslová - Nový svět - Dopravní terminál,3
+RT_4949,AG_211,605006,Dopravní terminál - Vysočany - Termesivy a zpět,3
+RT_4950,AG_211,605011,Dopravní terminál - Havlíčkovo náměstí - Penny market - Nemocnice - Ledečská - Perknov a zpět,3
+RT_4951,AG_211,605012,Dopravní terminál - Havlíčkovo náměstí - Penny market - Nemocnice - Psychiatrická nemocnice - Perknov a zpět,3
+RT_4952,AG_211,605022,Dopravní terminál - Pekárny - Žižkov II - Dopravní terminál,3
+RT_4953,AG_212,S16,Třemešná ve Slezsku – Osoblaha,2
+RT_4954,AG_212,S17,Milotice nad Opavou – Vrbno pod Pradědem,2
+RT_4955,AG_213,Ex1 Cracovia,Praha – Ostrava – Návsí / Opava,2
+RT_4956,AG_213,Ex1 Ostravan,Praha – Ostrava – Návsí / Opava,2
+RT_4957,AG_213,Ex1 Kysučan,Praha – Ostrava – Návsí / Opava - Čadca - Praha hl. n.,2
+RT_4958,AG_213,Ex1 Ostravan,Praha – Ostrava – Návsí / Opava - Čadca - Praha hl. n.,2
+RT_4959,AG_213,Ex1 Silesia,Praha – Ostrava – Návsí / Opava,2
+RT_4960,AG_213,Ex1,Praha – Ostrava – Návsí / Opava,2
+RT_4961,AG_213,R10,Praha – Hradec Králové – Trutnov / Letohrad,2
+RT_4962,AG_213,R10 Krakonoš,Praha – Hradec Králové – Trutnov / Letohrad,2
+RT_4963,AG_213,R10 Hradečan,Praha – Hradec Králové – Trutnov / Letohrad,2
+RT_4964,AG_213,S1,Praha – Poříčany – Kolín,2
+RT_4965,AG_213,S1/S20,Kolín – Světlá nad Sázavou - Praha – Poříčany – Kolín,2
+RT_4966,AG_213,S2,Praha – Lysá nad Labem – Kolín,2
+RT_4967,AG_213,S2,Praha – Lysá nad Labem – Kolín - Praha-Čakovice - Praha hl. n.,2
+RT_4968,AG_213,S2,Kúty - Praha Jih - Praha – Lysá nad Labem – Kolín,2
+RT_4969,AG_213,S12/S2,Poříčany – Nymburk - Praha – Lysá nad Labem – Kolín,2
+RT_4970,AG_213,S2/S21,Nymburk – Kopidlno – Jičín - Praha – Lysá nad Labem – Kolín,2
+RT_4971,AG_213,S2/S35,Mladá Boleslav – Nymburk - Praha – Lysá nad Labem – Kolín,2
+RT_4972,AG_213,S2/S35/S36,Mladá Boleslav hl.n. – Lomnice nad Popelkou - Mladá Boleslav – Nymburk - Praha – Lysá nad Labem – Kolín,2
+RT_4973,AG_213,S3,Praha - Neratovice – Mělník,2
+RT_4974,AG_213,S3/S30,Praha - Neratovice – Mělník - Všetaty - Mladá Boleslav město,2
+RT_4975,AG_213,S3/S36,Praha - Neratovice – Mělník - Všetaty - Mladá Boleslav město,2
+RT_4976,AG_213,S3/S43,Neratovice – Kralupy nad Vltavou - Praha - Neratovice – Mělník,2
+RT_4977,AG_213,R43/S3 Jizera,Praha - Neratovice – Mělník - Praha – Neratovice – Mladá Boleslav,2
+RT_4978,AG_213,S4,Praha – Kralupy nad Vltavou – Hněvice,2
+RT_4979,AG_213,S4/S43/U4,Neratovice – Kralupy nad Vltavou - Praha – Kralupy nad Vltavou – Hněvice - Ústí nad Labem hl.n. – Roudnice nad Labem – Hněvice,2
+RT_4980,AG_213,S4/U4,Praha – Kralupy nad Vltavou – Hněvice - Ústí nad Labem hl.n. – Roudnice nad Labem – Hněvice,2
+RT_4981,AG_213,S4/U54,Děčín – Hněvice - Praha – Kralupy nad Vltavou – Hněvice,2
+RT_4982,AG_213,S45,Praha – Kladno – Kladno-Ostrovec,2
+RT_4983,AG_213,S45,Kralupy nad Vltavou – Kladno - Praha – Kladno – Kladno-Ostrovec,2
+RT_4984,AG_213,S5,Kladno – Rakovník - Praha – Kladno – Kladno-Ostrovec,2
+RT_4985,AG_213,S6,Praha – Rudná u Prahy – Beroun,2
+RT_4986,AG_213,S7,Praha – Beroun,2
+RT_4987,AG_213,S7/S76,Praha – Beroun - Zadní Třebáň – Lochovice,2
+RT_4988,AG_213,S8,Praha – Vrané nad Vltavou – Čerčany,2
+RT_4989,AG_213,S9,Milovice – Lysá nad Labem – Praha – Říčany – Benešov u Prahy,2
+RT_4990,AG_213,S9/S98,Milovice – Lysá nad Labem – Praha – Říčany – Benešov u Prahy - Olbramovice – Sedlčany,2
+RT_4991,AG_213,S10,Kolín - Česká Třebová - Kolín – Přelouč,2
+RT_4992,AG_213,S11,Pečky – Kouřim,2
+RT_4993,AG_213,S12,Poříčany – Nymburk,2
+RT_4994,AG_213,S18,Kolín – Ledečko – Sázava,2
+RT_4995,AG_213,S20,Havlíčkův Brod - Kolín - Kolín – Světlá nad Sázavou,2
+RT_4996,AG_213,S20,Kolín – Světlá nad Sázavou,2
+RT_4997,AG_213,S20/S28,Kolín – Světlá nad Sázavou - Kutná Hora – Zruč nad Sázavou,2
+RT_4998,AG_213,S21,Nymburk – Kopidlno – Jičín,2
+RT_4999,AG_213,S22,Praha – Lysá nad Labem – Milovice,2
+RT_5000,AG_213,S23,Neratovice – Čelákovice,2
+RT_5001,AG_213,S27,Čáslav – Třemošnice,2
+RT_5002,AG_213,S28,Kutná Hora – Zruč nad Sázavou,2
+RT_5003,AG_213,S30,Všetaty - Mladá Boleslav město,2
+RT_5004,AG_213,S36,Všetaty - Mladá Boleslav město,2
+RT_5005,AG_213,S30/S36,Mladá Boleslav hl.n. – Lomnice nad Popelkou - Všetaty - Mladá Boleslav město,2
+RT_5006,AG_213,S36,Mladá Boleslav hl.n. – Lomnice nad Popelkou - Všetaty - Mladá Boleslav město,2
+RT_5007,AG_213,S31,Mladá Boleslav – Nymburk,2
+RT_5008,AG_213,S35,Mladá Boleslav město - Turnov - Mladá Boleslav – Nymburk,2
+RT_5009,AG_213,S31/S35,Mladá Boleslav město - Turnov - Mladá Boleslav – Nymburk,2
+RT_5010,AG_213,S35/S36,Mladá Boleslav hl.n. – Lomnice nad Popelkou - Mladá Boleslav – Nymburk,2
+RT_5011,AG_213,S31,Mladá Boleslav hl.n. – Lomnice nad Popelkou - Mladá Boleslav – Nymburk,2
+RT_5012,AG_213,S32,Štětí – Všetaty – Lysá nad Labem,2
+RT_5013,AG_213,S32/S33,Mělník – Mladá Boleslav - Štětí – Všetaty – Lysá nad Labem,2
+RT_5014,AG_213,S32/U32,Ústí nad Labem – Mělník – Lysá nad Labem - Štětí – Všetaty – Lysá nad Labem,2
+RT_5015,AG_213,S33,Mělník – Mladá Boleslav,2
+RT_5016,AG_213,S33/S36,Mladá Boleslav hl.n. – Lomnice nad Popelkou - Mělník – Mladá Boleslav,2
+RT_5017,AG_213,S35,Mladá Boleslav město - Turnov,2
+RT_5018,AG_213,R43/S35 Jizera,Mladá Boleslav město - Turnov - Praha – Neratovice – Mladá Boleslav,2
+RT_5019,AG_213,S31,Mladá Boleslav hl.n. – Lomnice nad Popelkou,2
+RT_5020,AG_213,S36,Mladá Boleslav hl.n. – Lomnice nad Popelkou,2
+RT_5021,AG_213,S40,Kralupy nad Vltavou – Slaný ,2
+RT_5022,AG_213,S40/S43,Kralupy nad Vltavou – Slaný  - Neratovice – Kralupy nad Vltavou,2
+RT_5023,AG_213,R44/S40,Kralupy nad Vltavou – Slaný  - Praha – Kralupy nad Vltavou,2
+RT_5024,AG_213,S40/U40,Kralupy nad Vltavou – Slaný  - Louny – Slaný,2
+RT_5025,AG_213,S43,Neratovice – Kralupy nad Vltavou,2
+RT_5026,AG_213,S44,Kralupy nad Vltavou – Velvary,2
+RT_5027,AG_213,S45,Kralupy nad Vltavou – Kladno,2
+RT_5028,AG_213,S5,Kladno – Rakovník,2
+RT_5029,AG_213,S50/S57,Kladno – Rakovník - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5030,AG_213,R45,Kladno – Rakovník - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5031,AG_213,R45,Kladno – Rakovník - Praha – Kladno – Kladno-Ostrovec - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5032,AG_213,R45/S5,Kladno – Rakovník - Praha – Kladno – Kladno-Ostrovec,2
+RT_5033,AG_213,S54,Praha – Hostivice – Středokluky – Podlešín – Slaný,2
+RT_5034,AG_213,S54/S65,Praha – Hostivice – Rudná u Prahy - Praha – Hostivice – Středokluky – Podlešín – Slaný,2
+RT_5035,AG_213,R45,Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5036,AG_213,S57,Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5037,AG_213,S57,Praha Masaryk. n. - Bečov nad Teplou - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5038,AG_213,R45,Praha – Kladno – Rakovník - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5039,AG_213,S57,Kladno - Bečov nad Teplou - Praha – Kladno – Rakovník - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5040,AG_213,S57,Praha Masaryk. n. - Bečov nad Teplou - Praha – Kladno – Rakovník - Rakovník - Blatno u Jesenice – Žlutice,2
+RT_5041,AG_213,S59,Protivec – Bochov,2
+RT_5042,AG_213,S60,Beroun – Zdice – Březnice,2
+RT_5043,AG_213,S60/S75,Beroun – Rakovník - Beroun – Zdice – Březnice,2
+RT_5044,AG_213,S60,Beroun – Zdice – Březnice - Strakonice – Blatná – Březnice,2
+RT_5045,AG_213,S65,Praha – Hostivice – Rudná u Prahy,2
+RT_5046,AG_213,P2/S70,Beroun – Kařez - Hořovice – Rokycany – Plzeň – Klatovy,2
+RT_5047,AG_213,S75,Beroun – Rakovník,2
+RT_5048,AG_213,S76,Zadní Třebáň – Lochovice,2
+RT_5049,AG_213,S80 Želivka,Čerčany - Zruč nad Sázavou,2
+RT_5050,AG_213,S80,Čerčany - Zruč nad Sázavou,2
+RT_5051,AG_213,R49/S80 Posázaví,Praha – Říčany – Benešov u Prahy – Tábor - Čerčany - Zruč nad Sázavou,2
+RT_5052,AG_213,R49/S80 Želivka,Praha – Říčany – Benešov u Prahy – Tábor - Čerčany - Zruč nad Sázavou,2
+RT_5053,AG_213,S82,Zruč nad Sázavou – Ledeč nad Sázavou – Světlá nad Sázavou,2
+RT_5054,AG_213,S20/S82,Havlíčkův Brod - Kolín - Zruč nad Sázavou – Ledeč nad Sázavou – Světlá nad Sázavou,2
+RT_5055,AG_213,S88,Praha – Vrané nad Vltavou – Dobříš,2
+RT_5056,AG_213,S98,Benešov u Prahy – Tábor,2
+RT_5057,AG_213,S98,Benešov u Prahy – Tábor - Olbramovice – Sedlčany,2
+RT_5058,AG_213,S98,Olbramovice – Sedlčany,2
+RT_5059,AG_213,S99,Benešov u Prahy – Trhový Štěpánov,2
+RT_5060,AG_213,R11,Brno - Jihlava - České Budějovice,2
+RT_5061,AG_213,R11 Rožmberk,Brno - Jihlava - České Budějovice,2
+RT_5062,AG_213,R11 Jihlava,Brno - Jihlava - České Budějovice,2
+RT_5063,AG_213,R41,Praha – Kolín – Kutná Hora,2
+RT_5064,AG_213,R41 Vrchlice,Praha – Kolín – Kutná Hora,2
+RT_5065,AG_213,R42,Praha – Lysá nad Labem – Nymburk – Kolín,2
+RT_5066,AG_213,R43 Jizera,Praha – Neratovice – Mladá Boleslav,2
+RT_5067,AG_213,R45,Praha – Kladno – Kladno-Ostrovec,2
+RT_5068,AG_213,R49 Sázava,Praha – Říčany – Benešov u Prahy – Tábor,2
+RT_5069,AG_213,R12 Bouzov,Brno – Olomouc – Šumperk / Jeseník,2
+RT_5070,AG_213,R13 Moravan,Brno – Břeclav – Přerov – Olomouc,2
+RT_5071,AG_213,R13,Brno – Břeclav – Přerov – Olomouc,2
+RT_5072,AG_213,R15 Krušnohor,Praha – Ústí nad Labem – Karlovy Vary – Cheb,2
+RT_5073,AG_213,R15,Praha – Ústí nad Labem – Karlovy Vary – Cheb,2
+RT_5074,AG_213,R15 Labe,Praha – Ústí nad Labem – Karlovy Vary – Cheb,2
+RT_5075,AG_213,R16,Praha – Plzeň – Klatovy – Železná Ruda,2
+RT_5076,AG_213,R16 Berounka,Praha – Plzeň – Klatovy – Železná Ruda,2
+RT_5077,AG_213,R17 Lužnice,Praha – Tábor – České Budějovice / Třeboň – České Velenice,2
+RT_5078,AG_213,R17 Silva Nortica,Gmünd NÖ - Praha hl. n. - Praha – Tábor – České Budějovice / Třeboň – České Velenice,2
+RT_5079,AG_213,R17 Vltava,Praha – Tábor – České Budějovice / Třeboň – České Velenice,2
+RT_5080,AG_213,R17,Praha – Tábor – České Budějovice / Třeboň – České Velenice,2
+RT_5081,AG_213,R18 Slovácký expres,Praha – Olomouc – Luhačovice / Veselí nad Moravou,2
+RT_5082,AG_213,R18 Přerovský zubr,Praha – Olomouc – Luhačovice / Veselí nad Moravou,2
+RT_5083,AG_213,R18,Praha – Olomouc – Luhačovice / Veselí nad Moravou,2
+RT_5084,AG_213,R18 Zlínský expres,Praha – Olomouc – Luhačovice / Veselí nad Moravou,2
+RT_5085,AG_213,R19 Svitava,Praha – Česká Třebová – Brno,2
+RT_5086,AG_213,R19 Třebovka,Praha – Česká Třebová – Brno,2
+RT_5087,AG_213,Ex2 Valašský expres,Praha Jih - Lúky pod Makytou - Praha – Olomouc – Vsetín – Horní Lideč,2
+RT_5088,AG_213,Ex2 Jan Perner,Praha – Olomouc – Vsetín – Horní Lideč,2
+RT_5089,AG_213,Ex2 Valašský expres,Praha – Olomouc – Vsetín – Horní Lideč,2
+RT_5090,AG_213,R20 Labe,Praha – Ústí nad Labem – Děčín,2
+RT_5091,AG_213,T2 Český ráj,Praha - Poříčany - Nymburk město - Jičín,2
+RT_5092,AG_213,T4 Cyklohráček,Praha-Zličín - Hostivice - Podlešín – Slaný,2
+RT_5093,AG_213,T6 Brdy,Praha – Beroun – Březnice – Blatná,2
+RT_5094,AG_213,T9 Rožmitálský motoráček,Březnice – Rožmitál p. Tř.,2
+RT_5095,AG_213,R24,Praha – Kladno – Rakovník,2
+RT_5096,AG_213,R27 Praděd,Ostrava – Krnov – Olomouc / Jeseník,2
+RT_5097,AG_213,R27 Cvilín,Ostrava – Krnov – Olomouc / Jeseník,2
+RT_5098,AG_213,R27,Ostrava – Krnov – Olomouc / Jeseník,2
+RT_5099,AG_213,Ex3 Metropol,Praha – Pardubice – Brno – Břeclav,2
+RT_5100,AG_213,Ex3 Metropolitan,Kúty - Praha Jih - Praha – Pardubice – Brno – Břeclav,2
+RT_5101,AG_213,Ex3 Brněnský drak,Praha – Pardubice – Brno – Břeclav,2
+RT_5102,AG_213,Ex3 Vindobona,Praha – Pardubice – Brno – Břeclav,2
+RT_5103,AG_213,Ex3 Metropolitan,Praha – Pardubice – Brno – Břeclav,2
+RT_5104,AG_213,Ex3 Metropolitan Slovenská strela,Praha – Pardubice – Brno – Břeclav,2
+RT_5105,AG_213,R31 Bezdrev,České Budějovice - Plzeň,2
+RT_5106,AG_213,R31,České Budějovice - Plzeň,2
+RT_5107,AG_213,R31 Rožmberk,České Budějovice - Plzeň,2
+RT_5108,AG_213,S1,České Velenice – České Budějovice – Zliv – Dívčice – Strakonice,2
+RT_5109,AG_213,S2,České Budějovice – Tábor (– Chotoviny),2
+RT_5110,AG_213,S3,Jindřichův Hradec – České Budějovice – Rybník – Horní Dvořiště / Lipno nad Vltavou,2
+RT_5111,AG_213,S3 Vltava Dunaj,Jindřichův Hradec – České Budějovice – Rybník – Horní Dvořiště / Lipno nad Vltavou - Summerau - České Budějovice,2
+RT_5112,AG_213,S3 Donau Moldau,Jindřichův Hradec – České Budějovice – Rybník – Horní Dvořiště / Lipno nad Vltavou - Summerau - České Budějovice,2
+RT_5113,AG_213,S5,České Velenice – Veselí nad Lužnicí,2
+RT_5114,AG_213,S6,České Budějovice – Protivín – Písek město,2
+RT_5115,AG_213,S9,Strakonice – Ražice – Písek – Tábor,2
+RT_5116,AG_213,S10,Tábor – Bechyně ,2
+RT_5117,AG_213,P12/S12,Kasejovice – Blatná,2
+RT_5118,AG_213,P12/S12,Kasejovice – Blatná - Nepomuk – Kasejovice,2
+RT_5119,AG_213,S13,Tábor – Pacov,2
+RT_5120,AG_213,S13,Tábor - Jihlava - Tábor – Pacov,2
+RT_5121,AG_213,S14,Slavonice – Telč,2
+RT_5122,AG_213,S14,Jemnice - Moravské Budějovice - Slavonice – Telč,2
+RT_5123,AG_213,S14 Renesance,Slavonice – Telč,2
+RT_5124,AG_213,S14 Renesance,Jemnice - Moravské Budějovice - Slavonice – Telč,2
+RT_5125,AG_213,S23,Tábor – Jindřichův Hradec,2
+RT_5126,AG_213,S60,Strakonice – Blatná – Březnice,2
+RT_5127,AG_213,S66,Březnice – Protivín,2
+RT_5128,AG_213,Ex32 Baltic express,Praha – Lichkov – Wrocław – Poznań – Gdynia,2
+RT_5129,AG_213,Ex32 Baltic express,Praha – Lichkov – Wrocław – Poznań – Gdynia - Ústí nad Orlicí - Letohrad,2
+RT_5130,AG_213,P1Z,Plzeň – Mariánské Lázně,2
+RT_5131,AG_213,P1J,Strakonice – Horažďovice předměstí – Plzeň – Pňovany,2
+RT_5132,AG_213,P2,Hořovice – Rokycany – Plzeň – Klatovy,2
+RT_5133,AG_213,P2/S70,Hořovice – Rokycany – Plzeň – Klatovy,2
+RT_5134,AG_213,P3,Plzeň – Domažlice město,2
+RT_5135,AG_213,P4,Plzeň – Žihle,2
+RT_5136,AG_213,P4,Plzeň hl. n. - Bělá nad Radbuzou - Plzeň – Žihle,2
+RT_5137,AG_213,P12,Nepomuk – Kasejovice,2
+RT_5138,AG_213,P13,Plzeň – Bezdružice,2
+RT_5139,AG_213,P13/P14,Plzeň – Bezdružice - Tachov – Planá u Mariánských Lázní,2
+RT_5140,AG_213,P13,Plzeň – Bezdružice - Plzeň – Radnice,2
+RT_5141,AG_213,P14,Tachov – Planá u Mariánských Lázní,2
+RT_5142,AG_213,P21,Rokycany – Nezvěstice,2
+RT_5143,AG_213,P13,Plzeň – Radnice,2
+RT_5144,AG_213,P24,Klatovy – Železná Ruda-Alžbětín,2
+RT_5145,AG_213,P31,Nýřany – Heřmanova Huť,2
+RT_5146,AG_213,P32,Holýšov – Staňkov – Poběžovice,2
+RT_5147,AG_213,P32/P33,Domažlice – Tachov - Holýšov – Staňkov – Poběžovice,2
+RT_5148,AG_213,P33,Domažlice – Tachov,2
+RT_5149,AG_213,P34,Domažlice – Furth im Wald - Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5150,AG_213,R33,Cheb – Nürnberg,2
+RT_5151,AG_213,Ex5/Ex3 Hungaria,Praha – Pardubice – Brno – Břeclav - Praha – Ústí nad Labem – Děčín,2
+RT_5152,AG_213,Ex5/Ex3 Vindobona,Praha – Pardubice – Brno – Břeclav - Praha – Ústí nad Labem – Děčín,2
+RT_5153,AG_213,Ex3/Ex5 Hungaria,Praha – Pardubice – Brno – Břeclav - Praha – Ústí nad Labem – Děčín,2
+RT_5154,AG_213,Ex3/Ex5 Vindobona,Praha – Pardubice – Brno – Břeclav - Praha – Ústí nad Labem – Děčín,2
+RT_5155,AG_213,Ex5/Ex3 Berliner,Praha – Pardubice – Brno – Břeclav - Praha – Ústí nad Labem – Děčín,2
+RT_5156,AG_213,Ex4 Sobieski,Břeclav – Přerov – Bohumín,2
+RT_5157,AG_213,Ex4 Moravia,Břeclav – Přerov – Bohumín,2
+RT_5158,AG_213,Ex4 Báthory,Břeclav – Přerov – Bohumín,2
+RT_5159,AG_213,Ex4 Porta Moravica,Břeclav – Přerov – Bohumín,2
+RT_5160,AG_213,Ex4 Polonia,Břeclav – Přerov – Bohumín,2
+RT_5161,AG_213,Ex4,Břeclav – Přerov – Bohumín,2
+RT_5162,AG_213,Ex4 Danubius,Břeclav – Přerov – Bohumín,2
+RT_5163,AG_213,Ex4 Prater,Břeclav – Přerov – Bohumín,2
+RT_5164,AG_213,U1,Děčín hl.n. – Ústí nad Labem hl.n. – Most – Chomutov – Kadaň předměstí,2
+RT_5165,AG_213,U2,Chomutov – Klášterec nad Ohří – Karlovy Vary,2
+RT_5166,AG_213,U2,Chomutov - Cheb - Chomutov – Klášterec nad Ohří – Karlovy Vary,2
+RT_5167,AG_213,U3,Děčín hl.n. – Ústí nad Labem hl.n. – Teplice v Čechách – Litvínov,2
+RT_5168,AG_213,U4,Ústí nad Labem hl.n. – Roudnice nad Labem – Hněvice,2
+RT_5169,AG_213,U6,Lovosice – Teplice v Čechách,2
+RT_5170,AG_213,U7,Děčín – Ústí nad Labem-Střekov – Ústí nad Labem západ,2
+RT_5171,AG_213,U8,Děčín – Česká Kamenice – Rumburk,2
+RT_5172,AG_213,U11,Česká Lípa – Litoměřice h.n. – Lovosice – Louny – Postoloprty,2
+RT_5173,AG_213,U14,Jirkov - Chomutov - Lužná u Rakovníka – Rakovník,2
+RT_5174,AG_213,U16,Chomutov – Hradec u Kadaně,2
+RT_5175,AG_213,U21,Roudnice nad Labem – Bříza obec,2
+RT_5176,AG_213,U22,Vraňany - Straškov - Bříza obec,2
+RT_5177,AG_213,U28,Děčín hl.n. – Bad Schandau – Sebnitz – Rumburk,2
+RT_5178,AG_213,U32,Ústí nad Labem – Mělník – Lysá nad Labem,2
+RT_5179,AG_213,S40/U40,Louny – Slaný,2
+RT_5180,AG_213,U51,Ústí nad Labem hl.n. – Most – Chomutov – Klášterec nad Ohří,2
+RT_5181,AG_213,U54,Děčín – Hněvice,2
+RT_5182,AG_213,T2,Děčín hl.n. / Liberec – Krásná Lípa/Rumburk – Mikulášovice,2
+RT_5183,AG_213,RE20 Letní kometa,Dresden – Ústí nad Labem – Litoměřice město,2
+RT_5184,AG_213,RE20,Dresden – Ústí nad Labem – Litoměřice město,2
+RT_5185,AG_213,RE20 Vánoční kometa,Dresden – Ústí nad Labem – Litoměřice město,2
+RT_5186,AG_213,Ex5,Praha – Ústí nad Labem – Děčín,2
+RT_5187,AG_213,Ex5 Canopus,Praha – Ústí nad Labem – Děčín,2
+RT_5188,AG_213,Ex5 Berliner,Louny předměstí - Most - Praha – Ústí nad Labem – Děčín,2
+RT_5189,AG_213,Ex5 Berliner,Praha – Ústí nad Labem – Děčín,2
+RT_5190,AG_213,L1,Liberec – Harrachov,2
+RT_5191,AG_213,L5,Stará Paka - Lomnice nad Popelkou - Ploužnice,2
+RT_5192,AG_213,L6,Liberec – Černousy,2
+RT_5193,AG_213,L9,Martinice v Krkonoších - Jilemnice - Jablonec nad Jizerou - Rokytnice nad Jizerou,2
+RT_5194,AG_213,L12,Smržovka – Josefův Důl,2
+RT_5195,AG_213,L18,Železný Brod – Tanvald,2
+RT_5196,AG_213,L34,Liberec – Turnov – Rovensko pod Troskami,2
+RT_5197,AG_213,L61,Liberec – Jindřichovice pod Smrkem,2
+RT_5198,AG_213,L62,Raspenava – Bílý Potok pod Smrkem,2
+RT_5199,AG_213,V2,Hradec Králové - Týniště nad Orlicí - Doudleby nad Orlicí - Letohrad,2
+RT_5200,AG_213,V3,Pardubice - Hradec Králové - Jaroměř - Náchod - Teplice nad Metují - Broumov,2
+RT_5201,AG_213,V3 Krakonoš,Pardubice - Hradec Králové - Jaroměř - Náchod - Teplice nad Metují - Broumov,2
+RT_5202,AG_213,V4 Krakonoš,Pardubice - Hradec Králové - Jaroměř - Trutnov - Svoboda nad Úpou,2
+RT_5203,AG_213,V4,Pardubice - Hradec Králové - Jaroměř - Trutnov - Svoboda nad Úpou,2
+RT_5204,AG_213,V5,Hradec Králové – Jičín – Turnov,2
+RT_5205,AG_213,V6,Pardubice – Hradec Králové – Jaroměř,2
+RT_5206,AG_213,V6,Pardubice centrum - Jaroměř - Pardubice – Hradec Králové – Jaroměř,2
+RT_5207,AG_213,V10,Hradec Králové - Chlumec nad Cidlinou,2
+RT_5208,AG_213,V20,Hradec Králové - Týniště nad Orlicí - Borohrádek,2
+RT_5209,AG_213,V21,Hradec Králové - Týniště nad Orlicí - Častolovice - Rychnov nad Kněžnou - Solnice,2
+RT_5210,AG_213,V22,Týniště nad Orlicí - Choceň,2
+RT_5211,AG_213,V23,Hradec Králové - Týniště nad Orlicí - Doudleby nad Orlicí - Potštejn / Rokytnice v Orlických horách,2
+RT_5212,AG_213,V24 Krakonoš,Trutnov - Teplice nad Metují - Hronov - Náchod - Týniště nad Orlicí - Choceň,2
+RT_5213,AG_213,V24,Trutnov - Teplice nad Metují - Hronov - Náchod - Týniště nad Orlicí - Choceň,2
+RT_5214,AG_213,V25,"Meziměstí - Teplice nad Metují - Hronov - Náchod - Týniště nad Orlicí - Choceň, Opočno - Dobruška",2
+RT_5215,AG_213,V30 Krakonoš,Starkoč - Náchod - Hronov - Teplice nad Metují - Broumov,2
+RT_5216,AG_213,V30,Starkoč - Náchod - Hronov - Teplice nad Metují - Broumov,2
+RT_5217,AG_213,V31,Starkoč - Václavice - Náchod,2
+RT_5218,AG_213,V33,Meziměstí - Teplice nad Metují - Adršpach,2
+RT_5219,AG_213,V34,Teplice nad Metují - Adršpach - Trutnov,2
+RT_5220,AG_213,V40,Trutnov – Svoboda nad Úpou,2
+RT_5221,AG_213,V41,Trutnov - Stará Paka - Chlumec nad Cidlinou - Kolín,2
+RT_5222,AG_213,V42,Trutnov - Vrchlabí / Jilemnice / Stará Paka,2
+RT_5223,AG_213,V43,Kunčice nad Labem – Vrchlabí,2
+RT_5224,AG_213,V50,Hradec Králové – Jičín – Turnov,2
+RT_5225,AG_213,V51,Lomnice nad Popelkou - Stará Paka - Chlumec nad Cidlinou - Městec Králové,2
+RT_5226,AG_213,Ex6 Bavorský expres,Plzeň hl. n. - Bělá nad Radbuzou - Praha – Plzeň – Cheb / Domažlice,2
+RT_5227,AG_213,Ex6 Západní expres,Praha – Plzeň – Cheb / Domažlice,2
+RT_5228,AG_213,Ex6 Pendolino,Plzeň hl. n. - Bělá nad Radbuzou - Plzeň hl. n. - Bělá nad Radbuzou - Praha – Plzeň – Cheb / Domažlice,2
+RT_5229,AG_213,Ex6,Praha – Plzeň – Cheb / Domažlice,2
+RT_5230,AG_213,Ex6 Ostravan,Plzeň hl. n. - Bělá nad Radbuzou - Praha – Plzeň – Cheb / Domažlice,2
+RT_5231,AG_213,Ex6 Bavorský expres,Plzeň hl. n. - Bělá nad Radbuzou - Plzeň hl. n. - Bělá nad Radbuzou - Praha – Plzeň – Cheb / Domažlice,2
+RT_5232,AG_213,S2,Březová nad Svitavou – Blansko – Brno – Křenovice horní nádraží,2
+RT_5233,AG_213,S2/S3,Březová nad Svitavou – Blansko – Brno – Křenovice horní nádraží - Níhov – Tišnov – Brno – Šakvice / Židlochovice,2
+RT_5234,AG_213,S3,Níhov – Tišnov – Brno – Šakvice / Židlochovice,2
+RT_5235,AG_213,S3/S9,Břeclav – Hodonín – Staré Město u Uh. Hradiště – Otrokovice – Hulín – Přerov - Níhov – Tišnov – Brno – Šakvice / Židlochovice - Šakvice – Břeclav,2
+RT_5236,AG_213,S3/S31 Pernštejn,Brno hl. n. - Žďár n.S. - Níhov – Tišnov – Brno – Šakvice / Židlochovice - Tišnov – Nedvědice – Rovné-Divišov,2
+RT_5237,AG_213,S3/S9,Níhov – Tišnov – Brno – Šakvice / Židlochovice - Šakvice – Břeclav,2
+RT_5238,AG_213,S4,Brno – Zastávka u Brna,2
+RT_5239,AG_213,S6,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště,2
+RT_5240,AG_213,S6/S9,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště - Břeclav – Hodonín – Staré Město u Uh. Hradiště – Otrokovice – Hulín – Přerov,2
+RT_5241,AG_213,S6/S91,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště - Břeclav – Hodonín – Staré Město u Uh. Hradiště – Otrokovice – Hulín – Přerov - Hodonín – Strážnice – Veselí nad Moravou – Velká nad Veličkou – Vrbovce – Myjava,2
+RT_5242,AG_213,S6/S61,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště - Bzenec – Moravský Písek,2
+RT_5243,AG_213,S6/S91,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště - Hodonín – Strážnice – Veselí nad Moravou – Velká nad Veličkou – Vrbovce – Myjava,2
+RT_5244,AG_213,S6/Sp5,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště - Staré Město u Uherského Hradiště – Uherské Hradiště – Újezdec u Luhačovic – Bojkovice – Bylnice,2
+RT_5245,AG_213,S6/Sp5 Javořina,Brno – Kyjov – Veselí nad Moravou – Staré Město u Uh. Hradiště - Staré Město u Uherského Hradiště – Uherské Hradiště – Újezdec u Luhačovic – Bojkovice – Bylnice,2
+RT_5246,AG_213,S91,Břeclav – Hodonín – Staré Město u Uh. Hradiště – Otrokovice – Hulín – Přerov,2
+RT_5247,AG_213,S9,Břeclav – Hodonín – Staré Město u Uh. Hradiště – Otrokovice – Hulín – Přerov,2
+RT_5248,AG_213,S11/S9,Břeclav – Hodonín – Staré Město u Uh. Hradiště – Otrokovice – Hulín – Přerov - Otrokovice – Vizovice,2
+RT_5249,AG_213,R12/Sp4 Radhošť,Brno – Nezamyslice – Kojetín - Kojetín – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm,2
+RT_5250,AG_213,R12/S6/Sp4 Radhošť,Brno – Nezamyslice – Kojetín - Kojetín – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm - Ostrava hl.n. – Frýdek-Místek – Frenštát pod Radhoštěm – Valašské Meziříčí,2
+RT_5251,AG_213,R13,Brno – Břeclav – Hodonín,2
+RT_5252,AG_213,R19/S22,Brno – Březová nad Svitavou - Letovice - Česká Třebová,2
+RT_5253,AG_213,S21,Skalice nad Svitavou – Boskovice – Velké Opatovice,2
+RT_5254,AG_213,S22,Březová nad Svitavou – Letovice - Letovice - Česká Třebová,2
+RT_5255,AG_213,S22,Březová nad Svitavou – Letovice,2
+RT_5256,AG_213,S31,Brno hl. n. - Žďár n.S. - Tišnov – Nedvědice – Rovné-Divišov,2
+RT_5257,AG_213,S31,Tišnov – Nedvědice – Rovné-Divišov,2
+RT_5258,AG_213,S41,Brno – Moravské Bránice – Ivančice / Hrušovany nad Jevišovkou-Šanov,2
+RT_5259,AG_213,S31/S42,Brno hl. n. - Žďár n.S. - Zastávka u Brna – Náměšť nad Oslavou,2
+RT_5260,AG_213,S42,Zastávka u Brna – Náměšť nad Oslavou,2
+RT_5261,AG_213,S9,Šakvice – Břeclav,2
+RT_5262,AG_213,R54/S31 HORÁCKÝ EXPRES,Brno hl. n. - Žďár n.S. - Brno – Náměšť nad Oslavou,2
+RT_5263,AG_213,S61,Bzenec – Moravský Písek,2
+RT_5264,AG_213,S71,Vyškov na Moravě – Nezamyslice,2
+RT_5265,AG_213,M2/S71,Nezamyslice – Přerov – Olomouc – Uničov – Šumperk - Vyškov na Moravě – Nezamyslice,2
+RT_5266,AG_213,S81,Znojmo – Moravské Budějovice,2
+RT_5267,AG_213,S31/S81 RYZLINK RÝNSKÝ,Brno hl. n. - Žďár n.S. - Znojmo – Moravské Budějovice,2
+RT_5268,AG_213,S31/S81,Brno hl. n. - Žďár n.S. - Znojmo – Moravské Budějovice,2
+RT_5269,AG_213,S31/S81 VELTLÍNSKÉ ZELENÉ,Brno hl. n. - Žďár n.S. - Znojmo – Moravské Budějovice,2
+RT_5270,AG_213,S31/S81 SAUVIGNON,Brno hl. n. - Žďár n.S. - Znojmo – Moravské Budějovice,2
+RT_5271,AG_213,S82,Javorník nad Veličkou zastávka - Hodonín - Znojmo – Šatov – Retz,2
+RT_5272,AG_213,S82,Znojmo – Šatov – Retz,2
+RT_5273,AG_213,S91,Hodonín – Strážnice – Veselí nad Moravou – Velká nad Veličkou – Vrbovce – Myjava,2
+RT_5274,AG_213,Ex7 Pendolino,Praha – Tábor – Č. Budějovice – Horní Dvořiště / Český Krumlov,2
+RT_5275,AG_213,Ex7 Jižní expres,Praha – Tábor – Č. Budějovice – Horní Dvořiště / Český Krumlov,2
+RT_5276,AG_213,Ex7,Praha – Tábor – Č. Budějovice – Horní Dvořiště / Český Krumlov,2
+RT_5277,AG_213,Ex7 Budvar,Praha – Tábor – Č. Budějovice – Horní Dvořiště / Český Krumlov,2
+RT_5278,AG_213,M1 Radhošť,Nezamyslice – Prostějov – Olomouc – Zábřeh na Moravě – Šumperk – Kouty nad Desnou,2
+RT_5279,AG_213,M1,Nezamyslice – Prostějov – Olomouc – Zábřeh na Moravě – Šumperk – Kouty nad Desnou,2
+RT_5280,AG_213,M2/S71,Nezamyslice – Přerov – Olomouc – Uničov – Šumperk,2
+RT_5281,AG_213,M2,Nezamyslice – Přerov – Olomouc – Uničov – Šumperk,2
+RT_5282,AG_213,M4,Olomouc – Drahanovice (– Prostějov),2
+RT_5283,AG_213,M5,Olomouc – Moravský Beroun,2
+RT_5284,AG_213,M6,Šumperk – Jeseník,2
+RT_5285,AG_213,M7,Olomouc – Přerov – Hustopeče nad Bečvou – Vsetín,2
+RT_5286,AG_213,M10,"Olomouc – Prostějov, Olomouc – Velké Losiny",2
+RT_5287,AG_213,M11,Letohrad - Králíky - Zábřeh na Moravě – Hoštejn,2
+RT_5288,AG_213,R12,"Olomouc – Šumperk, Zábřeh – Jeseník, Šumperk – Jeseník - Přerov - Nezamyslice",2
+RT_5289,AG_213,R12,"Olomouc – Šumperk, Zábřeh – Jeseník, Šumperk – Jeseník",2
+RT_5290,AG_213,M14,Šumperk – Sobotín,2
+RT_5291,AG_213,M20,"Olomouc – Šumperk, Přerov – Olomouc",2
+RT_5292,AG_213,M41,Červenka – Prostějov,2
+RT_5293,AG_213,M42,Červenka – Litovel – Mladeč,2
+RT_5294,AG_213,M44,Prostějov – Dzbel,2
+RT_5295,AG_213,M61,(Jeseník –) Lipová Lázně – Javorník ve Slezsku,2
+RT_5296,AG_213,M62,Hanušovice – Staré Město pod Sněžníkem,2
+RT_5297,AG_213,M65,Jeseník – Zlaté Hory,2
+RT_5298,AG_213,M70,Olomouc – Hranice na Moravě – Hustopeče nad Bečvou – Vsetín,2
+RT_5299,AG_213,S1,Kroměříž – Hulín – Otrokovice – Zlín (– Vizovice),2
+RT_5300,AG_213,S1/S4,Kojetín – Kroměříž – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm - Kroměříž – Hulín – Otrokovice – Zlín (– Vizovice),2
+RT_5301,AG_213,S1/S11,Kroměříž – Hulín – Otrokovice – Zlín (– Vizovice) - Otrokovice – Vizovice,2
+RT_5302,AG_213,S4,Kojetín – Kroměříž – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm,2
+RT_5303,AG_213,S5,Staré Město u Uherského Hradiště – Uherské Hradiště – Újezdec u Luhačovic – Bojkovice – Bylnice (– Vlárský  průsmyk / ZSSK),2
+RT_5304,AG_213,Sp1,Přerov – Otrokovice – Zlín (– Vizovice),2
+RT_5305,AG_213,S11,Otrokovice – Vizovice,2
+RT_5306,AG_213,Sp4,Kojetín – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm - Praha Jih - Lúky pod Makytou,2
+RT_5307,AG_213,R12/Sp4,Kojetín – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm,2
+RT_5308,AG_213,R12/Sp4 Radhošť,Kojetín – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm,2
+RT_5309,AG_213,R12/S6/Sp4 Radhošť,Brno hl. n. - Frenštát p.R. - Kojetín – Hulín – Valašské Meziříčí – Rožnov pod Radhoštěm - Ostrava hl.n. – Frýdek-Místek – Frenštát pod Radhoštěm – Valašské Meziříčí,2
+RT_5310,AG_213,S42,Valašské Meziříčí – Rožnov pod Radhoštěm,2
+RT_5311,AG_213,S43,Bystřice pod Hostýnem – Kroměříž – Zborovice / Kojetín,2
+RT_5312,AG_213,Sp5,Staré Město u Uherského Hradiště – Uherské Hradiště – Újezdec u Luhačovic – Bojkovice – Bylnice,2
+RT_5313,AG_213,S1,Opava východ – Ostrava-Svinov,2
+RT_5314,AG_213,S1/S9,Opava východ – Ostrava-Svinov - Ostrava-Svinov - Ostrava-Vítkovice – Ostrava-Kunčice – Havířov - Český Těšín,2
+RT_5315,AG_213,R61/S1/S9,Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova - Opava východ – Ostrava-Svinov - Ostrava-Svinov - Ostrava-Vítkovice – Ostrava-Kunčice – Havířov - Český Těšín,2
+RT_5316,AG_213,R61/S1,Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova - Opava východ – Ostrava-Svinov,2
+RT_5317,AG_213,S2,Ostrava-Svinov - Bohumín - Český Těšín - Mosty u Jablunkova - Mosty u Jablunkova zastávka,2
+RT_5318,AG_213,S2,Ostrava-Svinov - Bohumín - Český Těšín - Mosty u Jablunkova - Mosty u Jablunkova zastávka - Čadca - Praha hl. n.,2
+RT_5319,AG_213,S2/S3,Bohumín - Ostrava-Svinov - Studénka - Suchdol nad Odrou - Hranice na Moravě - Ostrava-Svinov - Bohumín - Český Těšín - Mosty u Jablunkova - Mosty u Jablunkova zastávka,2
+RT_5320,AG_213,S3,Bohumín - Ostrava-Svinov - Studénka - Suchdol nad Odrou - Hranice na Moravě,2
+RT_5321,AG_213,S3 Pendolino,Bohumín - Ostrava-Svinov - Studénka - Suchdol nad Odrou - Hranice na Moravě,2
+RT_5322,AG_213,S3/S4,"Bohumín - Ostrava-Svinov - Studénka - Suchdol nad Odrou - Hranice na Moravě - Petrovice u Karviné – Karviná hl. n. – Dětmarovice – Bohumín - Ostrava-Svinov - Studénka - Mošnov, Ostrava Airport",2
+RT_5323,AG_213,S3,"Bohumín - Ostrava-Svinov - Studénka - Suchdol nad Odrou - Hranice na Moravě - Petrovice u Karviné – Karviná hl. n. – Dětmarovice – Bohumín - Ostrava-Svinov - Studénka - Mošnov, Ostrava Airport",2
+RT_5324,AG_213,S3/S8,Bohumín - Ostrava-Svinov - Studénka - Suchdol nad Odrou - Hranice na Moravě - Ostrava střed - Ostrava hl.n. - Ostrava-Svinov - Studénka - Štramberk - Veřovice,2
+RT_5325,AG_213,S4,"Petrovice u Karviné – Karviná hl. n. – Dětmarovice – Bohumín - Ostrava-Svinov - Studénka - Mošnov, Ostrava Airport",2
+RT_5326,AG_213,S4/S8,"Ostrava střed - Ostrava hl.n. - Ostrava-Svinov - Studénka - Štramberk - Veřovice - Petrovice u Karviné – Karviná hl. n. – Dětmarovice – Bohumín - Ostrava-Svinov - Studénka - Mošnov, Ostrava Airport",2
+RT_5327,AG_213,R61/S4,"Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova - Petrovice u Karviné – Karviná hl. n. – Dětmarovice – Bohumín - Ostrava-Svinov - Studénka - Mošnov, Ostrava Airport",2
+RT_5328,AG_213,S5,Ostrava hl. n. – Ostrava-Svinov – Ostrava-Vítkovice – Frýdek-Místek – Frýdlant nad Ostravicí - Ostravice,2
+RT_5329,AG_213,S5 Lysohor,Ostrava hl. n. – Ostrava-Svinov – Ostrava-Vítkovice – Frýdek-Místek – Frýdlant nad Ostravicí - Ostravice,2
+RT_5330,AG_213,S6,Ostrava hl.n. – Frýdek-Místek – Frenštát pod Radhoštěm – Valašské Meziříčí,2
+RT_5331,AG_213,S6/S7,Frýdek-Místek - Hnojník - Český Těšín – Cieszyn - Ostrava hl.n. – Frýdek-Místek – Frenštát pod Radhoštěm – Valašské Meziříčí,2
+RT_5332,AG_213,S7,Frýdek-Místek - Hnojník - Český Těšín – Cieszyn,2
+RT_5333,AG_213,S8,Ostrava střed - Ostrava hl.n. - Ostrava-Svinov - Studénka - Štramberk - Veřovice,2
+RT_5334,AG_213,S9,Ostrava-Svinov - Ostrava-Vítkovice – Ostrava-Kunčice – Havířov - Český Těšín,2
+RT_5335,AG_213,R61/S9,Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova - Ostrava-Svinov - Ostrava-Vítkovice – Ostrava-Kunčice – Havířov - Český Těšín,2
+RT_5336,AG_213,S10,Opava východ - Krnov,2
+RT_5337,AG_213,S10/S15,Krnov – Třemešná ve Slezsku – Jindřichov ve Slezsku – Mikulovice – Jeseník - Opava východ - Krnov,2
+RT_5338,AG_213,S10/S19,Krnov – Bruntál – Moravský Beroun / Rýmařov - Opava východ - Krnov,2
+RT_5339,AG_213,S11,Opava východ – Kravaře ve Slezsku – Hlučín,2
+RT_5340,AG_213,S12,Kravaře ve Slezsku – Chuchelná,2
+RT_5341,AG_213,S13,Opava východ – Hradec nad Moravicí,2
+RT_5342,AG_213,S15,Krnov – Třemešná ve Slezsku – Jindřichov ve Slezsku – Mikulovice – Jeseník,2
+RT_5343,AG_213,S15/S19,Krnov – Bruntál – Moravský Beroun / Rýmařov - Krnov – Třemešná ve Slezsku – Jindřichov ve Slezsku – Mikulovice – Jeseník,2
+RT_5344,AG_213,S19,Krnov – Bruntál – Moravský Beroun / Rýmařov,2
+RT_5345,AG_213,S31,Studénka – Bílovec,2
+RT_5346,AG_213,S32,Suchdol nad Odrou – Fulnek,2
+RT_5347,AG_213,S33,Suchdol nad Odrou – Odry – Budišov nad Budišovkou,2
+RT_5348,AG_213,S34,Suchdol nad Odrou – Nový Jičín město,2
+RT_5349,AG_213,R61,Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova,2
+RT_5350,AG_213,R61 Pendolino,Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova,2
+RT_5351,AG_213,R61 Gorol,Opava východ - Ostrava-Svinov - Ostrava hl.n. - Havířov - Český Těšín – Návsí – Mosty u Jablunkova,2
+RT_5352,AG_213,R9 Vysočina,Praha – Havlíčkův Brod – Brno / Jihlava,2
+RT_5353,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5354,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5355,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5356,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5357,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5358,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5359,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5360,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5361,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5362,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5363,AG_213,Silvestrovský expres,Strakonice - Kubova Huť,2
+RT_5364,AG_213,Silvestrovský expres,Kubova Huť - Vimperk,2
+RT_5365,AG_213,Silvestrovský expres,Vimperk - Černý Kříž,2
+RT_5366,AG_213,Silvestrovský expres,Černý Kříž - Vimperk,2
+RT_5367,AG_213,Silvestrovský expres,Vimperk - Kubova Huť,2
+RT_5368,AG_213,Silvestrovský expres,Kubova Huť - Strakonice,2
+RT_5369,AG_213,Olza,Zebrzydowice - Bohumín,2
+RT_5370,AG_213,Comenius,Zebrzydowice - Bohumín,2
+RT_5371,AG_213,Comenius,Bohumín - Zebrzydowice,2
+RT_5372,AG_213,Olza,Bohumín - Zebrzydowice,2
+RT_5373,AG_213,Pendolino Košičan,Čadca - Praha hlavní nádraží,2
+RT_5374,AG_213,Pendolino Košičan,Praha hlavní nádraží - Čadca,2
+RT_5375,AG_213,,Praha hlavní nádraží - Břeclav,2
+RT_5376,AG_213,,Kúty - Praha hlavní nádraží,2
+RT_5377,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5378,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5379,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5380,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5381,AG_213,,Aš - Selb-Plößberg,2
+RT_5382,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5383,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5384,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5385,AG_213,,Selb-Plößberg - Aš,2
+RT_5386,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5387,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5388,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5389,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5390,AG_213,,Bohumín - Chałupki,2
+RT_5391,AG_213,Carpatia,Bohumín - Chałupki,2
+RT_5392,AG_213,,Chałupki - Bohumín,2
+RT_5393,AG_213,Carpatia,Chałupki - Bohumín,2
+RT_5394,AG_213,Wydmy,Chałupki - Bohumín,2
+RT_5395,AG_213,Wydmy,Bohumín - Chałupki,2
+RT_5396,AG_213,Slovakia,Bohumín - Praha hlavní nádraží,2
+RT_5397,AG_213,Slovakia,Čadca - Praha-Michle autovlak,2
+RT_5398,AG_213,Slovakia,Praha-Michle autovlak - Čadca,2
+RT_5399,AG_213,Chopin,Břeclav - Chałupki,2
+RT_5400,AG_213,Chopin,Chałupki - Břeclav,2
+RT_5401,AG_213,Chopin,Bohumín - Břeclav,2
+RT_5402,AG_213,Slovakia,Praha hlavní nádraží - Bohumín,2
+RT_5403,AG_213,,Hohenau - Břeclav,2
+RT_5404,AG_213,,Břeclav - Hohenau,2
+RT_5405,AG_213,,Gmünd NÖ - České Velenice,2
+RT_5406,AG_213,,České Velenice - Gmünd NÖ,2
+RT_5407,AG_213,nightjet,Břeclav - Bad Schandau,2
+RT_5408,AG_213,nightjet,Bad Schandau - Břeclav,2
+RT_5409,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5410,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5411,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5412,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5413,AG_213,Opavan,Čadca - Praha hl. n.,2
+RT_5414,AG_213,Pendolino,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_5415,AG_213,Pendolino,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_5416,AG_213,Pendolino,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_5417,AG_213,Pendolino,Bohumín - Praha hlavní nádraží,2
+RT_5418,AG_213,Pendolino,Praha hlavní nádraží - Bohumín,2
+RT_5419,AG_213,Opavan,Čadca - Praha hl. n.,2
+RT_5420,AG_213,Pendolino,Bohumín - Praha hlavní nádraží,2
+RT_5421,AG_213,Colours Expres,Ostrava střed - Praha hlavní nádraží,2
+RT_5422,AG_213,Colours Expres,Praha hlavní nádraží - Ostrava střed,2
+RT_5423,AG_213,Dny NATO,"Olomouc hlavní nádraží - Mošnov, Ostrava Airport",2
+RT_5424,AG_213,Dny NATO,"Olomouc hlavní nádraží - Mošnov, Ostrava Airport",2
+RT_5425,AG_213,Dny NATO,"Mošnov, Ostrava Airport - Praha hlavní nádraží",2
+RT_5426,AG_213,Dny NATO,"Praha hlavní nádraží - Mošnov, Ostrava Airport",2
+RT_5427,AG_213,Dny NATO,"Mošnov, Ostrava Airport - Brno hlavní nádraží",2
+RT_5428,AG_213,Dny NATO,"Brno hlavní nádraží - Mošnov, Ostrava Airport",2
+RT_5429,AG_213,,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5430,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5431,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5432,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5433,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5434,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5435,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5436,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5437,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5438,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5439,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5440,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5441,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5442,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5443,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5444,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5445,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5446,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5447,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5448,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5449,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5450,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5451,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5452,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5453,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5454,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5455,AG_213,,Havlíčkův Brod - Hlinsko v Č.,2
+RT_5456,AG_213,,Havlíčkův Brod - Hlinsko v Č.,2
+RT_5457,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5458,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5459,AG_213,,Havlíčkův Brod - Hlinsko v Č.,2
+RT_5460,AG_213,,Havlíčkův Brod - Hlinsko v Č.,2
+RT_5461,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5462,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5463,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5464,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5465,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5466,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5467,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5468,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5469,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5470,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5471,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5472,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5473,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5474,AG_213,Dny NATO,"Mošnov, Ostrava Airport - Olomouc hlavní nádraží",2
+RT_5475,AG_213,Dny NATO,"Mošnov, Ostrava Airport - Olomouc hlavní nádraží",2
+RT_5476,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5477,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5478,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5479,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5480,AG_213,,Břeclav - Lednice,2
+RT_5481,AG_213,,Lednice - Břeclav,2
+RT_5482,AG_213,Renesance,Jemnice - Moravské Budějovice,2
+RT_5483,AG_213,Renesance,Jemnice - Moravské Budějovice,2
+RT_5484,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5485,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5486,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5487,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5488,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5489,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5490,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5491,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5492,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5493,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5494,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5495,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5496,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5497,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5498,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5499,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5500,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5501,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5502,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5503,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5504,AG_213,CYKLO OHŘE,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5505,AG_213,CYKLO OHŘE,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5506,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5507,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5508,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5509,AG_213,Berounka,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5510,AG_213,Berounka,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5511,AG_213,Šumava,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5512,AG_213,Šumava,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5513,AG_213,Berounka,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5514,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5515,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5516,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5517,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5518,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5519,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5520,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5521,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5522,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5523,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5524,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5525,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5526,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5527,AG_213,Rychmburk,Ústí nad Orlicí - Letohrad,2
+RT_5528,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5529,AG_213,Rychmburk,Ústí nad Orlicí - Letohrad,2
+RT_5530,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5531,AG_213,Rychmburk,Ústí nad Orlicí - Letohrad,2
+RT_5532,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5533,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5534,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5535,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5536,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5537,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5538,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5539,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5540,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5541,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5542,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5543,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5544,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5545,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5546,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5547,AG_213,Rychmburk,Ústí nad Orlicí - Letohrad,2
+RT_5548,AG_213,Rychmburk,Ústí nad Orlicí - Letohrad,2
+RT_5549,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5550,AG_213,Rychmburk,Ústí nad Orlicí - Letohrad,2
+RT_5551,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5552,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5553,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5554,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5555,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5556,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5557,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5558,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5559,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5560,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5561,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5562,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5563,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5564,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5565,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5566,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5567,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5568,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5569,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5570,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5571,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5572,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5573,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5574,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5575,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5576,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5577,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5578,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5579,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5580,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5581,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5582,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5583,AG_213,,Havlíčkův Brod - Pardubice centrum,2
+RT_5584,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5585,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5586,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5587,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5588,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5589,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5590,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5591,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5592,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5593,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5594,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5595,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5596,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5597,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5598,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5599,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5600,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5601,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5602,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5603,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5604,AG_213,,Praha-Smíchov - Lužná u Rakovníka,2
+RT_5605,AG_213,,Lužná u Rakovníka - Praha-Smíchov,2
+RT_5606,AG_213,Mikuláš,Choceň - Litomyšl,2
+RT_5607,AG_213,Mikuláš,Litomyšl - Choceň,2
+RT_5608,AG_213,Mikuláš,Choceň - Litomyšl,2
+RT_5609,AG_213,Mikuláš,Litomyšl - Choceň,2
+RT_5610,AG_213,Mikuláš,Dolní Lipka - Letohrad,2
+RT_5611,AG_213,Mikuláš,Letohrad - Dolní Lipka,2
+RT_5612,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5613,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5614,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5615,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5616,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5617,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5618,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5619,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5620,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5621,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5622,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5623,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5624,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5625,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5626,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5627,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5628,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5629,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5630,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5631,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5632,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5633,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5634,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5635,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5636,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5637,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5638,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5639,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5640,AG_213,,Letohrad - Králíky,2
+RT_5641,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5642,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5643,AG_213,,Letohrad - Králíky,2
+RT_5644,AG_213,,Letohrad - Králíky,2
+RT_5645,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5646,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5647,AG_213,,Letohrad - Králíky,2
+RT_5648,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5649,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5650,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5651,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5652,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5653,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5654,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5655,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5656,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5657,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5658,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5659,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5660,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5661,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5662,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5663,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5664,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5665,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5666,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5667,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5668,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5669,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5670,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5671,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5672,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5673,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5674,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5675,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5676,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5677,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5678,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5679,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5680,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5681,AG_213,Vrchlice,Praha-Čakovice - Praha hl. n.,2
+RT_5682,AG_213,Chopin,Chałupki - Břeclav,2
+RT_5683,AG_213,Chopin,Břeclav - Chałupki,2
+RT_5684,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5685,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5686,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5687,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5688,AG_213,,Bečov nad Teplou - Karlovy Vary dolní n.,2
+RT_5689,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5690,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5691,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5692,AG_213,V6,Pardubice centrum - Jaroměř,2
+RT_5693,AG_213,,Lúky pod Makytou - Horní Lideč,2
+RT_5694,AG_213,,Lúky pod Makytou - Horní Lideč,2
+RT_5695,AG_213,,Lúky pod Makytou - Horní Lideč,2
+RT_5696,AG_213,Chopin,Chałupki - Hohenau,2
+RT_5697,AG_213,Slovakia,Česká Třebová - Čadca,2
+RT_5698,AG_213,,Přerov - Nezamyslice,2
+RT_5699,AG_213,nightjet,Bad Schandau - Hohenau,2
+RT_5700,AG_213,nightjet,Hohenau - Bad Schandau,2
+RT_5701,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5702,AG_213,,Nezamyslice - Přerov,2
+RT_5703,AG_213,Pendolino,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_5704,AG_213,,Zebrzydowice - Bohumín,2
+RT_5705,AG_213,,Lúky pod Makytou - Horní Lideč,2
+RT_5706,AG_213,Karel Klostermann,České Budějovice - Strakonice,2
+RT_5707,AG_213,,Valašské Meziříčí - Vsetín,2
+RT_5708,AG_213,,Opava východ - Svobodné Heřmanice,2
+RT_5709,AG_213,,Svobodné Heřmanice - Opava východ,2
+RT_5710,AG_213,,Kladno - Praha Masarykovo nádraží,2
+RT_5711,AG_213,,Žďárec u Skutče - Hlinsko v Čechách,2
+RT_5712,AG_213,,Horní Cerekev - Jihlava,2
+RT_5713,AG_213,,Kutná Hora hlavní nádraží - Kolín,2
+RT_5714,AG_213,,Hradec Králové hlavní nádraží - Praha hlavní nádraží,2
+RT_5715,AG_213,,Louny - Česká Lípa hlavní nádraží,2
+RT_5716,AG_213,,Jihlava - Havlíčkův Brod,2
+RT_5717,AG_213,,Krnov - Opava východ,2
+RT_5718,AG_213,,Hradec Králové hlavní nádraží - Praskačka,2
+RT_5719,AG_213,,Louny - Kadaň-Prunéřov,2
+RT_5720,AG_213,,Kadaň-Prunéřov - Lužec nad Vltavou,2
+RT_5721,AG_213,,Lužec nad Vltavou - Louny,2
+RT_5722,AG_213,,České Budějovice - Protivín,2
+RT_5723,AG_213,,Protivín - České Budějovice,2
+RT_5724,AG_213,,Lovosice - Roudnice nad Labem,2
+RT_5725,AG_213,,Frýdlant nad Ostravicí - Ostravice,2
+RT_5726,AG_213,,Moravské Bránice - Miroslav,2
+RT_5727,AG_213,,Úpořiny - Radejčín,2
+RT_5728,AG_213,,Mirovice - Protivín,2
+RT_5729,AG_213,,Kadaň-Prunéřov - Kadaň předměstí,2
+RT_5730,AG_213,,Praha-Vršovice - Dobříš,2
+RT_5731,AG_213,,Olomouc hlavní nádraží - Přerov,2
+RT_5732,AG_213,,Česká Třebová - Rudoltice v Čechách,2
+RT_5733,AG_213,,Blatná - Beroun,2
+RT_5734,AG_213,,Kladno - Praha-Bubny,2
+RT_5735,AG_213,nightjet,Děčín hlavní nádraží - Hohenau,2
+RT_5736,AG_213,Pendolino,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_5737,AG_213,Pendolino,Praha hlavní nádraží - Ostrava hlavní nádraží,2
+RT_5738,AG_213,Pendolino,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_5739,AG_213,,Dobřichovice - Praha-Smíchov,2
+RT_5740,AG_213,,Chomutov - Karlovy Vary,2
+RT_5741,AG_213,,Plzeň hlavní nádraží - Praha-Vysočany,2
+RT_5742,AG_213,,Lipník nad Bečvou - Přerov,2
+RT_5743,AG_213,,Přerov - Lipník nad Bečvou,2
+RT_5744,AG_213,,Františkovy Lázně - Cheb,2
+RT_5745,AG_213,,Cheb - Františkovy Lázně,2
+RT_5746,AG_213,,Česká Třebová - Ústí nad Orlicí,2
+RT_5747,AG_213,,Mladá Boleslav hlavní nádraží - Sobotka,2
+RT_5748,AG_213,,Sobotka - Mladá Boleslav hlavní nádraží,2
+RT_5749,AG_213,,Karviná hlavní nádraží - Dětmarovice,2
+RT_5750,AG_213,,Dětmarovice - Karviná hlavní nádraží,2
+RT_5751,AG_213,,Okříšky - Veselí nad Lužnicí,2
+RT_5752,AG_213,,Hradec Králové hlavní nádraží - Trutnov hlavní nádraží,2
+RT_5753,AG_213,,Veselí nad Lužnicí - Okříšky,2
+RT_5754,AG_213,,Ústí nad Labem hlavní nádraží - Bad Schandau,2
+RT_5755,AG_213,,Jihlava - Kostelec u Jihlavy,2
+RT_5756,AG_213,,Kostelec u Jihlavy - Jihlava,2
+RT_5757,AG_213,,Ruda nad Moravou - Zábřeh na Moravě,2
+RT_5758,AG_213,,Šumperk - Petrov nad Desnou,2
+RT_5759,AG_213,,Jihlava - Havlíčkův Brod,2
+RT_5760,AG_213,,Kostelec u Jihlavy - Jihlava,2
+RT_5761,AG_213,,Havlíčkův Brod - Jihlava,2
+RT_5762,AG_213,,Havlíčkův Brod - Jihlava,2
+RT_5763,AG_213,,Havlíčkův Brod - Jihlava,2
+RT_5764,AG_213,,Chomutov - Klášterec nad Ohří,2
+RT_5765,AG_213,,Klášterec nad Ohří - Chomutov,2
+RT_5766,AG_213,,Chomutov - Ústí nad Labem hlavní nádraží,2
+RT_5767,AG_213,,Tábor - Chýnov,2
+RT_5768,AG_213,,Brno hlavní nádraží - Hustopeče u Brna,2
+RT_5769,AG_213,Slovakia,Praha-Michle autovlak - Čadca,2
+RT_5770,AG_213,nightjet,Bad Schandau - Hohenau,2
+RT_5771,AG_213,Pendolino,Praha hlavní nádraží - Bohumín,2
+RT_5772,AG_213,,Kolín - Přelouč,2
+RT_5773,AG_213,,Louny předměstí - Osek město,2
+RT_5774,AG_213,,Lovosice - Česká Lípa hlavní nádraží,2
+RT_5775,AG_213,,Hohenau - Břeclav,2
+RT_5776,AG_213,,Louny předměstí - Osek město,2
+RT_5777,AG_213,,Louny předměstí - Osek město,2
+RT_5778,AG_213,,Mladá Boleslav hlavní nádraží - Katusice,2
+RT_5779,AG_213,U2,Chomutov - Cheb,2
+RT_5780,AG_213,U2,Chomutov - Cheb,2
+RT_5781,AG_213,,Louny předměstí - Osek město,2
+RT_5782,AG_213,Krakonoš,Ústí nad Orlicí - Letohrad,2
+RT_5783,AG_213,,Bohumín - Praha-Eden,2
+RT_5784,AG_213,,Uherské Hradiště - Veselí nad Moravou,2
+RT_5785,AG_213,,Uherské Hradiště - Bzenec,2
+RT_5786,AG_213,Krakonoš,Ústí nad Orlicí - Letohrad,2
+RT_5787,AG_213,,Chýnov - Tábor,2
+RT_5788,AG_213,,Mladá Boleslav město - Nymburk hlavní nádraží,2
+RT_5789,AG_213,,Mladá Boleslav město - Nymburk hlavní nádraží,2
+RT_5790,AG_213,Chopin,Chałupki - Hohenau,2
+RT_5791,AG_213,,Praha-Hostivař - Praha-Uhříněves,2
+RT_5792,AG_213,,Veselí nad Moravou - Brno hlavní nádraží,2
+RT_5793,AG_213,,Kúty - Praha Jih,2
+RT_5794,AG_213,,Přelouč - Kolín,2
+RT_5795,AG_213,,Mladá Boleslav hlavní nádraží - Mladá Boleslav město,2
+RT_5796,AG_213,,Skalice nad Svitavou - Rájec-Jestřebí,2
+RT_5797,AG_213,,Dobřichovice - Beroun,2
+RT_5798,AG_213,,Přerov - Nezamyslice,2
+RT_5799,AG_213,,Přerov - Nezamyslice,2
+RT_5800,AG_213,,Přerov - Nezamyslice,2
+RT_5801,AG_213,,Přerov - Nezamyslice,2
+RT_5802,AG_213,,Nymburk hlavní nádraží - Mladá Boleslav město,2
+RT_5803,AG_213,,Nymburk hlavní nádraží - Mladá Boleslav město,2
+RT_5804,AG_213,,Plzeň hlavní nádraží - Hořovice,2
+RT_5805,AG_213,,Návsí - Mosty u Jablunkova zastávka,2
+RT_5806,AG_213,,Mosty u Jablunkova zastávka - Návsí,2
+RT_5807,AG_213,,Nezamyslice - Přerov,2
+RT_5808,AG_213,,Nezamyslice - Přerov,2
+RT_5809,AG_213,,Nezamyslice - Přerov,2
+RT_5810,AG_213,,Nezamyslice - Přerov,2
+RT_5811,AG_213,,Přerov - Nezamyslice,2
+RT_5812,AG_213,,Přerov - Nezamyslice,2
+RT_5813,AG_213,,Přerov - Nezamyslice,2
+RT_5814,AG_213,,Praha-Libeň - Praha Masarykovo nádraží,2
+RT_5815,AG_213,,Praha Masarykovo nádraží - Praha-Libeň,2
+RT_5816,AG_213,,Přerov - Nezamyslice,2
+RT_5817,AG_213,,Přerov - Nezamyslice,2
+RT_5818,AG_213,,Přerov - Nezamyslice,2
+RT_5819,AG_213,,Přerov - Nezamyslice,2
+RT_5820,AG_213,R12/S6/Sp4 Radhošť,Brno hl. n. - Frenštát p.R.,2
+RT_5821,AG_213,,Kolín - Pečky,2
+RT_5822,AG_213,,Pečky - Kolín,2
+RT_5823,AG_213,Chopin,Hohenau - Chałupki,2
+RT_5824,AG_213,,Blíževedly - Postoloprty,2
+RT_5825,AG_213,,Litoměřice horní nádraží - Lovosice,2
+RT_5826,AG_213,,Stvolínky - Lovosice,2
+RT_5827,AG_213,,Lovosice - Ústí nad Labem hlavní nádraží,2
+RT_5828,AG_213,,Ústí nad Labem hlavní nádraží - Lovosice,2
+RT_5829,AG_213,Šumava,Plzeň hl. n. - Bělá nad Radbuzou,2
+RT_5830,AG_213,Pendolino,Ostrava hlavní nádraží - Praha hlavní nádraží,2
+RT_5831,AG_213,,České Budějovice - Praha hlavní nádraží,2
+RT_5832,AG_213,,Brno hlavní nádraží - Holubice,2
+RT_5833,AG_213,,Třebíč - Jihlava,2
+RT_5834,AG_213,S15,Lipová Lázně - Krnov,2
+RT_5835,AG_213,,Chotěboř - Havlíčkův Brod,2
+RT_5836,AG_213,,Choceň - Borohrádek,2
+RT_5837,AG_213,Pendolino Košičan,Čadca - Praha hlavní nádraží,2
+RT_5838,AG_213,,Chrudim - Pardubice centrum,2
+RT_5839,AG_213,,Praha hlavní nádraží - Dobříš,2
+RT_5840,AG_213,,Dobříš - Praha hlavní nádraží,2
+RT_5841,AG_213,,Olomouc hlavní nádraží - Moravský Beroun,2
+RT_5842,AG_213,,Moravský Beroun - Olomouc hlavní nádraží,2
+RT_5843,AG_213,,Olomouc hlavní nádraží - Moravský Beroun,2
+RT_5844,AG_213,,Moravský Beroun - Olomouc hlavní nádraží,2
+RT_5845,AG_213,,Česká Skalice - Hradec Králové hlavní nádraží,2
+RT_5846,AG_213,nightjet,Hohenau - Bad Schandau,2
+RT_5847,AG_213,Baltic express,Ústí nad Orlicí - Letohrad,2
+RT_5848,AG_213,Baltic express,Ústí nad Orlicí - Letohrad,2
+RT_5849,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5850,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5851,AG_213,,Jemnice - Moravské Budějovice,2
+RT_5852,AG_213,,Slaný - Kralupy nad Vltavou,2
+RT_5853,AG_213,,Janovice u Trutnova - Trutnov hlavní nádraží,2
+RT_5854,AG_213,nightjet,Bad Schandau - Hohenau,2
+RT_5855,AG_213,nightjet,Hohenau - Bad Schandau,2
+RT_5856,AG_213,,Zbraslavice - Zruč nad Sázavou,2
+RT_5857,AG_213,,Olomouc hlavní nádraží - Senice na Hané,2
+RT_5858,AG_213,,Bruntál - Opava východ,2
+RT_5859,AG_213,Slovakia,Čadca - Praha hlavní nádraží,2
+RT_5860,AG_213,,Valašské Meziříčí - Kojetín,2
+RT_5861,AG_213,,Havlíčkův Brod - Brno hlavní nádraží,2
+RT_5862,AG_213,S31 Vysočina,Brno hl. n. - Žďár n.S.,2
+RT_5863,AG_213,Vysočina,Havlíčkův Brod - Brno hlavní nádraží,2
+RT_5864,AG_213,,Přelouč - Pardubice hlavní nádraží,2
+RT_5865,AG_213,,Pardubice hlavní nádraží - Přelouč,2
+RT_5866,AG_213,,Brno hlavní nádraží - Havlíčkův Brod,2
+RT_5867,AG_213,,Praha hlavní nádraží - Jičín,2
+RT_5868,AG_213,,Jičín - Praha hlavní nádraží,2
+RT_5869,AG_213,,Nýrsko - Klatovy,2
+RT_5870,AG_213,,Tišnov - Havlíčkův Brod,2
+RT_5871,AG_213,,Havlíčkův Brod - Tišnov,2
+RT_5872,AG_213,Slovakia,Praha hlavní nádraží - Čadca,2
+RT_5873,AG_213,,Jihlava - Havlíčkův Brod,2
+RT_5874,AG_213,,Borová u Poličky - Polička,2
+RT_5875,AG_213,,Praha hlavní nádraží - Františkovy Lázně,2
+RT_5876,AG_213,,Bohumín - Praha hlavní nádraží,2
+RT_5877,AG_213,,Brno hlavní nádraží - Brno-Chrlice,2
+RT_5878,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5879,AG_213,,Moravská Třebová - Česká Třebová,2
+RT_5880,AG_213,R43,Praha-Libeň - Turnov,2
+RT_5881,AG_213,,Ústí nad Orlicí - Letohrad,2
+RT_5882,AG_214,,Bad Schandau - Praha hlavní nádraží,2
+RT_5883,AG_214,,Praha hlavní nádraží - Bad Schandau,2
+RT_5926,AG_215,58,Palmovka - Letňany - Čakovice - Miškovice,11
+RT_5927,AG_215,59,Nádraží Veleslavín - Letiště,11
+RT_6052,AG_215,X131,Bořislavka - Špitálka,3
+RT_6053,AG_215,AE,Hlavní nádraží  - Letiště / Terminál 1,3
+RT_6054,AG_215,X216,Hanspaulka - Špitálka,3
+RT_6055,AG_215,X302,"Letňany - Mratín / Přezletice, Horní náves",3
+RT_6071,AG_215,X25,Palmovka - Libeňský most - Palmovka,3
+RT_6072,AG_215,X26,,3
+RT_6073,AG_215,X94,Palmovka - Tusarova - Palmovka,3
+RT_6074,AG_215,X97,,3
+RT_6075,AG_215,X99,,3
+RT_6090,AG_215,X907,Zelená - U Matěje,3
+RT_6092,AG_215,XS1,"Poříčany,žel.st. - Kolín,nádraží",3
+RT_6093,AG_215,XS2,"Velký Osek,Žel.st. - Kolín,Nádraží",3
+RT_6094,AG_215,XR9,"Kolín,nádraží - Čáslav,žel.st.",3
+RT_6095,AG_215,XR45,"Kladno,Rozdělov - Praha,Nádraží Veleslavín",3
+RT_6096,AG_215,XS5,"Kladno,Ostrovec- Hostivice,Nádraží - Praha,Nádr. Veleslavín",3
+RT_6097,AG_215,XS40,"Slaný,žel.st. - Kralupy n.Vlt.,žel.st.",3
+RT_6098,AG_215,XS54,"Slaný,žel.st. - Hostivice,Nádraží",3
+RT_6099,AG_215,XS65,"Praha,Zličín - Rudná,u nádraží - Hostivice,Nádraží",3
+RT_6592,AG_215,BB2,Budějovická - Filadelfie - Budějovická,3
+RT_6593,AG_215,IKEA,Černý Most - Ikea Černý Most - Černý Most,3
+RT_6594,AG_215,BB1,(BB1) Budějovická - Delta,3
+RT_6595,AG_215,MHD 1,Oáza/Kuří - Strašín,3
+RT_6596,AG_215,MHD 2,"Strašín,Pastelkov - Oáza",3
+RT_6597,AG_215,MHD 3,Jažlovice - Pacov,3
+RT_6598,AG_215,MHD 91,Obchodní - Olivovna,3
+RT_6599,AG_215,MHD 92,"Pod Lihovarem - Strašín,Pampelišková",3
+RT_6600,AG_215,MHD 7,Olivovna - Srnčí,3
+RT_6601,AG_215,MHD 9,Olivovna - Obchodní,3
+RT_6602,AG_215,MHD 1,MHD Benešov ORANŽOVÁ Albert - Nezvalova - Terminál - U Náhonu,3
+RT_6603,AG_215,MHD 2,MHD Benešov ZELENÁ MŠ Úsměv - Terminál - Černoleská - Mariánovice,3
+RT_6604,AG_215,MHD 3,MHD Benešov MODRÁ Buková Lhota - Pomněnice - Purkyňova - Terminál - Masarykovo náměstí ,3
+RT_6605,AG_215,MHD 4,MHD Benešov RŮŽOVÁ MŠ Úsměv - Terminál - U Náhonu,3
+RT_6606,AG_215,MHD 5,MHD Benešov ŽLUTÁ Terminál - Křižíkova,3
+RT_6607,AG_215,MHD 6,"MHD Benešov ČERVENÁ Terminál - Konopiště, Růžová zahrada",3
+RT_6608,AG_215,P1,Sedlec - Zámky,4
+RT_6609,AG_215,P2,V Podbabě - Podhoří,4
+RT_6610,AG_215,X221,Nádraží Klánovice-sever - Klánovice,3
+RT_6611,AG_215,X315,Tuřice - Benátky nad Jizerou - Předměřice nad Jizerou,3
+RT_6612,AG_215,X398,Poděbrady - Písková Lhota,3
+RT_6643,AG_215,540345,Liberec - Hodkovice nad Mohelkou - Mladá Boleslav,3
+RT_6646,AG_215,U4,Hněvice - Roudnice nad Labem (- Ústí nad Labem),2
+RT_6647,AG_215,V5,Hradec Králové - Ostroměř - Jičín - Turnov,2
+RT_6648,AG_215,U11,(Česká Lípa - Litoměřice - Lovosice -) Louny - Louny město (- Postoloprty),2
+RT_6649,AG_215,U12,(Osek - Most -) Louny - Louny město - Domoušice - Rakovník,2
+RT_6650,AG_215,U14,Rakovník - Lužná u Rakovníka - Deštnice - Žatec (- Chomutov - Jirkov),2
+RT_6651,AG_215,U21,Roudnice nad Labem - Straškov - Bříza obec,2
+RT_6652,AG_215,U22,Vraňany - Straškov - Bříza obec,2
+RT_6653,AG_215,L34,(Liberec -) Turnov - Turnov město (- Rovensko pod Troskami),2
+RT_6654,AG_215,U40,Slaný - Zlonice - Telce - Louny,2
+RT_6655,AG_215,V41,Kolín - Velký Osek - Chlumec nad Cidlinou (- Nový Bydžov - Stará Paka - Trutnov),2
+RT_6656,AG_215,V50,(Hradec Králové - Ostroměř - Jičín -) Turnov město - Turnov,2
+RT_6657,AG_215,V51,Městec Králové - Chlumec nad Cidlinou (- Nový Bydžov - Stará Paka - Lomnice nad Popelkou),2
+RT_6658,AG_215,U54,Hněvice - Roudnice nad Labem (- Ústí nad Labem - Děčín),2
+RT_6659,AG_215,L4,Mladá Boleslav - Bakov nad Jizerou - Staré Splavy (- Česká Lípa - Rumburk),2
+RT_6660,AG_215,T1,Pražský motoráček: Praha hl. n. - Praha-Zličín,2
+RT_6661,AG_215,T2,Český ráj: Praha - Nymburk - Jičín,2
+RT_6662,AG_215,T3,Kokořínský rychlík: Praha - Neratovice - Všetaty - Mělník - Mšeno,2
+RT_6663,AG_215,T4,Cyklohráček: Praha - Hostivice - Podlešín - Slaný,2
+RT_6664,AG_215,T6,Brdy: Praha - Beroun - Zdice - Příbram - Březnice - Blatná,2
+RT_6665,AG_215,T7,Rakovnický rychlík: Praha - Beroun - Křivoklát - Rakovník,2
+RT_6666,AG_215,T8,Posázavský motoráček: Praha - Vrané n. Vlt. - Jílové u Prahy - Čerčany,2
+RT_6667,AG_215,T9,Rožmitálský motoráček: Březnice - Rožmitál pod Třemšínem,2
+RT_6668,AG_215,T10,Lužickohorský rychlík: Praha - Neratovice - Všetaty - Ml. Boleslav (- Jedlová - Mikulášovice),2
+RT_6669,AG_215,R9,Praha - Kolín - Kutná Hora - Čáslav - Světlá nad Sázavou (- Brno),2
+RT_6670,AG_215,R10,Praha - Nymburk - Poděbrady - Chlumec nad Cidlinou (- Hradec Králové - Trutnov),2
+RT_6671,AG_215,R16,Praha - Beroun - Zdice - Hořovice - Kařez - Rokycany (- Plzeň - Klatovy),2
+RT_6672,AG_215,R17,Praha - Benešov u Prahy - Olbramovice (- Tábor - České Budějovice),2
+RT_6673,AG_215,R18,Praha - Kolín - Přelouč (- Pardubice - Olomouc - Luhačovice),2
+RT_6674,AG_215,R19,Praha - Kolín - Přelouč (- Pardubice - Brno),2
+RT_6675,AG_215,R20,Praha - Kralupy nad Vltavou - Roudnice nad Labem (- Ústí nad Labem - Děčín),2
+RT_6676,AG_215,R21,Praha - Všetaty - Mladá Boleslav - Turnov (- Tanvald),2
+RT_6677,AG_215,R22,Kolín - Nymburk - Mladá Boleslav - Bakov n. Jiz. - Staré Splavy (- Česká Lípa - Rumburk),2
+RT_6678,AG_215,R23,Kolín - Nymburk - Lysá nad Labem - Všetaty - Mělník - Štětí (- Ústí nad Labem),2
+RT_6679,AG_215,R24,Praha - Kladno - Rakovník,2
+RT_6680,AG_215,R26,Praha - Beroun - Zdice - Příbram - Březnice - Čimelice (- Písek - České Budějovice),2
+RT_6681,AG_215,R41,Praha - Český Brod - Pečky - Kolín - Kutná Hora,2
+RT_6682,AG_215,R42,Praha - Lysá nad Labem - Nymburk - Kolín,2
+RT_6683,AG_215,R43,Praha - Všetaty - Mladá Boleslav,2
+RT_6684,AG_215,R44,Praha - Kralupy nad Vltavou,2
+RT_6685,AG_215,R45,Praha - Hostivice - Kladno,2
+RT_6686,AG_215,R49,Praha - Čerčany - Benešov u Prahy - Olbramovice - Střezimíř (- Tábor),2
+RT_6687,AG_215,S1,Praha - Český Brod - Poříčany - Pečky - Kolín,2
+RT_6688,AG_215,S2,Praha - Čelákovice - Lysá nad Labem - Nymburk - Kolín,2
+RT_6689,AG_215,S3,Praha - Neratovice - Všetaty - Mělník,2
+RT_6690,AG_215,S4,Praha - Kralupy nad Vltavou - Vraňany - Hněvice,2
+RT_6691,AG_215,S5,Praha - Hostivice - Kladno,2
+RT_6692,AG_215,S6,Praha - Rudná u Prahy - Beroun,2
+RT_6693,AG_215,S7,Praha - Řevnice - Beroun,2
+RT_6694,AG_215,S8,Praha - Vrané nad Vltavou - Čerčany,2
+RT_6695,AG_215,S9,Milovice - Lysá nad Labem - Praha - Říčany - Strančice - Čerčany - Benešov u Prahy,2
+RT_6696,AG_215,S10,Kolín - Týnec nad Labem - Přelouč,2
+RT_6697,AG_215,S11,Pečky - Bošice - Kouřim,2
+RT_6698,AG_215,S12,Poříčany - Nymburk,2
+RT_6699,AG_215,S18,Kolín - Bečváry - Ledečko - Sázava,2
+RT_6700,AG_215,S20,Kolín - Kutná Hora - Čáslav - Světlá nad Sázavou,2
+RT_6701,AG_215,S21,Nymburk - Křinec - Kopidlno - Jičín,2
+RT_6702,AG_215,S22,Praha - Lysá nad Labem - Milovice,2
+RT_6703,AG_215,S23,Čelákovice - Brandýs nad Labem - Neratovice,2
+RT_6704,AG_215,S27,Čáslav - Třemošnice,2
+RT_6705,AG_215,S28,Kutná Hora - Zruč nad Sázavou,2
+RT_6706,AG_215,S30,Všetaty - Mladá Boleslav,2
+RT_6707,AG_215,S31,Nymburk - Mladá Boleslav,2
+RT_6708,AG_215,S32,Lysá nad Labem - Stará Boleslav - Všetaty - Mělník - Štětí,2
+RT_6709,AG_215,S33,Mělník - Mšeno - Mladá Boleslav,2
+RT_6710,AG_215,S34,Praha Masarykovo n. - Praha-Čakovice,2
+RT_6711,AG_215,S35,Mladá Boleslav - Bakov nad Jizerou - Turnov,2
+RT_6712,AG_215,S36,Mladá Boleslav - Dolní Bousov - Mladějov v Čechách (- Lomnice nad Popelkou),2
+RT_6713,AG_215,S40,Kralupy nad Vltavou - Podlešín - Slaný,2
+RT_6714,AG_215,S43,Neratovice - Kralupy nad Vltavou,2
+RT_6715,AG_215,S44,Kralupy nad Vltavou - Velvary,2
+RT_6716,AG_215,S45,Kladno - Kralupy nad Vltavou,2
+RT_6717,AG_215,S49,Praha - Roztoky u Prahy,2
+RT_6718,AG_215,S50,Kladno - Lužná u Rakovníka - Rakovník,2
+RT_6719,AG_215,S54,(Praha -) Hostivice - Středokluky - Noutonice - Podlešín,2
+RT_6720,AG_215,S57,Rakovník - Blatno u Jesenice - Žlutice,2
+RT_6721,AG_215,S58,Rakovník - Čistá - Kralovice u Rakovníka,2
+RT_6722,AG_215,S59,Protivec - Bochov,2
+RT_6723,AG_215,S60,Beroun - Zdice - Lochovice - Příbram - Březnice - Blatná (- Strakonice),2
+RT_6724,AG_215,S61,Praha - Úvaly,2
+RT_6725,AG_215,S65,Praha - Hostivice - Rudná u Prahy,2
+RT_6726,AG_215,S66,Březnice - Čimelice (- Písek - Protivín),2
+RT_6727,AG_215,S70,Beroun - Zdice - Kařez,2
+RT_6728,AG_215,S75,Beroun - Rakovník,2
+RT_6729,AG_215,S76,Zadní Třebaň - Lochovice,2
+RT_6730,AG_215,S80,Čerčany - Sázava - Ledečko - Zruč nad Sázavou,2
+RT_6731,AG_215,S82,Zruč nad Sázavou - Ledeč nad Sázavou - Světlá nad Sázavou,2
+RT_6732,AG_215,S88,Praha - Vrané nad Vltavou - Dobříš,2
+RT_6733,AG_215,S90,Olbramovice - Tábor,2
+RT_6734,AG_215,S98,Benešov u Prahy - Olbramovice - Sedlčany,2
+RT_6735,AG_215,S99,Benešov u Prahy - Vlašim,2

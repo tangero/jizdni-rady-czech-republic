@@ -1,0 +1,216 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang
+AG_1,České dráhy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AG_2,Meziměstské autobusy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AG_3,Městská hromadná doprava (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AG_4,Kreiswerke Cham - Mobilitätszentrale,www.landkreis-cham.de,Europe/Prague,cs
+AG_5,Pražské Benátky s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_6,Regionalverkehr Sächsische Schweiz-Osterzgebirge GmbH,https://md.gov.cz/,Europe/Prague,cs
+AG_7,FlixBus DACH GmbH,http://www.flixbus.cz,Europe/Prague,cs
+AG_8,LLC TRANS NATSIONAL LTD,https://md.gov.cz/,Europe/Prague,cs
+AG_9,Centrotrans - Eurolines d.d.,http://www.centrotrans.com,Europe/Prague,cs
+AG_10,nabídková trasa,https://md.gov.cz/,Europe/Prague,cs
+AG_11,"Dopravní podnik hl.m. Prahy, a.s.",www.dpp.cz,Europe/Prague,cs
+AG_12,Obec Ptení,https://md.gov.cz/,Europe/Prague,cs
+AG_13,"EKOSERVIS TRANSPEED, a.s.",https://md.gov.cz/,Europe/Prague,cs
+AG_14,"Kolej-klub, z.s.",https://md.gov.cz/,Europe/Prague,cs
+AG_15,BUDOS - BUS s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_16,UMBRELLA Coach & Buses s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_17,GW BUS a.s.,www.gwbus.cz,Europe/Prague,cs
+AG_18,ROMAN BUS s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_19,VisitTeplice s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_20,Transdev Střední Čechy s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_21,BusLine LK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_22,BusLine LK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_23,BusLine LK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_24,BusLine LK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_25,BusLine KHK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_26,BusLine KHK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_27,BusLine KHK s.r.o.,www.busline.cz,Europe/Prague,cs
+AG_28,Holfedtrans s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_29,FlixBus CZ s.r.o.,http://www.flixbus.cz,Europe/Prague,cs
+AG_30,BUS LIGNETA a.s.,https://md.gov.cz/,Europe/Prague,cs
+AG_31,"Dopravní společnost Ústeckého kraje, příspěvková organizace",https://www.ds-uk.cz/,Europe/Prague,cs
+AG_32,Lutan s.r.o.,www.lutan.cz,Europe/Prague,cs
+AG_33,POASS Technologies s.r.o.,www.dopravaplus.com,Europe/Prague,cs
+AG_34,Michal Pelc,www.ad-pelc.cz,Europe/Prague,cs
+AG_35,Leo Express s.r.o. - žadatel,https://md.gov.cz/,Europe/Prague,cs
+AG_36,Transdev Morava s.r.o.,morava.transdev.cz,Europe/Prague,cs
+AG_37,Transdev Morava s.r.o.,morava.transdev.cz,Europe/Prague,cs
+AG_38,Transdev Morava s.r.o.,morava.transdev.cz,Europe/Prague,cs
+AG_39,Transdev Morava s.r.o.,morava.transdev.cz,Europe/Prague,cs
+AG_40,Autodoprava Daniel Sládek s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_41,RegioJet ÚK a.s.,https://md.gov.cz/,Europe/Prague,cs
+AG_42,ČSAD Plzeň s.r.o.,www.plzenskecsad.cz,Europe/Prague,cs
+AG_43,BusLine jižní Čechy s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_44,BusLine Pardubicko s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_45,BusLine Pardubicko s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_46,BusLine Pardubicko s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_47,BusLine Pardubicko s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_48,"Gepard Express, SE",https://md.gov.cz/,Europe/Prague,cs
+AG_49,Die Länderbahn CZ s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_50,HOLDOS s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_51,UMBRELLA CITY LINES s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_52,BusLine Express s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_53,BusLine Express s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_54,BusLine Express s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_55,BusLine Express s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_56,KAD BUS spol. s r.o.,www.kad.cz,Europe/Prague,cs
+AG_57,AD STŘEDNÍ ČECHY s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_58,"MARTIN UHER bus, s.r.o.",https://md.gov.cz/,Europe/Prague,cs
+AG_59,Zlatovánek spol. s r.o.,www.zlatovanek.cz,Europe/Prague,cs
+AG_60,Transdev Čechy s.r.o.,www.audisbus.cz,Europe/Prague,cs
+AG_61,Transdev Čechy s.r.o.,www.audisbus.cz,Europe/Prague,cs
+AG_62,Transdev Čechy s.r.o.,www.audisbus.cz,Europe/Prague,cs
+AG_63,Transdev Čechy s.r.o.,www.audisbus.cz,Europe/Prague,cs
+AG_64,"Městská doprava Teplice, p.o.",www.mdteplice.cz,Europe/Prague,cs
+AG_65,ČD Bus a.s.,www.cd.cz,Europe/Prague,cs
+AG_66,ČD Bus a.s.,www.cd.cz,Europe/Prague,cs
+AG_67,ČD Bus a.s.,www.cd.cz,Europe/Prague,cs
+AG_68,Zubačka provoz s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_69,Doprava Teplice s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_70,Railway Capital a.s.,https://md.gov.cz/,Europe/Prague,cs
+AG_71,Leo Express Tenders s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_72,Dopravní podnik města Ústí nad Labem a.s.,www.dpmul.cz,Europe/Prague,cs
+AG_73,"ČSAD Liberec, a.s.",www.csadlb.cz,Europe/Prague,cs
+AG_74,"ČSAD Liberec, a.s.",www.csadlb.cz,Europe/Prague,cs
+AG_75,"ČSAD Liberec, a.s.",www.csadlb.cz,Europe/Prague,cs
+AG_76,"Okresní autobusová doprava Kolín, s.r.o.",www.oad.cz,Europe/Prague,cs
+AG_77,"Dopravní podnik města České Budějovice, a.s.",www.dpmcb.cz,Europe/Prague,cs
+AG_78,"Plzeňské městské dopravní podniky, a.s.",www.pmdp.cz,Europe/Prague,cs
+AG_79,Trutnovská autobusová doprava s.r.o.,www.tad.cz,Europe/Prague,cs
+AG_80,MBM rail s.r.o.,www.mbmr.cz,Europe/Prague,cs
+AG_81,"BDS-BUS, s.r.o.",www.bds-vb.cz,Europe/Prague,cs
+AG_82,STUDENT AGENCY k.s.,http://www.regiojet.cz,Europe/Prague,cs
+AG_83,AKV bus a.s.,www.akvbus.cz,Europe/Prague,cs
+AG_84,AKV bus a.s.,www.akvbus.cz,Europe/Prague,cs
+AG_85,"Technické služby města Duchcova, s.r.o.",www.tsduchcov.cz,Europe/Prague,cs
+AG_86,"Technické služby Kadaň, s.r.o.",http://www.tskadan.cz,Europe/Prague,cs
+AG_87,DPÚK a.s.,http://www.dpuk.cz,Europe/Prague,cs
+AG_88,"TRADO-BUS, s.r.o.",www.icomtransport.cz/trado-bus/,Europe/Prague,cs
+AG_89,"Dopravní podnik města Brna, a.s.",www.dpmb.cz,Europe/Prague,cs
+AG_90,"Dopravní podnik města Jihlavy, a.s.",www.dpmj.cz,Europe/Prague,cs
+AG_91,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_92,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_93,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_94,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_95,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_96,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_97,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_98,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_99,ARRIVA STŘEDNÍ ČECHY s.r.o.,www.arriva.cz,Europe/Prague,cs
+AG_100,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_101,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_102,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_103,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_104,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_105,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_106,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_107,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_108,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_109,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_110,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_111,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_112,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_113,ARRIVA autobusy a.s.,www.arriva.cz,Europe/Prague,cs
+AG_114,P-transport s.r.o.,www.p-transport.cz,Europe/Prague,cs
+AG_115,ČSAD AUTOBUSY České Budějovice a.s.,www.busem.cz,Europe/Prague,cs
+AG_116,ČSAD AUTOBUSY České Budějovice a.s.,www.busem.cz,Europe/Prague,cs
+AG_117,ČSAD AUTOBUSY České Budějovice a.s.,www.busem.cz,Europe/Prague,cs
+AG_118,ČSAD AUTOBUSY České Budějovice a.s.,www.busem.cz,Europe/Prague,cs
+AG_119,ČSAD AUTOBUSY České Budějovice a.s.,www.busem.cz,Europe/Prague,cs
+AG_120,ČSAD AUTOBUSY České Budějovice a.s.,www.busem.cz,Europe/Prague,cs
+AG_121,VOJTILA TRANS s.r.o.,www.vojtila-trans.cz,Europe/Prague,cs
+AG_122,VOJTILA TRANS s.r.o.,www.vojtila-trans.cz,Europe/Prague,cs
+AG_123,VOJTILA TRANS BUS s.r.o.,www.vojtila-trans.cz,Europe/Prague,cs
+AG_124,VV autobusy s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_125,"METRANS Rail, s.r.o.",https://md.gov.cz/,Europe/Prague,cs
+AG_126,Cvinger bus s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_127,MĚSTSKÁ DOPRAVA Mariánské Lázně s.r.o.,www.mdml.cz,Europe/Prague,cs
+AG_128,Kokořínský SOK s.r.o.,www.kokorinskysok.cz,Europe/Prague,cs
+AG_129,STENBUS s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_130,MEGABUSTRANS s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_131,"MARTIN UHER, spol. s r.o.",www.martinuher.cz,Europe/Prague,cs
+AG_132,"Slezské zemské dráhy, o.p.s.",https://md.gov.cz/,Europe/Prague,cs
+AG_133,DATA AUTOTRANS s.r.o.,http://www.dataautotrans.cz,Europe/Prague,cs
+AG_134,ČSAD MHD Kladno a.s.,www.csadkladno.cz,Europe/Prague,cs
+AG_135,"Autobusy KAVKA, a.s.",http://www.kavka-bus.cz,Europe/Prague,cs
+AG_136,Quick Bus a.s.,http://www.quickbus.cz,Europe/Prague,cs
+AG_137,"KŽC Doprava, s.r.o.",www.kzc.cz,Europe/Prague,cs
+AG_138,H.F. TOUR s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_139,Služby města Špindlerův Mlýn s.r.o.,www.smsm.cz,Europe/Prague,cs
+AG_140,"ČSAD Střední Čechy , a.s.",www.csad-sc.cz,Europe/Prague,cs
+AG_141,Autobusová doprava Kohout s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_142,AUTODOPRAVA LAMER s.r.o.,www.lamer-doprava.cz,Europe/Prague,cs
+AG_143,ČSAD BUS Uherské Hradiště a.s.,www.csaduh.cz,Europe/Prague,cs
+AG_144,"PECHOČIAKOVÁ - ZEPRA, s.r.o.",https://md.gov.cz/,Europe/Prague,cs
+AG_145,RegioJet a.s.,https://md.gov.cz/,Europe/Prague,cs
+AG_146,GW Train Regio a.s.,https://md.gov.cz/,Europe/Prague,cs
+AG_147,Správa Ústecké dráhy s.r.o.,www.usteckadraha.cz,Europe/Prague,cs
+AG_148,ARRIVA vlaky s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_149,ABOUT ME s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_150,POVED s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_151,LEXTRANS BUS s.r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_152,"CHEMSTAV LITVÍNOV, s.r.o.",http://www.catanibus.cz,Europe/Prague,cs
+AG_153,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_154,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_155,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_156,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_157,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_158,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_159,Transdev Slezsko a.s.,www.slezsko.transdev.cz,Europe/Prague,cs
+AG_160,Z-Group bus a.s.,www.zgroupbus.cz,Europe/Prague,cs
+AG_161,Z-Group bus a.s.,www.zgroupbus.cz,Europe/Prague,cs
+AG_162,Z-Group bus a.s.,www.zgroupbus.cz,Europe/Prague,cs
+AG_163,Z-Group bus a.s.,www.zgroupbus.cz,Europe/Prague,cs
+AG_164,"FTL - First Transport Lines, a.s.",www.ftl.cz,Europe/Prague,cs
+AG_165,ICOM transport a.s.,www.icomtransport.cz,Europe/Prague,cs
+AG_166,ICOM transport a.s.,www.icomtransport.cz,Europe/Prague,cs
+AG_167,ICOM transport a.s.,www.icomtransport.cz,Europe/Prague,cs
+AG_168,ICOM transport a.s.,www.icomtransport.cz,Europe/Prague,cs
+AG_169,"ČSAD Brno holding, a.s.",https://md.gov.cz/,Europe/Prague,cs
+AG_170,"ČSAD POLKOST, spol. s r.o.",www.csadpolkost.cz,Europe/Prague,cs
+AG_171,"ČSAD Tišnov, spol. s r.o.",www.csad-tisnov.cz,Europe/Prague,cs
+AG_172,"ZDAR, a.s.",www.zdar.cz,Europe/Prague,cs
+AG_173,"ZDAR, a.s.",www.zdar.cz,Europe/Prague,cs
+AG_174,"ZDAR, a.s.",www.verejnadopravavysociny.cz,Europe/Prague,cs
+AG_175,"Dopravní podnik měst Liberce a Jablonce nad Nisou, a.s.",www.dpmlj.cz,Europe/Prague,cs
+AG_176,POHL Kladno spol. s r.o.,www.pohlkladno.cz,Europe/Prague,cs
+AG_177,"Dopravní podnik města Olomouce, a.s.",www.dpmo.cz,Europe/Prague,cs
+AG_178,Strojně dopravní služby Opava spol. s r.o.,https://md.gov.cz/,Europe/Prague,cs
+AG_179,"AŽD Praha, s.r.o.",https://md.gov.cz/,Europe/Prague,cs
+AG_180,"Dopravní podnik Karlovy Vary, a.s.",www.dpkv.cz,Europe/Prague,cs
+AG_181,"Dopravní podnik Karlovy Vary, a.s.",www.dpkv.cz,Europe/Prague,cs
+AG_182,"Tourbus, a.s.",www.tourbus.cz,Europe/Prague,cs
+AG_183,CAR - TOUR spol. s r.o.,www.car-tour.cz,Europe/Prague,cs
+AG_184,ČSAD Kyjov Bus a.s.,www.csadkyjov.cz,Europe/Prague,cs
+AG_185,ADOSA a.s.,www.adosa.cz,Europe/Prague,cs
+AG_186,ČAD Blansko a.s.,www.cadblansko.cz,Europe/Prague,cs
+AG_187,TQM - holding s.r.o.,www.tqm.cz,Europe/Prague,cs
+AG_188,TQM - holding s.r.o.,www.tqm.cz,Europe/Prague,cs
+AG_189,"KAD,spol. s r.o. Krkonošská automobilová doprava Vrchlabí",www.kad.cz,Europe/Prague,cs
+AG_190,BORS Břeclav a.s.,www.bors.cz,Europe/Prague,cs
+AG_191,"COMETT PLUS, spol. s r.o.",www.comettplus.cz,Europe/Prague,cs
+AG_192,"ČSAD Ústí nad Orlicí, a.s.",www.icomtransport.cz/csad-usti-nad-orlici/,Europe/Prague,cs
+AG_193,CDS s.r.o. Náchod,www.cdsnachod.cz,Europe/Prague,cs
+AG_194,CDS s.r.o. Náchod,www.cdsnachod.cz,Europe/Prague,cs
+AG_195,ČSAD Slaný s.r.o.,www.icomtransport.cz/csad-slany/,Europe/Prague,cs
+AG_196,ČSAD Benešov s.r.o.,www.icomtransport.cz/csad-benesov/,Europe/Prague,cs
+AG_197,DOPAZ s.r.o.,www.dopaz.cz,Europe/Prague,cs
+AG_198,"Dopravní společnost Zlín-Otrokovice, s.r.o.",www.dszo.cz,Europe/Prague,cs
+AG_199,ČSAD Hodonín a.s.,www.csad.com,Europe/Prague,cs
+AG_200,ČSAD Hodonín a.s.,www.csad.com,Europe/Prague,cs
+AG_201,Dopravní podnik Ostrava a.s.,www.dpo.cz,Europe/Prague,cs
+AG_202,"Dopravní podnik města Děčína, a.s.",www.dpmdas.cz,Europe/Prague,cs
+AG_203,COMPAG CZ s.r.o.,www.compag.cz,Europe/Prague,cs
+AG_204,"DOPRAVNÍ PODNIK měst Mostu a Litvínova, a.s.",http://www.dpmost.cz,Europe/Prague,cs
+AG_205,Vega Tour s.r.o.,www.vegatour.com,Europe/Prague,cs
+AG_206,BORS BUS s.r.o.,www.bors.cz,Europe/Prague,cs
+AG_207,"Znojemská dopravní společnost - PSOTA, s.r.o.",www.zds-psota.cz,Europe/Prague,cs
+AG_208,"Znojemská dopravní společnost - PSOTA, s.r.o.",https://md.gov.cz/,Europe/Prague,cs
+AG_209,Dopravní podnik měst Chomutova a Jirkova a.s.,www.dpchj.cz,Europe/Prague,cs
+AG_210,"Městský dopravní podnik Opava, a.s.",www.mdpo.cz,Europe/Prague,cs
+AG_211,Technické služby Havlíčkův Brod,https://md.gov.cz/,Europe/Prague,cs
+AG_212,Moravskoslezský kraj,https://md.gov.cz/,Europe/Prague,cs
+AG_213,"České dráhy, a.s.",www.cd.cz,Europe/Prague,cs
+AG_214,European Sleeper Coöperatie U.A.,https://md.gov.cz/,Europe/Prague,cs
+AG_215,Pražská integrovaná doprava,https://pid.cz,Europe/Prague,cs

@@ -4,33 +4,45 @@ Agregovaná a konsolidovaná data veřejné dopravy v České republice ve stand
 
 ## 📊 Přehled datasetu
 
-Tento dataset obsahuje kompletní informace o jízdních řádech městské hromadné dopravy (MHD) a vybraných regionálních spojích v České republice.
+Tento dataset obsahuje kompletní informace o jízdních řádech městské hromadné dopravy (MHD) a regionálních spojích v České republice, integrující data z více veřejně dostupných zdrojů.
 
 ### Pokrytí
 
-- **109 měst** s MHD
-- **18,862 zastávek**
-- **116 dopravních linek**
-- **15,121 denních spojů**
+- **215 dopravních agentur**
+- **61,052 unikátních zastávek**
+- **6,735 dopravních linek** (4,588 MHD + 2,147 regionálních)
+- **384,685 denních spojů** (301,953 MHD + 82,732 regionálních)
+- **6.9 milionu stop_times záznamů**
 
 ## 🗂️ Struktura dat
 
 ### data/mhd/
-Městská hromadná doprava (MHD) pro 109 měst po celé České republice.
+Městská hromadná doprava (MHD) pro města po celé České republice.
 
 **Standardní GTFS soubory:**
-- `agency.txt` - Dopravní agentury
-- `stops.txt` - Zastávky a stanice
-- `routes.txt` - Linky a trasy
-- `trips.txt` - Jednotlivé spoje
-- `stop_times.txt` - Časy příjezdů a odjezdů
-- `calendar.txt` - Kalendář platnosti
+- `agency.txt` - 215 dopravních agentur
+- `stops.txt` - 61,052 zastávek
+- `routes.txt` - 4,588 MHD linek (tramvaje, metro, městské autobusy)
+- `trips.txt` - 301,953 spojů
+- `stop_times.txt` - 5.9 mil. záznamů příjezdů/odjezdů (226 MB)
 
 ### data/regional/
-Vybrané regionální a dálkové spoje (připravováno).
+Regionální a dálkové spoje (vlaky, meziměstské autobusy).
+
+**Standardní GTFS soubory:**
+- `agency.txt` - 215 dopravních agentur (sdílené)
+- `stops.txt` - 61,052 zastávek (sdílené)
+- `routes.txt` - 2,147 regionálních linek
+- `trips.txt` - 82,732 spojů
+- `stop_times.txt` - 1.0 mil. záznamů příjezdů/odjezdů (39 MB)
 
 ### data/merged/
-Sloučený dataset pro použití v aplikacích (připravováno).
+Kompletní integrovaný dataset (MHD + regionální) pro použití v aplikacích.
+
+**Obsahuje:**
+- Vše výše zmíněné v jednom datasetu
+- `calendar_dates.txt` - 1.58 mil. kalendářních výjimek (státní svátky, prázdniny)
+- `stop_times.txt` - 6.9 mil. záznamů (265 MB)
 
 ## 🏙️ Seznam měst s MHD
 
@@ -44,25 +56,26 @@ Adamov, Aš, Benešov, Bílina, Blansko, Brandýs nad Labem, Břeclav, Bruntál,
 
 ### Celkový přehled
 
-| Kategorie | Města/Linky | Zastávky | Spoje |
-|-----------|-------------|----------|-------|
-| MHD | 109 | 11,231 | 14,566 |
-| Vlaky | 5 | 4,507 | 410 |
-| Autobusy | 2 | 3,124 | 145 |
-| **Celkem** | **116** | **18,862** | **15,121** |
+| Kategorie | Linky | Spoje | Stop times | Velikost |
+|-----------|-------|-------|------------|----------|
+| **MHD** | 4,588 | 301,953 | 5.9 mil. | 226 MB |
+| **Regionální** | 2,147 | 82,732 | 1.0 mil. | 39 MB |
+| **Celkem** | **6,735** | **384,685** | **6.9 mil.** | **265 MB** |
 
-### Top 10 měst podle počtu zastávek
+### Pokrytí
 
-1. **Hradec Králové** - 4,687 zastávek
-2. **Praha (PID vlaky)** - 3,838 zastávek
-3. **Meziměstské autobusy** - 3,000 zastávek
-4. **Jindřichův Hradec** - 863 zastávek
-5. **Karlovy Vary** - 557 zastávek
-6. **Slaný** - 552 zastávek
-7. **Vyškov** - 470 zastávek
-8. **Kroměříž** - 390 zastávek
-9. **Jihlava** - 253 zastávek
-10. **IDOL vlaky** - 204 zastávek
+- **215 dopravních agentur** (městské dopravní podniky, České dráhy, soukromí dopravci)
+- **61,052 unikátních zastávek** (po celé České republice)
+- **1.58 mil. kalendářních výjimek** (svátky, prázdniny, víkendy)
+
+### Typ dopravy
+
+| Typ | GTFS route_type | Počet linek |
+|-----|-----------------|-------------|
+| Tramvaj | 0 | ~600 |
+| Metro | 1 | 3 (Praha) |
+| Vlak | 2 | ~1,900 |
+| Autobus | 3 | ~4,200 |
 
 ## 🚀 Použití
 
@@ -190,11 +203,14 @@ Pro kompletní jízdní řády doporučujeme kombinaci s:
 
 ## 📊 Zdroje dat
 
-Všechna data v tomto datasetu vznikla agregací veřejně dostupných zdrojů včetně:
-- Oficiálních jízdních řádů dopravních společností
-- Otevřených dat z portálů veřejné správy
-- Integrovaných dopravních systémů (PID, ODIS, IDSJMK)
-- Městských dopravních podniků
+Tento dataset vznikl agregací a konsolidací veřejně dostupných zdrojů jízdních řádů, včetně:
+
+- **Oficiální GTFS data** z [portal.cisjr.cz](https://portal.cisjr.cz/) (Celostátní informační systém o jízdních řádech)
+- **PID (Pražská integrovaná doprava)** - kompletní jízdní řády pro Prahu a Středočeský kraj
+- **Regionální dopravní systémy** - ODIS, IDSJMK, IDOL a další
+- **Městské dopravní podniky** - MHD pro města po celé ČR
+
+Data byla deduplikována, normalizována a kategorizována pro snadnější použití v analytických a navigačních aplikacích.
 
 ## 📄 Licence
 
@@ -226,6 +242,8 @@ Tento dataset vznikl jako součást projektu [stredniskoly.cz](https://strednisk
 
 ---
 
-**Verze:** 1.0.0
+**Verze:** 2.0.0
 **Poslední aktualizace:** 2026-02-08
 **Formát:** GTFS (General Transit Feed Specification)
+**Velikost datasetu:** ~530 MB (kompletní)
+**Zdroje:** GTFS_CR, PID, vlastní agregace
