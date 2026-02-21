@@ -243,6 +243,52 @@ Můžete data:
 Za podmínek:
 - **Uvedení autora** - Musíte uvést odkaz na tento zdroj, tedy zpracovatele Patricka Zandla a na internetu použít proklik na Github repozitář. 
 
+## 🔄 Vlastní aktualizace dat
+
+Data si můžete aktualizovat sami — stačí Python 3.9+ a žádné externí závislosti.
+
+### Postup
+
+1. **Stáhněte KOMPLET.ZIP** z [CHAPS/IDOS](https://www.chaps.cz/cs/download/idos#kotvatt) — archiv obsahuje aktuální jízdní řády ve formátu .tt
+2. **Rozbalte** archiv kamkoliv na disk
+3. **Spusťte konverzi:**
+
+```bash
+# Pouze konverze TT → GTFS
+python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET
+
+# Konverze + integrace se všemi GTFS zdroji (PID, GTFS_CR)
+python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET --integrate
+```
+
+### Co skript dělá
+
+Konverzní pipeline (`scripts/convert_tt_to_gtfs.py`) postupně:
+
+1. **Dekóduje** binární .tt soubory z KOMPLET balíku (`tt_decoder_v2.py`)
+2. **Filtruje** nesmyslné záznamy — POI (bankomaty, banky), servisní texty (německé/anglické legendy), interní CHAPS kódy (`¤¤...`)
+3. **Konvertuje** do standardního GTFS formátu se třemi kategoriemi: VL (vlaky), BUS (autobusy), MHD (`komplet_to_gtfs.py`)
+4. **Sloučí** kategorie do jednoho GTFS zdroje
+5. S `--integrate` spustí integraci se všemi dostupnými zdroji
+
+### Struktura KOMPLET.ZIP
+
+```
+KOMPLET/
+├── Data1/    # Vlaky (VL)
+├── Data2/    # Meziměstské autobusy (BUS)
+└── Data3/    # Městská MHD (MHD)
+```
+
+### Skripty v repo
+
+| Skript | Popis |
+|--------|-------|
+| `scripts/convert_tt_to_gtfs.py` | Hlavní workflow — konverze + sloučení + integrace |
+| `scripts/tt_decoder_v2.py` | Dekodér CHAPS .tt binárního formátu |
+| `scripts/komplet_to_gtfs.py` | Konvertor dekódovaných dat do GTFS |
+| `scripts/integrate_all_data_fast.py` | Integrace více GTFS zdrojů dohromady |
+
 ## 🤝 Přispívání
 
 Uvítáme příspěvky v oblasti:
@@ -261,8 +307,8 @@ Tento dataset vznikl jako součást projektu [Přijímačky na školu](https://w
 
 ---
 
-**Verze:** 2.0.0
-**Poslední aktualizace:** 2026-02-08
+**Verze:** 2.1.0
+**Poslední aktualizace:** 2026-02-21
 **Formát:** GTFS (General Transit Feed Specification)
 **Velikost datasetu:** ~530 MB (kompletní)
 **Zdroje:** GTFS_CR, PID, vlastní agregace
