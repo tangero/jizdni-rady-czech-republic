@@ -430,7 +430,7 @@ class GTFSIntegratorFast:
 def main():
     # Cesty
     project_dir = Path(__file__).parent.parent
-    tt_converted_dir = project_dir / 'data' / 'mhd'
+    tt_converted_dir = project_dir / 'data' / 'tt_source' / 'ALL'
     gtfs_cr_dir = Path('/Users/imac/Github/stredniskoly/data/GTFS_CR')
     pid_dir = Path('/Users/imac/Github/stredniskoly/data/PID')
     output_dir = project_dir / 'data'

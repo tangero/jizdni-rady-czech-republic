@@ -27,3 +27,13 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# Logy
+logs/
+
+# Konverzní mezivýstupy
+data/gtfs_output/
+data/tt_source/
+
+# Claude Code
+.claude/

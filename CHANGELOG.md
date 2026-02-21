@@ -2,6 +2,24 @@
 
 Všechny významné změny v tomto projektu budou zdokumentovány v tomto souboru.
 
+## [2.1.0] - 2026-02-21
+
+### Přidáno
+- **Self-contained TT konvertor**: Skripty pro konverzi CHAPS .tt souborů přímo v tomto repo
+  - `scripts/tt_decoder_v2.py` — dekodér binárního .tt formátu
+  - `scripts/komplet_to_gtfs.py` — konvertor dekódovaných dat do GTFS
+  - `scripts/convert_tt_to_gtfs.py` — hlavní workflow skript pro konverzi a integraci
+- **Pole `agency_id` v stops.txt**: Každá zastávka je přiřazena k příslušné agentuře (AGENCY_VL/BUS/MHD)
+
+### Opraveno
+- **Filtrování nesmyslných zastávek**: Odstraněny POI záznamy (bankomaty, banky), německé/anglické servisní texty (legendy), CHAPS interní kódy (`¤¤J775001-3`), markup tagy (`{L}`, `{l}`) a geografické zóny (`*UA`, `*CZ-KA`)
+- **Cross-reference filtrování**: Zastávky nereferencované v žádném spoji jsou automaticky odstraněny
+
+### Změněno
+- Aktualizována data z nového KOMPLET balíku (2026-02)
+- Integrační skript nyní čte TT data z `data/tt_source/ALL/` (odděleno od výstupu)
+- Aktualizován .gitignore pro logy a mezivýstupy konverze
+
 ## [2.0.0] - 2026-02-08
 
 ### Přidáno

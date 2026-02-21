@@ -4,7 +4,7 @@ Agregovaná a konsolidovaná data veřejné dopravy v České republice ve stand
 
 ## 📊 Přehled datasetu
 
-Tento dataset obsahuje kompletní informace o jízdních řádech městské hromadné dopravy (MHD) a regionálních spojích v České republice, integrující data z více veřejně dostupných zdrojů.
+Tento dataset obsahuje kompletní informace o jízdních řádech městské hromadné dopravy (MHD) a regionálních spojích v České republice, integrující data z více veřejně dostupných zdrojů. Tato data jsou primárně veřejnou službou, veřejná a pro veřejnost určená. 
 
 ### Pokrytí
 
@@ -241,7 +241,7 @@ Můžete data:
 - ✅ Komerčně využívat
 
 Za podmínek:
-- **Uvedení autora** - Musíte uvést odkaz na tento zdroj
+- **Uvedení autora** - Musíte uvést odkaz na tento zdroj, tedy zpracovatele Patricka Zandla a na internetu použít proklik na Github repozitář. 
 
 ## 🤝 Přispívání
 
@@ -257,7 +257,7 @@ Pro otázky ohledně datasetu vytvořte issue na GitHubu.
 
 ## 🙏 Poděkování
 
-Tento dataset vznikl jako součást projektu [stredniskoly.cz](https://stredniskoly.cz) pro analýzu dostupnosti středních škol veřejnou dopravou.
+Tento dataset vznikl jako součást projektu [Přijímačky na školu](https://www.prijimackynaskolu.cz) pro analýzu dostupnosti středních škol veřejnou dopravou. A pak jsem si říkal, že když už jsem si s tím dal tolik práce a spálil tolik procesorového času OrchestrAI nástroje pro utřídění dat, tak by se to mohlo hodit i ostatním. 
 
 ---
 

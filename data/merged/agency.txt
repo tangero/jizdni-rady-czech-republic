@@ -1,7 +1,7 @@
 agency_id,agency_name,agency_url,agency_timezone,agency_lang
-AG_1,České dráhy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
-AG_2,Meziměstské autobusy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
-AG_3,Městská hromadná doprava (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AG_1,Městská hromadná doprava (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AG_2,České dráhy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
+AG_3,Meziměstské autobusy (TT Decoded),https://prijimackynaskolu.cz,Europe/Prague,cs
 AG_4,Kreiswerke Cham - Mobilitätszentrale,www.landkreis-cham.de,Europe/Prague,cs
 AG_5,Pražské Benátky s.r.o.,https://md.gov.cz/,Europe/Prague,cs
 AG_6,Regionalverkehr Sächsische Schweiz-Osterzgebirge GmbH,https://md.gov.cz/,Europe/Prague,cs

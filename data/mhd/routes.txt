@@ -1,5 +1,5 @@
 route_id,agency_id,route_short_name,route_long_name,route_type
-RT_64,AG_3,NJ,MHD NJ,3
+RT_57,AG_1,NJ,MHD NJ,3
 RT_117,AG_4,982,Klatovy-Hamry-Nýrsko-Lam-Drachselsried-Bodenmais,3
 RT_122,AG_7,136,Praha (CZ)-Strasbourg (F),3
 RT_123,AG_7,161,Praha-Berlin-Bremen,3
