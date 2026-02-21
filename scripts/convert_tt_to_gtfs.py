@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
-Konverze CHAPS .tt souborů (KOMPLET balík) do GTFS formátu.
+Konverze IDOS .tt souborů (KOMPLET.ZIP) do GTFS formátu.
+
+Skript zpracovává soubory IDOS ve formátu .tt, které jsou publikovány
+v archivu KOMPLET.ZIP ke stažení na:
+    https://www.chaps.cz/cs/download/idos#kotvatt
 
 Pipeline:
 1. Dekóduje .tt binární soubory (tt_decoder_v2.py)
@@ -11,9 +15,12 @@ Pipeline:
 Prerekvizity:
     - Python 3.9+
     - Žádné externí závislosti (pouze stdlib)
+    - Stažený a rozbalený KOMPLET.ZIP z https://www.chaps.cz/cs/download/idos#kotvatt
 
 Použití:
-    # Základní konverze
+    # 1. Stáhni KOMPLET.ZIP z https://www.chaps.cz/cs/download/idos#kotvatt
+    # 2. Rozbal ZIP archiv
+    # 3. Spusť konverzi:
     python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET
 
     # Konverze + integrace všech zdrojů
@@ -23,14 +30,15 @@ Použití:
     python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET --output-dir data/moje_gtfs
 
 Aktualizace dat:
-    1. Stáhni nový KOMPLET balík z CHAPS (https://www.chaps.cz/)
-       - Balík obsahuje Data1/ (vlaky), Data2/ (autobusy), Data3/ (MHD)
-    2. Rozbal KOMPLET kamkoliv na disk
+    1. Stáhni nový KOMPLET.ZIP z https://www.chaps.cz/cs/download/idos#kotvatt
+       - Archiv je aktualizován při každé změně jízdních řádů
+       - Obsahuje Data1/ (vlaky), Data2/ (autobusy), Data3/ (MHD)
+    2. Rozbal KOMPLET.ZIP kamkoliv na disk
     3. Spusť: python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET --integrate
     4. Zkontroluj výstup v data/mhd/, data/regional/, data/merged/
     5. Commitni změny
 
-Struktura KOMPLET balíku:
+Struktura KOMPLET.ZIP:
     KOMPLET/
     ├── Data1/          # Vlakové .tt soubory (VL)
     │   ├── Vlak26C.tt
@@ -45,9 +53,9 @@ Struktura KOMPLET balíku:
 
 Co je .tt formát:
     Proprietární binární formát firmy CHAPS spol. s r.o. používaný
-    pro distribuci jízdních řádů v ČR a SR. Obsahuje zastávky, časy
-    odjezdů/příjezdů, hrany cestovního grafu a metadata linek.
-    Dekodér (tt_decoder_v2.py) extrahuje data heuristicky — hledá
+    systémem IDOS pro distribuci jízdních řádů v ČR a SR. Obsahuje
+    zastávky, časy odjezdů/příjezdů, hrany cestovního grafu a metadata
+    linek. Dekodér (tt_decoder_v2.py) extrahuje data heuristicky — hledá
     nejlepší kandidátní tabulku zastávek a časových záznamů v binárním
     blobu a filtruje nesmyslné záznamy (POI, servisní texty, CHAPS kódy).
 """
