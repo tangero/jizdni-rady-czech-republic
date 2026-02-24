@@ -100,6 +100,7 @@ class TTDecoderV2:
         self.best_stop_offset: Optional[int] = None
         self.best_time_offset: Optional[int] = None
         self.stop_quality_score: float = 0.0
+        self.city_name: Optional[str] = None
         if debug:
             self._debug = True
 
@@ -108,6 +109,8 @@ class TTDecoderV2:
         try:
             if not self._verify_header():
                 return False
+
+            self._extract_city_name()
 
             if not self._find_stops():
                 return False
@@ -134,6 +137,31 @@ class TTDecoderV2:
             return False
         header_str = self.data[0:60].decode('cp1250', errors='ignore')
         return 'TT' in header_str and 'TimeTable' in header_str and 'CHAPS' in header_str
+
+    def _extract_city_name(self):
+        """Extrahuj název města z hlavičky .tt souboru.
+
+        Hlavička obsahuje řetězce ve formátu 'MHD <město>Public Transportation ...'
+        kde <město> je plný název s diakritikou, na rozdíl od zkráceného
+        názvu souboru (DOS 8.3 formát bez diakritiky).
+        """
+        import re
+        try:
+            header_region = self.data[0x60:0x200].decode('cp1250', errors='replace')
+            match = re.search(r'MHD\s+(.+?)(?:Public|MHD|\x00)', header_region)
+            if match:
+                name = match.group(1).strip()
+                # Oprav případy jako 'OstravaOstrava' → 'Ostrava'
+                if len(name) >= 6 and len(name) % 2 == 0:
+                    half = len(name) // 2
+                    if name[:half] == name[half:]:
+                        name = name[:half]
+                if name:
+                    self.city_name = name
+                    if hasattr(self, '_debug'):
+                        print(f"  DEBUG: City name from header: {name}")
+        except Exception:
+            pass  # Fallback: city_name zůstane None, použije se název souboru
 
     def _is_likely_service_text(self, name: str) -> bool:
         lowered = name.lower()
@@ -656,6 +684,7 @@ class TTDecoderV2:
 
         data = {
             'source_file': self.filepath.name,
+            'city_name': self.city_name,
             'stops': self.stops,
             'trips': self.trips,
             'stats': self.get_stats(),

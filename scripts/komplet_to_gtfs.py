@@ -369,7 +369,9 @@ class KompletToGTFS:
         with open(json_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
-        city_name = json_file.stem
+        # Použij plný název města z hlavičky .tt souboru (s diakritikou),
+        # fallback na název souboru (zkrácený DOS formát bez diakritiky)
+        city_name = data.get('city_name') or json_file.stem
         stops_list = data['stops']
         trips_data = data.get('trips', [])
         edges_data = data.get('edges', {})
