@@ -2,6 +2,14 @@
 
 Všechny významné změny v tomto projektu budou zdokumentovány v tomto souboru.
 
+## [2.2.0] - 2026-02-24
+
+### Opraveno
+- **Názvy měst s diakritikou**: Plný název města se nyní extrahuje z hlavičky .tt binárního souboru (cp1250), místo zkráceného DOS 8.3 názvu souboru bez diakritiky (např. "Prostějov" místo "Prostej", "České Budějovice" místo "CesBud")
+  - `tt_decoder_v2.py` — nová metoda `_extract_city_name()` parsuje řetězec z offsetu 0x60–0x200 v hlavičce
+  - `tt_decoder_v2.py` — nový atribut `city_name` exportovaný do JSON
+  - `komplet_to_gtfs.py` — použití `city_name` z JSON s fallbackem na název souboru pro soubory bez MHD hlavičky (IDSJMK, PID, ODIS)
+
 ## [2.1.0] - 2026-02-21
 
 ### Přidáno
