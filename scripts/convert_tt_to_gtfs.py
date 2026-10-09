@@ -155,7 +155,7 @@ def run_integration() -> bool:
 
     import subprocess
     result = subprocess.run(
-        [sys.executable, str(integration_script)],
+        [sys.executable, str(integration_script), "--with-tt"],
         cwd=str(PROJECT_DIR),
     )
     return result.returncode == 0
@@ -178,7 +178,7 @@ Příklady:
     )
     parser.add_argument(
         "--integrate", action="store_true",
-        help="Po konverzi spustit integraci se všemi GTFS zdroji (PID, GTFS_CR atd.)",
+        help="Po konverzi spustit integraci s GTFS_CR (vyžaduje scripts/download_sources.py)",
     )
     parser.add_argument(
         "--output-dir", type=Path, default=None,

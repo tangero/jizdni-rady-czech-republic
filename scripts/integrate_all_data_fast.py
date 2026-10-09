@@ -1,133 +1,164 @@
 #!/usr/bin/env python3
 """
-Rychlá integrace všech GTFS dat bez pandas závislosti.
-Používá buffered I/O a batch processing pro velké soubory.
+Rychlá integrace GTFS zdrojů do datasetů data/mhd, data/regional a data/merged.
+
+Bez externích závislostí, stop_times se zpracovávají průběžně (streaming)
+a zapisují rovnou jako stop_times.txt.gz.
+
+Zdroje (výchozí cesty, stažené přes scripts/download_sources.py):
+    GTFS_CR  data/sources/GTFS_CR   - CIS JŘ, páteřní zdroj (obsahuje i PID a MHD)
+    PID      data/sources/PID       - volitelně (--with-pid); GTFS_CR už PID obsahuje,
+                                      takže zapnutí vede k duplicitním spojům
+    TT       data/tt_source/ALL     - volitelně (--with-tt); heuristicky dekódovaný
+                                      KOMPLET.ZIP bez GPS a s obecným kalendářem
+
+Použití:
+    python scripts/integrate_all_data_fast.py
+    python scripts/integrate_all_data_fast.py --with-tt --from-date 20261201
 """
 
+import argparse
 import csv
+import gzip
+import io
+from datetime import date, datetime
 from pathlib import Path
-from typing import Dict, Set, List
-import sys
+from typing import Dict, List, Optional, Set
+
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+
+AGENCY_FIELDS = ['agency_id', 'agency_name', 'agency_url', 'agency_timezone', 'agency_lang']
+STOP_FIELDS = ['stop_id', 'stop_name', 'stop_lat', 'stop_lon']
+ROUTE_FIELDS = ['route_id', 'agency_id', 'route_short_name', 'route_long_name', 'route_type']
+TRIP_FIELDS = ['trip_id', 'route_id', 'service_id']
+CALENDAR_FIELDS = ['service_id', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
+                   'saturday', 'sunday', 'start_date', 'end_date']
+CALENDAR_DATE_FIELDS = ['service_id', 'date', 'exception_type']
+STOP_TIME_FIELDS = ['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time']
+
+WEEKDAYS = CALENDAR_FIELDS[1:8]
+DATASETS = ('mhd', 'regional', 'merged')
+
+
+def _open_csv(file_path: Path):
+    """Otevře GTFS CSV (toleruje BOM)."""
+    return open(file_path, 'r', encoding='utf-8-sig', newline='')
+
+
+def _has_coords(lat: str, lon: str) -> bool:
+    try:
+        return float(lat) != 0.0 and float(lon) != 0.0
+    except (TypeError, ValueError):
+        return False
+
 
 class GTFSIntegratorFast:
-    def __init__(self):
+    def __init__(self, from_date: str):
+        self.from_date = from_date
+
         self.next_agency_id = 1
         self.next_stop_id = 1
         self.next_route_id = 1
         self.next_trip_id = 1
         self.next_service_id = 1
 
-        # Mapování původních ID na nová
+        # Mapování původních ID na nová (per zdroj)
         self.agency_map: Dict[str, Dict[str, str]] = {}
         self.stop_map: Dict[str, Dict[str, str]] = {}
         self.route_map: Dict[str, Dict[str, str]] = {}
         self.trip_map: Dict[str, Dict[str, str]] = {}
         self.service_map: Dict[str, Dict[str, str]] = {}
 
-        # Deduplikace zastávek podle názvu
-        self.stop_names: Dict[str, str] = {}
+        # Deduplikace zastávek podle názvu: název -> index v self.stops
+        self.stop_names: Dict[str, int] = {}
 
-        # Výsledné soubory - budeme psát průběžně
-        self.agencies = []
-        self.stops = []
-        self.routes_mhd = []
-        self.routes_regional = []
-        self.trips_mhd = []
-        self.trips_regional = []
-        self.calendar_dates = []
+        self.agencies: List[Dict] = []
+        self.stops: List[Dict] = []
+        self.routes_mhd: List[Dict] = []
+        self.routes_regional: List[Dict] = []
+        self.trips_mhd: List[Dict] = []
+        self.trips_regional: List[Dict] = []
+        self.calendar: List[Dict] = []
+        self.calendar_dates: List[Dict] = []
 
-        # MHD trip IDs pro rychlé vyhledávání
+        self.mhd_route_ids: Set[str] = set()
         self.mhd_trip_ids: Set[str] = set()
+        self.active_services: Set[str] = set()
+        self.skipped_trips = 0
 
     def load_source(self, source_dir: Path, source_name: str):
         """Načte jeden GTFS zdroj a remapuje ID."""
-        print(f"\nNačítám: {source_name}")
+        print(f"\nNačítám: {source_name} ({source_dir})")
 
-        self.agency_map[source_name] = {}
-        self.stop_map[source_name] = {}
-        self.route_map[source_name] = {}
-        self.trip_map[source_name] = {}
-        self.service_map[source_name] = {}
+        for mapping in (self.agency_map, self.stop_map, self.route_map, self.trip_map, self.service_map):
+            mapping[source_name] = {}
 
-        # 1. Agency
         self._load_agencies(source_dir, source_name)
-
-        # 2. Stops
         self._load_stops(source_dir, source_name)
-
-        # 3. Routes
         self._load_routes(source_dir, source_name)
-
-        # 4. Calendar
         self._load_calendar(source_dir, source_name)
-
-        # 5. Calendar dates
         self._load_calendar_dates(source_dir, source_name)
-
-        # 6. Trips
         self._load_trips(source_dir, source_name)
-
-        # 7. Stop times - NEBUDEME načítat do paměti, pouze zpracujeme později
-        # Toto je klíčová optimalizace
+        # stop_times se nenačítají do paměti, zpracují se v process_stop_times()
 
     def _load_agencies(self, source_dir: Path, source_name: str):
-        """Načte agencies."""
         file_path = source_dir / 'agency.txt'
         if not file_path.exists():
             return
 
-        with open(file_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                old_id = row['agency_id']
+        with _open_csv(file_path) as f:
+            for row in csv.DictReader(f):
                 new_id = f'AG_{self.next_agency_id}'
                 self.next_agency_id += 1
-                self.agency_map[source_name][old_id] = new_id
+                self.agency_map[source_name][row.get('agency_id', '')] = new_id
 
                 self.agencies.append({
                     'agency_id': new_id,
                     'agency_name': row['agency_name'],
                     'agency_url': row.get('agency_url', ''),
-                    'agency_timezone': row.get('agency_timezone', 'Europe/Prague'),
-                    'agency_lang': row.get('agency_lang', 'cs')
+                    'agency_timezone': row.get('agency_timezone') or 'Europe/Prague',
+                    'agency_lang': row.get('agency_lang') or 'cs',
                 })
 
     def _load_stops(self, source_dir: Path, source_name: str):
-        """Načte stops s deduplikací."""
+        """Načte zastávky s deduplikací podle názvu."""
         file_path = source_dir / 'stops.txt'
         if not file_path.exists():
             return
 
         new_stops = 0
+        filled_coords = 0
 
-        with open(file_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                old_id = row['stop_id']
+        with _open_csv(file_path) as f:
+            for row in csv.DictReader(f):
                 stop_name = row['stop_name']
+                lat, lon = row.get('stop_lat', ''), row.get('stop_lon', '')
 
-                # Deduplikace podle názvu
-                if stop_name in self.stop_names:
-                    new_id = self.stop_names[stop_name]
-                else:
-                    new_id = f'ST_{self.next_stop_id}'
-                    self.next_stop_id += 1
-                    self.stop_names[stop_name] = new_id
-                    new_stops += 1
-
+                idx = self.stop_names.get(stop_name)
+                if idx is None:
+                    idx = len(self.stops)
+                    self.stop_names[stop_name] = idx
                     self.stops.append({
-                        'stop_id': new_id,
+                        'stop_id': f'ST_{self.next_stop_id}',
                         'stop_name': stop_name,
-                        'stop_lat': row.get('stop_lat', '0.0'),
-                        'stop_lon': row.get('stop_lon', '0.0')
+                        'stop_lat': lat if _has_coords(lat, lon) else '0.0',
+                        'stop_lon': lon if _has_coords(lat, lon) else '0.0',
                     })
+                    self.next_stop_id += 1
+                    new_stops += 1
+                else:
+                    # Doplň souřadnice, pokud je dřívější zdroj neměl
+                    stop = self.stops[idx]
+                    if not _has_coords(stop['stop_lat'], stop['stop_lon']) and _has_coords(lat, lon):
+                        stop['stop_lat'], stop['stop_lon'] = lat, lon
+                        filled_coords += 1
 
-                self.stop_map[source_name][old_id] = new_id
+                self.stop_map[source_name][row['stop_id']] = self.stops[idx]['stop_id']
 
-        print(f"  Zastávky: +{new_stops} nových")
+        print(f"  Zastávky: +{new_stops} nových, doplněno souřadnic: {filled_coords}")
 
     def _load_routes(self, source_dir: Path, source_name: str):
-        """Načte routes s kategorizací."""
+        """Načte linky s kategorizací MHD / regionální."""
         file_path = source_dir / 'routes.txt'
         if not file_path.exists():
             return
@@ -135,34 +166,23 @@ class GTFSIntegratorFast:
         mhd_count = 0
         regional_count = 0
 
-        with open(file_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                old_id = row['route_id']
+        with _open_csv(file_path) as f:
+            for row in csv.DictReader(f):
                 new_id = f'RT_{self.next_route_id}'
                 self.next_route_id += 1
-                self.route_map[source_name][old_id] = new_id
-
-                agency_old = row.get('agency_id', '')
-                agency_new = self.agency_map[source_name].get(agency_old, '')
+                self.route_map[source_name][row['route_id']] = new_id
 
                 route_data = {
                     'route_id': new_id,
-                    'agency_id': agency_new,
+                    'agency_id': self.agency_map[source_name].get(row.get('agency_id', ''), ''),
                     'route_short_name': row.get('route_short_name', ''),
                     'route_long_name': row.get('route_long_name', ''),
-                    'route_type': row.get('route_type', '3'),
-                    '_is_mhd': False  # Internal flag
+                    'route_type': row.get('route_type') or '3',
                 }
 
-                # Kategorizace
-                if self._is_mhd_route(
-                    row.get('route_short_name', ''),
-                    row.get('route_type', '3'),
-                    row.get('route_long_name', '')
-                ):
-                    route_data['_is_mhd'] = True
+                if self._is_mhd_route(route_data['route_short_name'], route_data['route_type']):
                     self.routes_mhd.append(route_data)
+                    self.mhd_route_ids.add(new_id)
                     mhd_count += 1
                 else:
                     self.routes_regional.append(route_data)
@@ -170,80 +190,84 @@ class GTFSIntegratorFast:
 
         print(f"  Linky: +{mhd_count} MHD, +{regional_count} regionální")
 
+    def _map_service(self, source_name: str, old_id: str) -> str:
+        """Vrátí nové service_id (každé původní ID se mapuje jen jednou)."""
+        mapping = self.service_map[source_name]
+        if old_id not in mapping:
+            mapping[old_id] = f'SV_{self.next_service_id}'
+            self.next_service_id += 1
+        return mapping[old_id]
+
     def _load_calendar(self, source_dir: Path, source_name: str):
-        """Načte calendar."""
         file_path = source_dir / 'calendar.txt'
         if not file_path.exists():
             return
 
-        with open(file_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
+        count = 0
+        with _open_csv(file_path) as f:
+            for row in csv.DictReader(f):
                 old_id = row['service_id']
-                new_id = f'SV_{self.next_service_id}'
-                self.next_service_id += 1
-                self.service_map[source_name][old_id] = new_id
+                if old_id in self.service_map[source_name]:
+                    continue  # duplicitní řádek ve zdroji
+                new_id = self._map_service(source_name, old_id)
+
+                entry = {field: row[field] for field in CALENDAR_FIELDS}
+                entry['service_id'] = new_id
+                self.calendar.append(entry)
+                count += 1
+
+                if entry['end_date'] >= self.from_date and any(entry[d] == '1' for d in WEEKDAYS):
+                    self.active_services.add(new_id)
+
+        print(f"  Calendar: +{count}")
 
     def _load_calendar_dates(self, source_dir: Path, source_name: str):
-        """Načte calendar dates."""
         file_path = source_dir / 'calendar_dates.txt'
         if not file_path.exists():
             return
 
         count = 0
-
-        with open(file_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                service_old = row['service_id']
-                service_new = self.service_map[source_name].get(service_old, f'SV_{self.next_service_id}')
-
-                if service_old not in self.service_map[source_name]:
-                    self.service_map[source_name][service_old] = service_new
-                    self.next_service_id += 1
-
+        with _open_csv(file_path) as f:
+            for row in csv.DictReader(f):
+                new_id = self._map_service(source_name, row['service_id'])
+                exception_type = row.get('exception_type') or '1'
                 self.calendar_dates.append({
-                    'service_id': service_new,
+                    'service_id': new_id,
                     'date': row['date'],
-                    'exception_type': row.get('exception_type', '1')
+                    'exception_type': exception_type,
                 })
+                if exception_type == '1' and row['date'] >= self.from_date:
+                    self.active_services.add(new_id)
                 count += 1
 
         print(f"  Calendar dates: +{count}")
 
     def _load_trips(self, source_dir: Path, source_name: str):
-        """Načte trips s kategorizací."""
+        """Načte spoje; vynechá spoje bez linky nebo bez platnosti od from_date."""
         file_path = source_dir / 'trips.txt'
         if not file_path.exists():
             return
 
         mhd_count = 0
         regional_count = 0
+        skipped = 0
 
-        with open(file_path, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                old_id = row['trip_id']
+        with _open_csv(file_path) as f:
+            for row in csv.DictReader(f):
+                route_new = self.route_map[source_name].get(row.get('route_id', ''))
+                service_new = self.service_map[source_name].get(row.get('service_id', ''))
+
+                if not route_new or service_new not in self.active_services:
+                    skipped += 1
+                    continue
+
                 new_id = f'TR_{self.next_trip_id}'
                 self.next_trip_id += 1
-                self.trip_map[source_name][old_id] = new_id
+                self.trip_map[source_name][row['trip_id']] = new_id
 
-                route_old = row.get('route_id', '')
-                route_new = self.route_map[source_name].get(route_old, '')
+                trip_data = {'trip_id': new_id, 'route_id': route_new, 'service_id': service_new}
 
-                service_old = row.get('service_id', '')
-                service_new = self.service_map[source_name].get(service_old, '')
-
-                trip_data = {
-                    'trip_id': new_id,
-                    'route_id': route_new,
-                    'service_id': service_new
-                }
-
-                # Zjisti, jestli je route MHD
-                is_mhd = any(r['route_id'] == route_new and r.get('_is_mhd') for r in self.routes_mhd)
-
-                if is_mhd:
+                if route_new in self.mhd_route_ids:
                     self.trips_mhd.append(trip_data)
                     self.mhd_trip_ids.add(new_id)
                     mhd_count += 1
@@ -251,17 +275,17 @@ class GTFSIntegratorFast:
                     self.trips_regional.append(trip_data)
                     regional_count += 1
 
-        print(f"  Spoje: +{mhd_count} MHD, +{regional_count} regionální")
+        self.skipped_trips += skipped
+        print(f"  Spoje: +{mhd_count} MHD, +{regional_count} regionální, vynecháno {skipped} (neplatné od {self.from_date})")
 
-    def _is_mhd_route(self, route_name: str, route_type: str, route_long_name: str) -> bool:
+    @staticmethod
+    def _is_mhd_route(route_name: str, route_type: str) -> bool:
         """Určí, jestli je linka MHD nebo regionální."""
-        route_type = str(route_type)
-
-        # Tramvaje a metro - vždy MHD
-        if route_type in ['0', '1']:
+        # Tramvaje, metro, trolejbusy - vždy MHD
+        if route_type in ('0', '1', '11'):
             return True
 
-        # Vlaky - většinou regionální
+        # Vlaky - regionální
         if route_type == '2':
             return False
 
@@ -274,207 +298,193 @@ class GTFSIntegratorFast:
 
         return False
 
-    def process_stop_times(self, source_dir: Path, source_name: str, output_dir: Path):
-        """Zpracuje stop_times průběžně bez načítání do paměti."""
-        file_path = source_dir / 'stop_times.txt'
-        if not file_path.exists():
-            return
+    def prune(self):
+        """Odstraní linky, kalendáře a zastávky, na které nic neodkazuje."""
+        used_routes = {t['route_id'] for t in self.trips_mhd} | {t['route_id'] for t in self.trips_regional}
+        used_services = {t['service_id'] for t in self.trips_mhd} | {t['service_id'] for t in self.trips_regional}
 
-        print(f"  Stop times ({source_name}): zpracovávám", end='', flush=True)
+        self.routes_mhd = [r for r in self.routes_mhd if r['route_id'] in used_routes]
+        self.routes_regional = [r for r in self.routes_regional if r['route_id'] in used_routes]
+        self.calendar = [c for c in self.calendar if c['service_id'] in used_services]
+        self.calendar_dates = [c for c in self.calendar_dates if c['service_id'] in used_services]
 
-        # Otevři výstupní soubory
-        mhd_file = output_dir / 'mhd' / 'stop_times.txt'
-        regional_file = output_dir / 'regional' / 'stop_times.txt'
-        merged_file = output_dir / 'merged' / 'stop_times.txt'
+        used_agencies = {r['agency_id'] for r in self.routes_mhd + self.routes_regional}
+        self.agencies = [a for a in self.agencies if a['agency_id'] in used_agencies]
 
-        mhd_count = 0
-        regional_count = 0
-        processed = 0
+    def prune_stops(self, used_stops: Set[str]):
+        self.stops = [s for s in self.stops if s['stop_id'] in used_stops]
 
-        with open(file_path, 'r', encoding='utf-8') as f_in:
-            reader = csv.DictReader(f_in)
+    def process_stop_times(self, sources: List[tuple], output_dir: Path) -> Set[str]:
+        """Zpracuje stop_times všech zdrojů průběžně a zapíše .txt.gz. Vrací použité zastávky."""
+        used_stops: Set[str] = set()
+        writers = {}
+        handles = []
 
-            # Otevři výstupní soubory v append módu
-            with open(mhd_file, 'a', encoding='utf-8', newline='') as f_mhd, \
-                 open(regional_file, 'a', encoding='utf-8', newline='') as f_regional, \
-                 open(merged_file, 'a', encoding='utf-8', newline='') as f_merged:
+        for name in DATASETS:
+            path = output_dir / name / 'stop_times.txt.gz'
+            raw = open(path, 'wb')
+            # mtime=0 a prázdné jméno -> deterministický výstup (menší git diffy)
+            gz = gzip.GzipFile(fileobj=raw, mode='wb', compresslevel=6, mtime=0, filename='')
+            text = io.TextIOWrapper(gz, encoding='utf-8', newline='')
+            handles.append((text, gz, raw))
+            writer = csv.writer(text)
+            writer.writerow(STOP_TIME_FIELDS)
+            writers[name] = writer
 
-                writer_mhd = csv.DictWriter(f_mhd, fieldnames=['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time'])
-                writer_regional = csv.DictWriter(f_regional, fieldnames=['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time'])
-                writer_merged = csv.DictWriter(f_merged, fieldnames=['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time'])
+        try:
+            for source_name, source_dir in sources:
+                file_path = source_dir / 'stop_times.txt'
+                if not file_path.exists():
+                    continue
 
-                for row in reader:
-                    trip_old = row['trip_id']
-                    trip_new = self.trip_map[source_name].get(trip_old)
+                print(f"  Stop times ({source_name}): zpracovávám", end='', flush=True)
+                trip_map = self.trip_map[source_name]
+                stop_map = self.stop_map[source_name]
+                mhd_count = regional_count = processed = 0
 
-                    if not trip_new:
-                        continue
+                with _open_csv(file_path) as f_in:
+                    for row in csv.DictReader(f_in):
+                        trip_new = trip_map.get(row['trip_id'])
+                        if not trip_new:
+                            continue
+                        stop_new = stop_map.get(row['stop_id'])
+                        if not stop_new:
+                            continue
 
-                    stop_old = row['stop_id']
-                    stop_new = self.stop_map[source_name].get(stop_old)
+                        record = [
+                            trip_new,
+                            stop_new,
+                            row.get('stop_sequence') or '0',
+                            row.get('arrival_time') or '',
+                            row.get('departure_time') or '',
+                        ]
+                        used_stops.add(stop_new)
 
-                    if not stop_new:
-                        continue
+                        if trip_new in self.mhd_trip_ids:
+                            writers['mhd'].writerow(record)
+                            mhd_count += 1
+                        else:
+                            writers['regional'].writerow(record)
+                            regional_count += 1
+                        writers['merged'].writerow(record)
 
-                    st_data = {
-                        'trip_id': trip_new,
-                        'stop_id': stop_new,
-                        'stop_sequence': row.get('stop_sequence', '0'),
-                        'arrival_time': row.get('arrival_time', '00:00:00'),
-                        'departure_time': row.get('departure_time', '00:00:00')
-                    }
+                        processed += 1
+                        if processed % 1_000_000 == 0:
+                            print('.', end='', flush=True)
 
-                    # Zjisti, jestli je trip MHD
-                    is_mhd = trip_new in self.mhd_trip_ids
+                print(f" +{mhd_count:,} MHD, +{regional_count:,} regionální")
+        finally:
+            for text, gz, raw in handles:
+                text.close()
+                raw.close()
 
-                    if is_mhd:
-                        writer_mhd.writerow(st_data)
-                        mhd_count += 1
-                    else:
-                        writer_regional.writerow(st_data)
-                        regional_count += 1
-
-                    writer_merged.writerow(st_data)
-
-                    processed += 1
-                    if processed % 100000 == 0:
-                        print('.', end='', flush=True)
-
-        print(f" +{mhd_count} MHD, +{regional_count} regionální")
+        return used_stops
 
     def export_metadata(self, output_dir: Path):
-        """Exportuje metadata (vše kromě stop_times)."""
-        print("\n" + "="*80)
+        """Exportuje vše kromě stop_times."""
+        print("\n" + "=" * 80)
         print("EXPORT METADAT")
-        print("="*80)
+        print("=" * 80)
 
-        # Vytvoř výstupní adresáře
-        mhd_dir = output_dir / 'mhd'
-        regional_dir = output_dir / 'regional'
-        merged_dir = output_dir / 'merged'
+        dirs = {name: output_dir / name for name in DATASETS}
+        for d in dirs.values():
+            d.mkdir(parents=True, exist_ok=True)
+            # Starý nekomprimovaný stop_times by byl zastaralý a matoucí
+            (d / 'stop_times.txt').unlink(missing_ok=True)
 
-        mhd_dir.mkdir(parents=True, exist_ok=True)
-        regional_dir.mkdir(parents=True, exist_ok=True)
-        merged_dir.mkdir(parents=True, exist_ok=True)
+        routes = {
+            'mhd': self.routes_mhd,
+            'regional': self.routes_regional,
+            'merged': self.routes_mhd + self.routes_regional,
+        }
+        trips = {
+            'mhd': self.trips_mhd,
+            'regional': self.trips_regional,
+            'merged': self.trips_mhd + self.trips_regional,
+        }
 
-        # Export společných souborů
-        print("\nExport společných souborů...")
+        for name, d in dirs.items():
+            used_services = {t['service_id'] for t in trips[name]}
+            calendar = [c for c in self.calendar if c['service_id'] in used_services]
+            calendar_dates = [c for c in self.calendar_dates if c['service_id'] in used_services]
 
-        # Agency
-        self._write_csv(mhd_dir / 'agency.txt', self.agencies, ['agency_id', 'agency_name', 'agency_url', 'agency_timezone', 'agency_lang'])
-        self._write_csv(regional_dir / 'agency.txt', self.agencies, ['agency_id', 'agency_name', 'agency_url', 'agency_timezone', 'agency_lang'])
-        self._write_csv(merged_dir / 'agency.txt', self.agencies, ['agency_id', 'agency_name', 'agency_url', 'agency_timezone', 'agency_lang'])
-        print(f"  agency.txt: {len(self.agencies)} agencies")
+            self._write_csv(d / 'agency.txt', self.agencies, AGENCY_FIELDS)
+            self._write_csv(d / 'stops.txt', self.stops, STOP_FIELDS)
+            self._write_csv(d / 'routes.txt', routes[name], ROUTE_FIELDS)
+            self._write_csv(d / 'trips.txt', trips[name], TRIP_FIELDS)
+            self._write_csv(d / 'calendar.txt', calendar, CALENDAR_FIELDS)
+            self._write_csv(d / 'calendar_dates.txt', calendar_dates, CALENDAR_DATE_FIELDS)
 
-        # Stops
-        self._write_csv(mhd_dir / 'stops.txt', self.stops, ['stop_id', 'stop_name', 'stop_lat', 'stop_lon'])
-        self._write_csv(regional_dir / 'stops.txt', self.stops, ['stop_id', 'stop_name', 'stop_lat', 'stop_lon'])
-        self._write_csv(merged_dir / 'stops.txt', self.stops, ['stop_id', 'stop_name', 'stop_lat', 'stop_lon'])
-        print(f"  stops.txt: {len(self.stops)} zastávek")
+            print(f"  {name}: {len(routes[name]):,} linek, {len(trips[name]):,} spojů, "
+                  f"{len(calendar):,} kalendářů, {len(calendar_dates):,} výjimek")
+        print(f"  společné: {len(self.agencies):,} dopravců, {len(self.stops):,} zastávek")
 
-        # Calendar dates
-        if self.calendar_dates:
-            self._write_csv(merged_dir / 'calendar_dates.txt', self.calendar_dates, ['service_id', 'date', 'exception_type'])
-            print(f"  calendar_dates.txt: {len(self.calendar_dates)} výjimek")
-
-        # Export MHD
-        print("\nExport MHD dat...")
-
-        # Odstraň internal flag
-        routes_mhd_clean = [{k: v for k, v in r.items() if not k.startswith('_')} for r in self.routes_mhd]
-
-        self._write_csv(mhd_dir / 'routes.txt', routes_mhd_clean, ['route_id', 'agency_id', 'route_short_name', 'route_long_name', 'route_type'])
-        print(f"  routes.txt: {len(routes_mhd_clean)} linek")
-
-        self._write_csv(mhd_dir / 'trips.txt', self.trips_mhd, ['trip_id', 'route_id', 'service_id'])
-        print(f"  trips.txt: {len(self.trips_mhd)} spojů")
-
-        # Vytvoř prázdný stop_times.txt s hlavičkou
-        self._write_csv(mhd_dir / 'stop_times.txt', [], ['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time'])
-
-        # Export regionální
-        print("\nExport regionálních dat...")
-
-        routes_regional_clean = [{k: v for k, v in r.items() if not k.startswith('_')} for r in self.routes_regional]
-
-        self._write_csv(regional_dir / 'routes.txt', routes_regional_clean, ['route_id', 'agency_id', 'route_short_name', 'route_long_name', 'route_type'])
-        print(f"  routes.txt: {len(routes_regional_clean)} linek")
-
-        self._write_csv(regional_dir / 'trips.txt', self.trips_regional, ['trip_id', 'route_id', 'service_id'])
-        print(f"  trips.txt: {len(self.trips_regional)} spojů")
-
-        self._write_csv(regional_dir / 'stop_times.txt', [], ['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time'])
-
-        # Export merged
-        print("\nExport kompletního datasetu...")
-
-        all_routes = routes_mhd_clean + routes_regional_clean
-        self._write_csv(merged_dir / 'routes.txt', all_routes, ['route_id', 'agency_id', 'route_short_name', 'route_long_name', 'route_type'])
-        print(f"  routes.txt: {len(all_routes)} linek")
-
-        all_trips = self.trips_mhd + self.trips_regional
-        self._write_csv(merged_dir / 'trips.txt', all_trips, ['trip_id', 'route_id', 'service_id'])
-        print(f"  trips.txt: {len(all_trips)} spojů")
-
-        self._write_csv(merged_dir / 'stop_times.txt', [], ['trip_id', 'stop_id', 'stop_sequence', 'arrival_time', 'departure_time'])
-
-    def _write_csv(self, file_path: Path, data: List[Dict], fieldnames: List[str]):
-        """Zapíše CSV soubor."""
+    @staticmethod
+    def _write_csv(file_path: Path, data: List[Dict], fieldnames: List[str]):
         with open(file_path, 'w', encoding='utf-8', newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
             writer.writeheader()
-            for row in data:
-                writer.writerow(row)
+            writer.writerows(data)
 
 
-def main():
-    # Cesty
-    project_dir = Path(__file__).parent.parent
-    tt_converted_dir = project_dir / 'data' / 'tt_source' / 'ALL'
-    gtfs_cr_dir = Path('/Users/imac/Github/stredniskoly/data/GTFS_CR')
-    pid_dir = Path('/Users/imac/Github/stredniskoly/data/PID')
-    output_dir = project_dir / 'data'
+def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Integrace GTFS zdrojů do data/mhd|regional|merged")
+    parser.add_argument('--gtfs-cr', type=Path, default=PROJECT_DIR / 'data' / 'sources' / 'GTFS_CR',
+                        help='Adresář s rozbaleným GTFS CIS JŘ')
+    parser.add_argument('--pid', type=Path, default=PROJECT_DIR / 'data' / 'sources' / 'PID',
+                        help='Adresář s rozbaleným PID GTFS')
+    parser.add_argument('--tt', type=Path, default=PROJECT_DIR / 'data' / 'tt_source' / 'ALL',
+                        help='Adresář s GTFS z TT konverze')
+    parser.add_argument('--with-pid', action='store_true',
+                        help='Přidat PID zvlášť (pozor: GTFS_CR už PID obsahuje -> duplicity)')
+    parser.add_argument('--with-tt', action='store_true',
+                        help='Přidat data z TT konverze (KOMPLET.ZIP)')
+    parser.add_argument('--from-date', default=date.today().strftime('%Y%m%d'),
+                        help='Vynechat spoje, které od tohoto data (YYYYMMDD) už nejedou (default: dnes)')
+    parser.add_argument('--output-dir', type=Path, default=PROJECT_DIR / 'data')
+    args = parser.parse_args(argv)
+    datetime.strptime(args.from_date, '%Y%m%d')  # validace formátu
+    return args
 
-    # Vytvoř integrátor
-    integrator = GTFSIntegratorFast()
 
-    print("="*80)
-    print("INTEGRACE VŠECH GTFS DAT")
-    print("="*80)
+def main(argv: Optional[List[str]] = None):
+    args = parse_args(argv)
 
-    sources = []
+    # Pořadí je důležité: první zdroj vyhrává při deduplikaci zastávek podle názvu
+    sources = [('GTFS_CR', args.gtfs_cr)]
+    if args.with_pid:
+        sources.append(('PID', args.pid))
+    if args.with_tt:
+        sources.append(('TT-converted', args.tt))
 
-    # Načti metadata ze zdrojů
-    if tt_converted_dir.exists():
-        integrator.load_source(tt_converted_dir, 'TT-converted')
-        sources.append(('TT-converted', tt_converted_dir))
+    missing = [f"{name}: {path}" for name, path in sources if not (path / 'trips.txt').exists()]
+    if missing:
+        raise SystemExit("Chybí zdrojová data (spusť scripts/download_sources.py):\n  " + "\n  ".join(missing))
 
-    if gtfs_cr_dir.exists():
-        integrator.load_source(gtfs_cr_dir, 'GTFS_CR')
-        sources.append(('GTFS_CR', gtfs_cr_dir))
+    print("=" * 80)
+    print(f"INTEGRACE GTFS DAT (spoje platné od {args.from_date})")
+    print("=" * 80)
 
-    if pid_dir.exists():
-        integrator.load_source(pid_dir, 'PID')
-        sources.append(('PID', pid_dir))
+    integrator = GTFSIntegratorFast(args.from_date)
+    for name, path in sources:
+        integrator.load_source(path, name)
 
-    # Export metadat
-    integrator.export_metadata(output_dir)
+    integrator.prune()
 
-    # Zpracuj stop_times průběžně
-    print("\n" + "="*80)
+    print("\n" + "=" * 80)
     print("ZPRACOVÁNÍ STOP_TIMES")
-    print("="*80)
+    print("=" * 80)
+    for name in DATASETS:
+        (args.output_dir / name).mkdir(parents=True, exist_ok=True)
+    used_stops = integrator.process_stop_times(sources, args.output_dir)
+    integrator.prune_stops(used_stops)
 
-    for source_name, source_dir in sources:
-        integrator.process_stop_times(source_dir, source_name, output_dir)
+    integrator.export_metadata(args.output_dir)
 
-    print("\n" + "="*80)
+    print("\n" + "=" * 80)
     print("HOTOVO")
-    print("="*80)
-    print(f"\nData exportována do:")
-    print(f"  - {output_dir / 'mhd'} (MHD)")
-    print(f"  - {output_dir / 'regional'} (Regionální)")
-    print(f"  - {output_dir / 'merged'} (Vše dohromady)")
+    print("=" * 80)
+    print("Ověření konzistence: python scripts/validate_gtfs.py")
 
 
 if __name__ == '__main__':

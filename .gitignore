@@ -31,7 +31,8 @@ Thumbs.db
 # Logy
 logs/
 
-# Konverzní mezivýstupy
+# Stažené zdroje a konverzní mezivýstupy
+data/sources/
 data/gtfs_output/
 data/tt_source/
 

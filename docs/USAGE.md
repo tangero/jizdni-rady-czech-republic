@@ -8,6 +8,7 @@ Tento průvodce ukazuje, jak pracovat s GTFS daty pro Českou republiku.
 
 ```python
 import csv
+import gzip
 from pathlib import Path
 
 # Cesta k GTFS datům
@@ -71,7 +72,7 @@ def calculate_travel_time(trip_id):
     """Vypočítá celkovou dobu spoje."""
     stop_times = []
 
-    with open(gtfs_dir / 'stop_times.txt', 'r', encoding='utf-8') as f:
+    with gzip.open(gtfs_dir / 'stop_times.txt.gz', 'rt', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for st in reader:
             if st['trip_id'] == trip_id:
@@ -111,7 +112,7 @@ def build_transit_graph():
     """Vytvoří graf zastávek a jejich spojení."""
     graph = defaultdict(list)
 
-    with open(gtfs_dir / 'stop_times.txt', 'r', encoding='utf-8') as f:
+    with gzip.open(gtfs_dir / 'stop_times.txt.gz', 'rt', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         stop_times = list(reader)
 
@@ -241,7 +242,7 @@ CREATE TABLE stop_times (
 \copy stops FROM 'data/mhd/stops.txt' CSV HEADER;
 \copy routes FROM 'data/mhd/routes.txt' CSV HEADER;
 \copy trips FROM 'data/mhd/trips.txt' CSV HEADER;
-\copy stop_times FROM 'data/mhd/stop_times.txt' CSV HEADER;
+\copy stop_times FROM PROGRAM 'gzip -dc data/mhd/stop_times.txt.gz' CSV HEADER;
 ```
 
 ### SQLite

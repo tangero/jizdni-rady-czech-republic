@@ -4,78 +4,56 @@ Agregovaná a konsolidovaná data veřejné dopravy v České republice ve stand
 
 ## 📊 Přehled datasetu
 
-Tento dataset obsahuje kompletní informace o jízdních řádech městské hromadné dopravy (MHD) a regionálních spojích v České republice, integrující data z více veřejně dostupných zdrojů. Tato data jsou primárně veřejnou službou, veřejná a pro veřejnost určená. 
+Tento dataset obsahuje jízdní řády městské hromadné dopravy (MHD), regionálních autobusů a vlaků v České republice ve standardním GTFS formátu. Páteřním zdrojem jsou oficiální data Celostátního informačního systému o jízdních řádech (CIS JŘ), která zahrnují i Pražskou integrovanou dopravu. Tato data jsou primárně veřejnou službou, veřejná a pro veřejnost určená.
+
+**Stav dat: 9. 10. 2026** (zdroj CIS JŘ publikovaný 9. 10. 2026)
 
 ### Pokrytí
 
-- **215 dopravních agentur**
-- **61,052 unikátních zastávek**
-- **6,735 dopravních linek** (4,588 MHD + 2,147 regionálních)
-- **384,685 denních spojů** (301,953 MHD + 82,732 regionálních)
-- **6.9 milionu stop_times záznamů**
+- **241 dopravců**
+- **36,937 zastávek** (deduplikovaných podle názvu, 99 % s GPS souřadnicemi)
+- **6,140 linek** (4,196 MHD + 1,944 regionálních)
+- **289,357 spojů** (244,800 MHD + 44,557 regionálních)
+- **5.2 milionu stop_times záznamů**
 
 ## 🗂️ Struktura dat
 
-### data/mhd/
-Městská hromadná doprava (MHD) pro města po celé České republice.
+Všechny tři datasety mají stejnou sadu souborů a jsou samostatně použitelné:
 
-**Standardní GTFS soubory:**
-- `agency.txt` - 215 dopravních agentur
-- `stops.txt` - 61,052 zastávek
-- `routes.txt` - 4,588 MHD linek (tramvaje, metro, městské autobusy)
-- `trips.txt` - 301,953 spojů
-- `stop_times.txt.gz` - 5.9 mil. záznamů příjezdů/odjezdů (45 MB komprimováno, 226 MB nekomprimováno)
+| Soubor | Obsah |
+|--------|-------|
+| `agency.txt` | dopravci (společné pro všechny datasety) |
+| `stops.txt` | zastávky s GPS souřadnicemi (společné) |
+| `routes.txt` | linky |
+| `trips.txt` | spoje |
+| `calendar.txt` | pravidelná platnost spojů (dny v týdnu, od–do) |
+| `calendar_dates.txt` | výjimky z platnosti (svátky, výluky, jednotlivé dny) |
+| `stop_times.txt.gz` | příjezdy a odjezdy na zastávkách (gzip) |
+
+### data/mhd/
+Městská hromadná doprava: tramvaje, metro, trolejbusy, lanovky, přívozy a autobusy s nejvýše trojmístným číslem linky. 4,196 linek, 244,800 spojů, 4.6 mil. stop_times (37 MB komprimováno).
 
 ### data/regional/
-Regionální a dálkové spoje (vlaky, meziměstské autobusy).
-
-**Standardní GTFS soubory:**
-- `agency.txt` - 215 dopravních agentur (sdílené)
-- `stops.txt` - 61,052 zastávek (sdílené)
-- `routes.txt` - 2,147 regionálních linek
-- `trips.txt` - 82,732 spojů
-- `stop_times.txt` - 1.0 mil. záznamů příjezdů/odjezdů (39 MB nekomprimováno)
+Regionální a dálkové spoje: vlaky a meziměstské autobusy. 1,944 linek, 44,557 spojů, 0.6 mil. stop_times (4 MB komprimováno).
 
 ### data/merged/
-Kompletní integrovaný dataset (MHD + regionální) pro použití v aplikacích.
+Kompletní integrovaný dataset (MHD + regionální) pro použití v aplikacích. 6,140 linek, 289,357 spojů, 5.2 mil. stop_times (42 MB komprimováno).
 
-**Obsahuje:**
-- Vše výše zmíněné v jednom datasetu
-- `calendar_dates.txt` - 1.58 mil. kalendářních výjimek (státní svátky, prázdniny)
-- `stop_times.txt.gz` - 6.9 mil. záznamů (52 MB komprimováno, 265 MB nekomprimováno)
-
-## 🏙️ Seznam měst s MHD
-
-### Krajská města
-Praha (PID), Brno (IDSJMK), Ostrava (ODIS), Plzeň, Liberec, Olomouc, Ústí nad Labem, Hradec Králové, České Budějovice, Pardubice, Zlín, Havířov, Kladno, Karlovy Vary
-
-### Další města (95)
-Adamov, Aš, Benešov, Bílina, Blansko, Brandýs nad Labem, Břeclav, Bruntál, Bystřice nad Pernštejnem, České Těšín, Česká Lípa, Český Krumlov, Děčín, Domažlice, Duchcov, Dvůr Králové nad Labem, Frýdek-Místek, Havlíčkův Brod, Hodonín, Hořice, Hranice, Jablonec nad Nisou, Jáchymov, Jičín, Jihlava, Jindřichův Hradec, Karviná, Klášterec nad Ohří, Kolín, Kostelec nad Orlicí, Kralupy nad Vltavou, Kroměříž, Krnov, Kyjov, Litoměřice, Litomyšl, Louny, Lovosice, Mariánské Lázně, Mladá Boleslav, Milevsko, Mníšek pod Brdy, Most, Náchod, Nová Ves, Nové Město na Moravě, Opava, Orlová, Ostrov, Pelhřimov, Písek, Polička, Přelouč, Přerov, Příbram, Prostějov, Říčany, Rokycany, Roudnice nad Labem, Rychnov nad Kněžnou, Slaný, Sokolov, Špindlerův Mlýn, Štětí, Strakonice, Stříbro, Studenka, Šumperk, Tábor, Tachov, Teplice, Třebíč, Třinec, Trutnov, Turnov, Týniště nad Orlicí, Uherské Hradiště, Valašské Meziříčí, Varnsdorf, Velké Meziříčí, Vimperk, Vlašim, Vrchlabí, Vsetín, Vyškov, Znojmo, Žďár nad Sázavou, Zábřeh, Žatec
+> **Pozor na dělení MHD / regionální:** rozdělení je heuristické podle typu dopravy a čísla linky. Regionální autobusové linky integrovaných systémů s trojmístným číslem (např. PID 3xx–7xx, ODIS 3xx) proto spadají do `mhd/`. Pro routing používejte `merged/`.
 
 ## 📋 Statistiky
 
-### Celkový přehled
-
-| Kategorie | Linky | Spoje | Stop times | Velikost |
-|-----------|-------|-------|------------|----------|
-| **MHD** | 4,588 | 301,953 | 5.9 mil. | 226 MB |
-| **Regionální** | 2,147 | 82,732 | 1.0 mil. | 39 MB |
-| **Celkem** | **6,735** | **384,685** | **6.9 mil.** | **265 MB** |
-
-### Pokrytí
-
-- **215 dopravních agentur** (městské dopravní podniky, České dráhy, soukromí dopravci)
-- **61,052 unikátních zastávek** (po celé České republice)
-- **1.58 mil. kalendářních výjimek** (svátky, prázdniny, víkendy)
-
-### Typ dopravy
+### Typ dopravy (merged)
 
 | Typ | GTFS route_type | Počet linek |
 |-----|-----------------|-------------|
-| Tramvaj | 0 | ~600 |
+| Tramvaj | 0 | 95 |
 | Metro | 1 | 3 (Praha) |
-| Vlak | 2 | ~1,900 |
-| Autobus | 3 | ~4,200 |
+| Vlak | 2 | 1,309 |
+| Autobus | 3 | 4,601 |
+| Přívoz | 4 | 5 |
+| Lanovka | 7 | 2 |
+| Trolejbus | 11 | 125 |
 
 ## 🚀 Použití
 
@@ -85,8 +63,7 @@ Velké `stop_times.txt` soubory jsou komprimované gzipem (`.txt.gz`) kvůli lim
 
 **Dekomprese (pokud potřebuješ nekomprimované soubory):**
 ```bash
-gunzip data/mhd/stop_times.txt.gz
-gunzip data/merged/stop_times.txt.gz
+gunzip -k data/merged/stop_times.txt.gz
 ```
 
 ### Rychlý start
@@ -165,7 +142,7 @@ MHD_ROUTE_0,AGENCY_MHD,Pardubice,MHD Pardubice,3
 Jednotlivé spoje na lince.
 ```
 trip_id,route_id,service_id
-MHD_TRIP_0,MHD_ROUTE_0,WEEKDAY
+MHD_TRIP_0,MHD_ROUTE_0,SV_2
 ```
 
 #### stop_times.txt
@@ -179,32 +156,30 @@ MHD_TRIP_0,MHD_STOP_0,1,08:00:00,08:00:00
 Kalendář platnosti jízdních řádů.
 ```
 service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-WEEKDAY,1,1,1,1,1,1,1,20260208,20270208
+SV_2,1,1,1,1,1,1,1,20261017,20261018
 ```
 
 ## ⚠️ Omezení
 
 ### GPS souřadnice
-Aktuální verze obsahuje zastávky s GPS souřadnicemi nastavenými na `0.0, 0.0`. Pro přesnou lokalizaci doporučujeme:
-- Použití geocoding služeb (Google Maps API, Nominatim)
-- Manuální doplnění souřadnic
-- Propojení s oficiálními registr y zastávek
+Souřadnice zastávek pocházejí z CIS JŘ. Zhruba 1 % zastávek (353) souřadnice nemá a má nastaveno `0.0, 0.0`.
+
+Zastávky jsou deduplikované podle názvu (formát „Obec, zastávka“), takže jednotlivá nástupiště téže zastávky jsou sloučena do jednoho bodu.
 
 ### Časové pokrytí
-Dataset obsahuje jízdní řády platné pro:
-- **Od:** 2026-02-08
-- **Do:** 2027-02-08
+Dataset obsahuje jen spoje, které jedou v den sestavení nebo později (starší jsou vyřazeny). Skutečné pokrytí závisí na tom, jak daleko dopředu dopravci publikují:
+
+| Den | Jedoucích spojů |
+|-----|-----------------|
+| středa 14. 10. 2026 | 159,559 |
+| středa 4. 11. 2026 | 109,348 |
+| středa 9. 12. 2026 | 101,929 |
+| středa 16. 12. 2026 | 20,403 |
+
+PID publikuje jízdní řády zhruba dva týdny dopředu a 13. 12. 2026 proběhne celostátní změna jízdních řádů. Data je proto vhodné pravidelně aktualizovat (viz níže).
 
 ### Rozsah dat
-Dataset primárně pokrývá:
-- ✅ Městskou hromadnou dopravu (MHD) - kompletní
-- ⚠️ Regionální autobusy - vybrané linky
-- ⚠️ Vlakové spoje - vybrané linky
-
-Pro kompletní jízdní řády doporučujeme kombinaci s:
-- [Oficiální GTFS data ČR](https://portal.cisjr.cz/)
-- [PID OpenData](https://pid.cz/o-systemu/opendata/)
-- [ODIS OpenData](https://www.odis.cz/)
+Pokrytí odpovídá CIS JŘ: vlaky, linková autobusová doprava a MHD, kterou dopravci do CIS JŘ předávají.
 
 ## 🔧 Nástroje pro práci s GTFS
 
@@ -222,14 +197,13 @@ Pro kompletní jízdní řády doporučujeme kombinaci s:
 
 ## 📊 Zdroje dat
 
-Tento dataset vznikl agregací a konsolidací veřejně dostupných zdrojů jízdních řádů, včetně:
+| Zdroj | URL | Použití |
+|-------|-----|---------|
+| **CIS JŘ** (Celostátní informační systém o jízdních řádech) | https://www.spojenka.cz/jrdata/jizdnirady-gtfs.zip | páteřní zdroj, obsahuje i PID a MHD měst |
+| **PID** (Pražská integrovaná doprava) | https://data.pid.cz/PID_GTFS.zip | volitelně (`--with-pid`); CIS JŘ už PID obsahuje, zapnutí vede k duplicitám |
+| **IDOS KOMPLET.ZIP** (CHAPS) | https://www.chaps.cz/cs/download/idos#kotvatt | volitelně (`--with-tt`), heuristicky dekódovaný binární formát bez GPS |
 
-- **Oficiální GTFS data** z [portal.cisjr.cz](https://portal.cisjr.cz/) (Celostátní informační systém o jízdních řádech)
-- **PID (Pražská integrovaná doprava)** - kompletní jízdní řády pro Prahu a Středočeský kraj
-- **Regionální dopravní systémy** - ODIS, IDSJMK, IDOL a další
-- **Městské dopravní podniky** - MHD pro města po celé ČR
-
-Data byla deduplikována, normalizována a kategorizována pro snadnější použití v analytických a navigačních aplikacích.
+Všechna ID jsou přemapována na jednotné schéma (`AG_*`, `ST_*`, `RT_*`, `TR_*`, `SV_*`). ID nejsou mezi verzemi stabilní.
 
 ## 📄 Licence
 
@@ -245,33 +219,37 @@ Za podmínek:
 
 ## 🔄 Vlastní aktualizace dat
 
-Data si můžete aktualizovat sami — stačí Python 3.9+ a žádné externí závislosti.
+Data si můžete aktualizovat sami. Stačí Python 3.9+ bez externích závislostí.
 
 ### Postup
 
-1. **Stáhněte KOMPLET.ZIP** z [CHAPS/IDOS](https://www.chaps.cz/cs/download/idos#kotvatt) — archiv obsahuje aktuální jízdní řády ve formátu .tt
-2. **Rozbalte** archiv kamkoliv na disk
-3. **Spusťte konverzi:**
-
 ```bash
-# Pouze konverze TT → GTFS
-python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET
+# 1. Stažení aktuálních zdrojů do data/sources/ (CIS JŘ ~80 MB, PID ~50 MB)
+python scripts/download_sources.py
 
-# Konverze + integrace se všemi GTFS zdroji (PID, GTFS_CR)
-python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET --integrate
+# 2. Integrace do data/mhd, data/regional, data/merged (cca 1 minuta)
+python scripts/integrate_all_data_fast.py
+
+# 3. Kontrola konzistence
+python scripts/validate_gtfs.py
 ```
 
-### Co skript dělá
+Užitečné volby integrace:
 
-Konverzní pipeline (`scripts/convert_tt_to_gtfs.py`) postupně:
+```bash
+# Ponechat spoje platné od konkrétního data (default: dnes)
+python scripts/integrate_all_data_fast.py --from-date 20261213
 
-1. **Dekóduje** binární .tt soubory z KOMPLET balíku (`tt_decoder_v2.py`)
-2. **Filtruje** nesmyslné záznamy — POI (bankomaty, banky), servisní texty (německé/anglické legendy), interní CHAPS kódy (`¤¤...`)
-3. **Konvertuje** do standardního GTFS formátu se třemi kategoriemi: VL (vlaky), BUS (autobusy), MHD (`komplet_to_gtfs.py`)
-4. **Sloučí** kategorie do jednoho GTFS zdroje
-5. S `--integrate` spustí integraci se všemi dostupnými zdroji
+# Přidat data z IDOS KOMPLET.ZIP (nejdřív je převeďte, viz níže)
+python scripts/integrate_all_data_fast.py --with-tt
+```
 
-### Struktura KOMPLET.ZIP
+### Volitelně: konverze IDOS KOMPLET.ZIP
+
+1. Stáhněte KOMPLET.ZIP z [CHAPS/IDOS](https://www.chaps.cz/cs/download/idos#kotvatt) a rozbalte ho
+2. Spusťte `python scripts/convert_tt_to_gtfs.py /cesta/ke/KOMPLET --integrate`
+
+Konverzní pipeline dekóduje binární .tt soubory (`tt_decoder_v2.py`), odfiltruje POI, servisní texty a interní CHAPS kódy, převede data do GTFS (`komplet_to_gtfs.py`) a s `--integrate` je přidá k CIS JŘ. Dekodér je heuristický, data nemají GPS souřadnice a mají obecný kalendář (pracovní dny).
 
 ```
 KOMPLET/
@@ -284,10 +262,12 @@ KOMPLET/
 
 | Skript | Popis |
 |--------|-------|
-| `scripts/convert_tt_to_gtfs.py` | Hlavní workflow — konverze + sloučení + integrace |
+| `scripts/download_sources.py` | Stažení aktuálních GTFS zdrojů (CIS JŘ, PID) |
+| `scripts/integrate_all_data_fast.py` | Integrace zdrojů do výstupních datasetů |
+| `scripts/validate_gtfs.py` | Kontrola referenční integrity a časového pokrytí |
+| `scripts/convert_tt_to_gtfs.py` | Konverze IDOS KOMPLET.ZIP (volitelné) |
 | `scripts/tt_decoder_v2.py` | Dekodér CHAPS .tt binárního formátu |
 | `scripts/komplet_to_gtfs.py` | Konvertor dekódovaných dat do GTFS |
-| `scripts/integrate_all_data_fast.py` | Integrace více GTFS zdrojů dohromady |
 
 ## 🤝 Přispívání
 
@@ -307,8 +287,8 @@ Tento dataset vznikl jako součást projektu [Přijímačky na školu](https://w
 
 ---
 
-**Verze:** 2.1.0
-**Poslední aktualizace:** 2026-02-21
+**Verze:** 2.2.0
+**Poslední aktualizace:** 2026-10-09
 **Formát:** GTFS (General Transit Feed Specification)
-**Velikost datasetu:** ~530 MB (kompletní)
-**Zdroje:** GTFS_CR, PID, vlastní agregace
+**Velikost datasetu:** ~150 MB (komprimované stop_times)
+**Zdroje:** CIS JŘ (GTFS), volitelně PID a IDOS KOMPLET

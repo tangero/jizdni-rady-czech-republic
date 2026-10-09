@@ -2,6 +2,28 @@
 
 Všechny významné změny v tomto projektu budou zdokumentovány v tomto souboru.
 
+## [2.2.0] - 2026-10-09
+
+### Přidáno
+- `scripts/download_sources.py`: stažení aktuálních zdrojů (CIS JŘ, PID) do `data/sources/`
+- `scripts/validate_gtfs.py`: kontrola referenční integrity a časového pokrytí
+- `calendar.txt` a `calendar_dates.txt` ve všech třech datasetech
+- `data/regional/stop_times.txt.gz` (dříve v repozitáři chyběl)
+
+### Opraveno
+- **Platnost spojů**: obsah `calendar.txt` se do výstupu nezapisoval, většina spojů odkazovala na nedefinované `service_id`
+- **Nekonzistentní stop_times**: `stop_times.txt.gz` se vytváří přímo při integraci, nemůže tedy zůstat z jiného sestavení
+- **Duplicitní spoje PID**: CIS JŘ už obsahuje PID, samostatný PID zdroj je proto jen volitelný (`--with-pid`)
+- **Souřadnice zastávek**: CIS JŘ se načítá první, takže zastávky z TT konverze bez GPS už nepřepisují skutečné souřadnice
+- Duplicitní `service_id` ve zdrojovém `calendar.txt` se mapují jen jednou
+
+### Změněno
+- Aktualizována data z CIS JŘ k 9. 10. 2026
+- Výchozím zdrojem je pouze CIS JŘ; PID (`--with-pid`) a TT konverze (`--with-tt`) jsou volitelné
+- Vyřazují se spoje, které od data sestavení už nejedou (`--from-date`), a nepoužité zastávky, linky a dopravci
+- Cesty ke zdrojům jsou konfigurovatelné, integrace už nečte data z jiného repozitáře
+- Trolejbusy (`route_type` 11) se řadí do MHD
+
 ## [2.1.0] - 2026-02-21
 
 ### Přidáno
