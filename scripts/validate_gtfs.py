@@ -12,10 +12,12 @@ Ověřuje:
 Použití:
     python scripts/validate_gtfs.py                 # všechny datasety
     python scripts/validate_gtfs.py data/merged     # konkrétní adresář
+    python scripts/validate_gtfs.py data/merged --min-trips 150000
 
 Návratový kód 1, pokud se najde chyba.
 """
 
+import argparse
 import csv
 import gzip
 import sys
@@ -37,7 +39,7 @@ def _ids(path: Path, column: str) -> Set[str]:
     return {row[column] for row in _rows(path)} if path.exists() else set()
 
 
-def validate(dataset: Path) -> List[str]:
+def validate(dataset: Path, min_trips: int = 0) -> List[str]:
     errors: List[str] = []
     print(f"\n== {dataset.relative_to(PROJECT_DIR) if dataset.is_relative_to(PROJECT_DIR) else dataset}")
 
@@ -88,6 +90,8 @@ def validate(dataset: Path) -> List[str]:
     short_trips = sum(1 for t in trips if st_per_trip[t] < 2)
     if short_trips:
         errors.append(f"{short_trips} spojů má méně než 2 zastávky")
+    if len(trips) < min_trips:
+        errors.append(f"jen {len(trips):,} spojů, očekáváno alespoň {min_trips:,} (zdroj je neúplný?)")
 
     # Časové pokrytí
     days: List[str] = []
@@ -111,8 +115,13 @@ def validate(dataset: Path) -> List[str]:
 
 
 def main():
-    dirs = [Path(p).resolve() for p in sys.argv[1:]] or DEFAULT_DIRS
-    failed = [d for d in dirs if validate(d)]
+    parser = argparse.ArgumentParser(description="Kontrola konzistence GTFS datasetů")
+    parser.add_argument('dirs', nargs='*', type=Path, help='Adresáře datasetů (default: mhd, regional, merged)')
+    parser.add_argument('--min-trips', type=int, default=0, help='Minimální počet spojů v každém datasetu')
+    args = parser.parse_args()
+
+    dirs = [d.resolve() for d in args.dirs] or DEFAULT_DIRS
+    failed = [d for d in dirs if validate(d, args.min_trips)]
     if failed:
         print(f"\nNalezeny chyby v {len(failed)} datasetech")
         sys.exit(1)

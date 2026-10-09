@@ -244,6 +244,12 @@ python scripts/integrate_all_data_fast.py --from-date 20261213
 python scripts/integrate_all_data_fast.py --with-tt
 ```
 
+### Automatická aktualizace
+
+GitHub Action [`update-data.yml`](.github/workflows/update-data.yml) běží každé pondělí ráno a provede kroky výše včetně validace. Ověřená data publikuje jako [Release](../../releases) `data-RRRR-MM-DD` se ZIPem všech tří datasetů. Ponechává se posledních 12 týdenních releasů.
+
+Do větve `main` se data commitují jen první pondělí v měsíci a v týdnu po prosincové změně jízdních řádů, protože každý commit přidá do historie zhruba 50 MB. Nejčerstvější data jsou proto vždy v posledním Release. Ruční spuštění: záložka Actions → „Aktualizace dat“ → Run workflow (volitelně s commitem do `main`).
+
 ### Volitelně: konverze IDOS KOMPLET.ZIP
 
 1. Stáhněte KOMPLET.ZIP z [CHAPS/IDOS](https://www.chaps.cz/cs/download/idos#kotvatt) a rozbalte ho

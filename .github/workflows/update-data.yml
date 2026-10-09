@@ -1,0 +1,120 @@
+# Pravidelná aktualizace GTFS dat z CIS JŘ.
+#
+# Každé pondělí: stáhne zdroje, sestaví datasety, ověří je a publikuje
+# jako GitHub Release (tag data-RRRR-MM-DD).
+# Do main commituje jen první pondělí v měsíci, v týdnu po prosincové
+# změně jízdních řádů a při ručním spuštění s commit=true
+# (každý commit přidá do historie ~50 MB).
+#
+# Selhání workflow GitHub oznámí e-mailem.
+
+name: Aktualizace dat
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'  # pondělí 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Commitnout data do main'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+env:
+  MIN_TRIPS: '150000'   # pod touto hranicí v data/merged je zdroj podezřelý
+  KEEP_RELEASES: '12'   # kolik týdenních releasů ponechat
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Stažení zdrojů
+        run: python scripts/download_sources.py GTFS_CR
+
+      - name: Integrace
+        run: python -u scripts/integrate_all_data_fast.py
+
+      - name: Validace
+        run: |
+          python scripts/validate_gtfs.py | tee validation.txt
+          python scripts/validate_gtfs.py data/merged --min-trips "$MIN_TRIPS"
+
+      - name: Metadata
+        id: meta
+        run: |
+          published=$(python -c "import json; print(json.load(open('data/sources/GTFS_CR/_source.json'))['published'])")
+          echo "published=$published" >> "$GITHUB_OUTPUT"
+          echo "tag=data-$published" >> "$GITHUB_OUTPUT"
+
+          day=$(date -u +%-d); month=$(date -u +%-m)
+          commit=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            commit=${{ inputs.commit }}
+          elif [ "$day" -le 7 ]; then
+            commit=true   # první pondělí v měsíci
+          elif [ "$month" -eq 12 ] && [ "$day" -ge 9 ] && [ "$day" -le 15 ]; then
+            commit=true   # pondělí po změně JŘ (druhá neděle v prosinci)
+          fi
+          echo "commit=$commit" >> "$GITHUB_OUTPUT"
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          PUBLISHED: ${{ steps.meta.outputs.published }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG už existuje, přeskakuji"
+            exit 0
+          fi
+          zip -qr "gtfs-cz-$PUBLISHED.zip" data/mhd data/regional data/merged
+          {
+            echo "GTFS data jízdních řádů ČR, zdroj CIS JŘ publikovaný $PUBLISHED."
+            echo
+            echo '```'
+            cat validation.txt
+            echo '```'
+          } > notes.md
+          gh release create "$TAG" "gtfs-cz-$PUBLISHED.zip" \
+            --title "Data $PUBLISHED" --notes-file notes.md --latest
+
+      - name: Úklid starých releasů
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release list --limit 200 --json tagName,createdAt \
+            --jq '[.[] | select(.tagName | startswith("data-"))] | sort_by(.createdAt) | reverse | .['"$KEEP_RELEASES"':] | .[].tagName' |
+          while read -r tag; do
+            gh release delete "$tag" --yes --cleanup-tag
+          done
+
+      - name: Commit do main
+        if: steps.meta.outputs.commit == 'true'
+        env:
+          PUBLISHED: ${{ steps.meta.outputs.published }}
+        run: |
+          d=$(date -u -d "$PUBLISHED" +'%-d. %-m. %Y')
+          sed -i "s/^\*\*Stav dat: .*/**Stav dat: $d** (zdroj CIS JŘ publikovaný $d)/" README.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/mhd data/regional data/merged README.md
+          if git diff --cached --quiet; then
+            echo "Žádné změny"
+            exit 0
+          fi
+          git commit -m "chore(data): aktualizace dat z CIS JŘ k $PUBLISHED"
+          git push

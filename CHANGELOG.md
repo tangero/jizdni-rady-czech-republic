@@ -6,7 +6,8 @@ Všechny významné změny v tomto projektu budou zdokumentovány v tomto soubor
 
 ### Přidáno
 - `scripts/download_sources.py`: stažení aktuálních zdrojů (CIS JŘ, PID) do `data/sources/`
-- `scripts/validate_gtfs.py`: kontrola referenční integrity a časového pokrytí
+- `scripts/validate_gtfs.py`: kontrola referenční integrity a časového pokrytí, volba `--min-trips`
+- GitHub Action `update-data.yml`: týdenní aktualizace s validací, publikace jako Release, měsíční commit do `main`
 - `calendar.txt` a `calendar_dates.txt` ve všech třech datasetech
 - `data/regional/stop_times.txt.gz` (dříve v repozitáři chyběl)
 
