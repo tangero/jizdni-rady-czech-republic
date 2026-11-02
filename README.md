@@ -6,7 +6,7 @@ Agregovaná a konsolidovaná data veřejné dopravy v České republice ve stand
 
 Tento dataset obsahuje jízdní řády městské hromadné dopravy (MHD), regionálních autobusů a vlaků v České republice ve standardním GTFS formátu. Páteřním zdrojem jsou oficiální data Celostátního informačního systému o jízdních řádech (CIS JŘ), která zahrnují i Pražskou integrovanou dopravu. Tato data jsou primárně veřejnou službou, veřejná a pro veřejnost určená.
 
-**Stav dat: 9. 10. 2026** (zdroj CIS JŘ publikovaný 9. 10. 2026)
+**Stav dat: 2. 11. 2026** (zdroj CIS JŘ publikovaný 2. 11. 2026)
 
 ### Pokrytí
 
